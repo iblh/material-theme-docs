@@ -88,11 +88,13 @@ npm-check hexo-material
 编辑 **站点配置文件**，将 `language` 设置成你所需要的语言。
 可用的语言如下：
 
+- العَرَبِيَّة (ar) 
 - English (en)
+- Español (es)
+- Français (fr)
+- 日本語 (ja)
 - 简体中文 (zh-CN)
 - 繁體中文 (zh-TW)
-- Spanish (es)
-- 日本語 (ja)
 
 
 >例如：选用繁體中文，则配置为：
@@ -122,3 +124,8 @@ root: /hexo
 ### 站点描述设置
 
 编辑 **站点配置文件**，设置 `description` 字段为你的站点描述。站点描述可以是你喜欢的一句签名:)
+
+### RSS
+
+安装插件：[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)，配置方式如插件 `README.md` 所示。
+然后在 [url: rss](/intro/#url) 中添加生成的 feed 路径。

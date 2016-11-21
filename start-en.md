@@ -122,3 +122,8 @@ Edit **site config**, set `author` to your nickname.
 ### Site Description Settings
 
 Edit the **site config** and set the 'description` field to your site description. The site description can be a signature you like :)
+
+### RSS
+
+Install the plugin: [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed), Configuration as shown in the plugin `README.md`.
+Then add the generated feed path in [url: rss](/en/intro/#url).
