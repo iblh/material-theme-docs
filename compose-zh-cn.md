@@ -136,14 +136,29 @@ Name:
 - `这是一个描述` 为图片描述。
 
 
+## 创建「标签云」页面
+
+### 创建页面
+
+在 hexo 目录下的 `source` 文件夹内创建一个名为 `tags`（只是建议，可根据自己喜好修改）的文件夹。
+
+然后在文件内创建一个名为 `index.md` 的 Markdown 文件。
+
+在 `index.md` 文件内写入如下内容即可。
+```markdown
+---
+title: tags
+date: 
+layout: tags
+---
+```
+>`title` 可修改，`layout` 不可修改。
+
+如果想添加「图库」页面的入口，请参考 [独立页面](/intro/#pages)。
+
+
 ## 创建「私有」页面
 如果某篇文章不想显示在站点中，只需要在 `front-matter` 中加入
 ```yml
 layout: private
-```
-
-## 创建「标签云」页面
-如果某篇文章不想显示在站点中，只需要在 `front-matter` 中加入
-```yml
-layout: tags
 ```

@@ -78,6 +78,7 @@ scheme: Paradox
 用于设置阅读体验。
 - markdown: Markdown 解析样式。目前有三种样式，分别是 `Material`, `Github`, `Plain`。
 - entry_excerpt: 首页文章输出摘要的字符长度。默认为80。
+- code_highlight: 文章内代码高亮的样式，具体设置详情：[代码高亮样式](/expert/#代码高亮样式)。
 
 #### thumbnail
 

@@ -24,3 +24,23 @@ The code will be displayed before `</head>`,
 `Name` will appear as a comment above the code.
 
 ## Palette
+
+[Color palette](https://material.google.com/style/color.html#color-color-palette)
+
+## Material icons
+
+Custom the icons in Material Theme, such as `dropdown: icon`.
+
+[Material icons](https://material.io/icons/)
+
+## Code highlight
+
+[Preview 77 kinds style](https://highlightjs.org/static/demo/)
+
+At `Theme folder -> source -> css -> highlight` directory has all of the stylesheet，fill in the corresponding name.
+
+For example：
+```yml
+reading:
+    code_highlight: solarized-dark
+```

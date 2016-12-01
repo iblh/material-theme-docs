@@ -23,3 +23,23 @@ Name:
 
 
 ## 调色板
+
+[Color palette](https://material.google.com/style/color.html#color-color-palette)
+
+## Material 图标
+
+用于自定义例如 `dropdown: icon` 的图标。
+
+[Material icons](https://material.io/icons/)
+
+## 代码高亮样式
+
+[77 种样式预览](https://highlightjs.org/static/demo/)
+
+在 `主题文件夹 -> source -> css -> highlight` 目录可查看所有样式文件，填入对应文件名即可使用。
+
+例如：
+```yml
+reading:
+	code_highlight: solarized-dark
+```

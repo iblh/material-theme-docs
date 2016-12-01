@@ -88,7 +88,8 @@ Used to control the Material theme comes with a variety of js features.
 Used to set the reading experience.
 
 - markdown: Markdown parsing style. There are three styles, `Material`,` Github`, `Plain`.
-- entry_excerpt: Home page Outputs the character length of the digest. The default is 80.
+- entry_excerpt: Home page Outputs the character length of the digest. The default value is 80.
+- code_highlight: The style of code field，Specific settings at：[Code highlight](/enl/expert/#Code-highlight)。
 
 #### thumbnail
 

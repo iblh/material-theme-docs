@@ -146,18 +146,34 @@ Name:
 - `http://example.com/thumb-image.png` is the address of the thumbnail image, if there is no thumbnail can also use the full picture of the address.
 - `This is a description` for picture description.
 
+
+## Create the "Tag Cloud" page
+
+### Create the page
+
+Create a folder in the `source` folder under the hexo directory called` tags` (just a suggestion, which you can modify as you like).
+
+Then create a Markdown file named `index.md` in the file.
+
+In the `index.md` file to write the following content.
+
+```markdown
+---
+title: tags
+date:
+layout: tags
+---
+```
+
+> `title` can be changed,` layout` can not be modified.
+
+If you'd like to add an entry to the Gallery page, please refer to the separate [page](/en/intro/#pages).
+
+
 ## Create a private page
 
 If an article does not want to appear in the site, just add it to the `front-matter`
 
 ```yaml
 layout: private
-```
-
-## Create the "Tag Cloud" page
-
-If an article does not want to appear in the site, just add it to the `front-matter`
-
-```yaml
-layout: tags
 ```
