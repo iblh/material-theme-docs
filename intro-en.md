@@ -129,6 +129,12 @@ The default values `are Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino
 
 > The font settings are more standardized, no special requirements without additional changes.
 
+#### qrcode
+
+Use this to show qrcode in your article.  
+Need hexo-helper-qrcode to support this feature. Use "npm install hexo-helper-qrcode --save" to install.  
+
+
 ### Menu
 
 #### sns
