@@ -115,6 +115,11 @@ scheme: Paradox
 
 >该字体设定较为规范，如无特殊要求 无需额外修改。
 
+#### qrcode
+
+用于在文章页中显示二维码，扫描二维码即可直接打开文章。  
+需要 hexo-helper-qrcode 支持，使用 "npm install hexo-helper-qrcode --save" 进行安装。
+
 
 ### Menu
 
