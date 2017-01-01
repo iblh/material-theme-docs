@@ -58,7 +58,7 @@ scheme: Paradox
 #### uiux
 
 用于设置主题 UI 与 UX。
-- slogan: 显示在 `blog_info` 模块中的标语
+- slogan: 显示在 `blog_info` 模块中的标语，现在可以设置多行标语（见下方）
 - theme_color: 主题主要颜色。大部分地方使用此颜色。
 - theme_sub_color: 主题辅助颜色。
 - hyperlink_color: 超链接颜色。
@@ -66,6 +66,15 @@ scheme: Paradox
 - android_chrome_color: 安卓 Chrome 浏览器地址栏颜色。
 - nprogress_color: 页面加载时顶部加载进度条的颜色。
 - nprogress_buffer: 页面加载时顶部加载进度条的缓冲。
+
+多行标语使用
+```yaml
+  slogan: 
+   - "标语第一行"
+   - "标语第二行"
+   - "标语第三行"
+```
+即可分行显示
 
 #### js_effect
 
