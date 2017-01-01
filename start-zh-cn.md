@@ -92,7 +92,9 @@ npm-check hexo-material
 - English (en)
 - Español (es)
 - Français (fr)
+- Deutsche (de)
 - 日本語 (ja)
+- Malay (ms)
 - 简体中文 (zh-CN)
 - 繁體中文 (zh-TW)
 

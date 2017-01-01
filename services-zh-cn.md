@@ -16,7 +16,8 @@ Material 内置了一套 多说 的 Material Design 样式。
 
 然后在 `comment: shortname: ` 填入你的多说 shortname
 
->主题的多说评论使用两种 `tread key`，默认为文章的相对路径。
+>主题的多说评论使用两种 `tread key`，使用方式参考：[comment](https://material.vss.im/intro/#comment)。
+默认为文章的相对路径。
 另一种为 id，需要在 `front-matter` 中添加 
 ```yml
 id: id_number
