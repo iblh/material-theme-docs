@@ -69,7 +69,7 @@ hexo new page "about"
 ```markdown
 ---
 title: links
-date: 
+date:
 layout: links
 ---
 ```
@@ -110,7 +110,7 @@ Name:
 ```markdown
 ---
 title: gallery
-date: 
+date:
 layout: gallery
 ---
 ```
@@ -151,7 +151,7 @@ Name:
 ```markdown
 ---
 title: tags
-date: 
+date:
 layout: tags
 ---
 ```

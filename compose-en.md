@@ -35,7 +35,7 @@ In the hexo main directory `source -> _posts` create a file which suffix is ` .m
 | comment    | Display comment	                         | true             |
 | notag      | Do not generate Tags menu                | false             |
 
- 
+
 
 ### Thumbnail function
 
