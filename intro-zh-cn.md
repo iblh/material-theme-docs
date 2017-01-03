@@ -148,8 +148,19 @@ scheme: Paradox
 - instagram
 - tumblr
 - github
-- Linkedin
+- linkedin
+- facebook
 
+#### sns_share
+
+用于定义分享菜单中的项目， `false` 的项将不会显示在分享菜单中。
+
+- twitter
+- googleplus
+- weibo
+- linkedin
+- qq
+- telegram
 
 #### dropdown
 用于设置 Paradox 侧边栏用户下拉菜单，默认为空。

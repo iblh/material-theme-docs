@@ -166,6 +166,20 @@ Used to fill in your SNS information, in addition to `email`, other information 
 - instagram
 - tumblr
 - github
+- linkedin
+- facebook
+
+#### sns_share
+
+Used to choose which items will be displayed in share menu.The items with `false`  will not be displayed in the share menu.
+
+- twitter
+- googleplus
+- weibo
+- linkedin
+- qq
+- telegram
+
 
 #### dropdown
 
