@@ -18,8 +18,8 @@ Specific to the Material, there are `Github` and `NPM` two ways.
 In order to facilitate the subsequent update, the proposed ** clone ** approach. The cloning command is as follows:
 
 ```Shell
-$ cd your-hexo-site
-$ git clone https://github.com/viosey/hexo-theme-material.git
+$ cd your-hexo-site/themes
+$ git clone https://github.com/viosey/hexo-theme-material.git material
 ```
 
 ### NPM

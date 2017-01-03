@@ -19,7 +19,7 @@ hexo new <title>
 
 [Front-matter - 官方介绍](https://hexo.io/zh-cn/docs/front-matter.html)
 
-| 参数         | 描述                | 默认值       |
+| 参数          | 描述                | 默认值       |
 |:--           |:--                  |:--           |
 | `layout`     | 布局                | post         |
 | `title`      | 标题                | 文件名       |
@@ -29,6 +29,8 @@ hexo new <title>
 | `categories` | 分类（不适用于分页）|              |
 | `permalink`  | 覆盖文章网址        |              |
 | `thumbnail`  | 缩略图地址          |              |
+| `toc`        |  显示 TOC 按钮      | true        |
+| `comment`      | 显示评论      | true        |
 | `notag`      | 不生成标签按钮      | false        |
 
 ### 缩略图功能

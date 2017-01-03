@@ -31,6 +31,8 @@ In the hexo main directory `source -> _posts` create a file which suffix is ` .m
 | tags       | Tags (Not available for pages)           |                   |
 | categories | Categories (Not available for pages)     |                   |
 | permalink  | Override the default permalink of the post |                   |
+| toc        | Display TOC button		                 | true   		     |
+| comment    | Display comment	                         | true             |
 | notag      | Do not generate Tags menu                | false             |
 
  
