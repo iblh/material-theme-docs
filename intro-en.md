@@ -68,6 +68,20 @@ If you want to use one of the themes, delete the '#' before the scheme name.
 Used to set the theme UI and UX.
 
 - slogan: The slogan displayed in the `blog_info` module, now we support multi line slogan (see below).
+
+> Single line slogan
+> ```yaml
+  slogan: Slogan
+```
+
+> Multi line slogan
+> ```yaml
+  slogan:
+   - "First Line"
+   - "Second Line"
+   - "Third Line"
+```
+
 - theme_color: Theme The main color. Most places use this color.
 - theme_sub_color: Theme auxiliary color.
 - hyperlink_color: The color of the hyperlink.
@@ -76,13 +90,7 @@ Used to set the theme UI and UX.
 - nprogress_color: The color of the top loading progress bar when the page loads.
 - nprogress_buffer: The top loading progress bar buffers when the page loads.
 
-Using Multi Line Slogan:
-```yaml
-  slogan: 
-   - "First Line"
-   - "Second Line"
-   - "Third Line"
-```
+
 We will automatically generate multi line slogan.
 
 #### js_effect

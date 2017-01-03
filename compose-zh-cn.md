@@ -29,6 +29,7 @@ hexo new <title>
 | `categories` | 分类（不适用于分页）|              |
 | `permalink`  | 覆盖文章网址        |              |
 | `thumbnail`  | 缩略图地址          |              |
+| `toc`      | 显示 TOC 目录按钮      | true        |
 | `notag`      | 不生成标签按钮      | false        |
 
 ### 缩略图功能
@@ -67,7 +68,7 @@ hexo new page "about"
 ```markdown
 ---
 title: links
-date: 
+date:
 layout: links
 ---
 ```
@@ -108,7 +109,7 @@ Name:
 ```markdown
 ---
 title: gallery
-date: 
+date:
 layout: gallery
 ---
 ```
@@ -149,7 +150,7 @@ Name:
 ```markdown
 ---
 title: tags
-date: 
+date:
 layout: tags
 ---
 ```

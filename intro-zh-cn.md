@@ -19,7 +19,7 @@ Material 主题提供了多种分支主题外观，亦称「Scheme」。
 Paradox 的至简样式，简洁明了。
 
 ### 切换
-Scheme 的切换通过更改 **主题配置文**件，搜索 `scheme` 关键字。 你会看到有几行 scheme 的配置，将你需用启用的 scheme 去掉前面注释 `#` 即可。
+Scheme 的切换通过更改 **主题配置文件**，搜索 `scheme` 关键字。 你会看到有几行 scheme 的配置，将你需用启用的 scheme 去掉前面注释 `#` 即可。
 
 >例如 - 选择 Paradox Scheme
 
@@ -58,7 +58,20 @@ scheme: Paradox
 #### uiux
 
 用于设置主题 UI 与 UX。
-- slogan: 显示在 `blog_info` 模块中的标语，现在可以设置多行标语（见下方）
+- slogan: 显示在 `blog_info` 模块中的标语，现在可以设置多行标语：
+
+> 单行标语使用
+> ```yaml
+  slogan: 标语
+```
+> 多行标语使用
+> ```yaml
+  slogan:
+   - "标语第一行"
+   - "标语第二行"
+   - "标语第三行"
+```
+
 - theme_color: 主题主要颜色。大部分地方使用此颜色。
 - theme_sub_color: 主题辅助颜色。
 - hyperlink_color: 超链接颜色。
@@ -66,15 +79,6 @@ scheme: Paradox
 - android_chrome_color: 安卓 Chrome 浏览器地址栏颜色。
 - nprogress_color: 页面加载时顶部加载进度条的颜色。
 - nprogress_buffer: 页面加载时顶部加载进度条的缓冲。
-
-多行标语使用
-```yaml
-  slogan: 
-   - "标语第一行"
-   - "标语第二行"
-   - "标语第三行"
-```
-即可分行显示
 
 #### js_effect
 
@@ -102,8 +106,8 @@ scheme: Paradox
 - bgimg: 背景地址，默认调用 `主题文件夹 -> source -> img` 中的 `bg.png`。可更换此图片或者自己填入 url。
 - bing: 用于启用 bing 图片。
   - `parameter` 参数可用：`new`, `color=`, `type=`。
-	- `color=`: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow。
-	- `type=`: A (animal), C (culture), N (nature), S (space), T (travel)。
+  - `color=`: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow。
+  - `type=`: A (animal), C (culture), N (nature), S (space), T (travel)。
 
 #### img
 
@@ -120,7 +124,7 @@ scheme: Paradox
 
 用于设置站点的字体。
 
-默认值为 `Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif` 
+默认值为 `Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif`
 
 >该字体设定较为规范，如无特殊要求 无需额外修改。
 
@@ -144,6 +148,7 @@ scheme: Paradox
 - instagram
 - tumblr
 - github
+- Linkedin
 
 
 #### dropdown
@@ -151,8 +156,8 @@ scheme: Paradox
 >参考配置样式
 
 >```yaml
-dropdown: 
-	Email Me: 
+dropdown:
+	Email Me:
 		link: "#"
 		icon: email
 ```
@@ -183,8 +188,8 @@ pages:
 具体设置参考 [评论系统](/services/#评论系统)
 
 目前可使用 `duoshuo` `disqus`。
-- use: 
-- shortname: 
+- use:
+- shortname:
 - duoshuo_thread_key: 用于设置多说 tread key 的使用，默认为 `path`，可设置为 `id`。
 - duoshuo_embed_js_url: 多说 js。
 
@@ -201,7 +206,7 @@ pages:
 
 #### leancloud
 
-具体设置参考 [设置 Leancloud 浏览次数统计](/services/#Leancloud) 
+具体设置参考 [设置 Leancloud 浏览次数统计](/services/#Leancloud)
 - enable: 默认为 false。
 - app_id: APP ID。
 - app_key: APP Key。
