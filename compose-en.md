@@ -170,7 +170,7 @@ layout: tags
 
 > `title` can be changed,` layout` can not be modified.
 
-If you'd like to add an entry to the Gallery page, please refer to the separate [page](/en/intro/#pages).
+If you'd like to add an entry to the Tag Cloud page, please refer to the separate [page](/en/intro/#pages).
 
 
 ## Create a private page
