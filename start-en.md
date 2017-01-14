@@ -22,7 +22,7 @@ Download a [stable release](https://github.com/viosey/hexo-theme-material/releas
 
 Cloning the Github repository is more suitable to benefit from further updates. Go in the site root directory and use the following command:
 
-```Shell
+```bash
 git clone https://github.com/viosey/hexo-theme-material.git themes/material
 ```
 
@@ -30,7 +30,7 @@ git clone https://github.com/viosey/hexo-theme-material.git themes/material
 
 Go in the site root directory and use the following commands:
 
-```
+```bash
 npm install hexo-material
 cp -R node_modules/hexo-material/ themes/material
 ```
@@ -53,7 +53,7 @@ Save your `_config.yml` file somewhere. Then download a new [stable release](htt
 
 Simply use:
 
-```
+```bash
 cd themes/material
 git stash
 git pull
@@ -70,7 +70,7 @@ NPM updates can be done in two ways:
 
 Save your `_config.yml` file somewhere. Then use:
 
-```
+```bash
 npm update hexo-material
 rm -R themes/material
 cp -R node_modules/hexo-material/ themes/material
@@ -84,13 +84,13 @@ Finally reconcile the new version of the `_config.yml` with the one you saved.
 
 Install npm-check:
 
-```
+```bash
 npm install -g npm-check
 ```
 
 Save your `_config.yml` file somewhere. Then use:
 
-```
+```bash
 npm-check hexo-material
 ```
 
@@ -117,7 +117,7 @@ Available languages ​​are:
 
 > For example, to use Traditional Chinese, the configuration would be:
 >
-```yml
+```yaml
 language: zh-TW
 ```
 
@@ -127,13 +127,13 @@ Edit the **site config**, put your main domain name as the `url` parameter and p
 
 > For example, for a site accessible using `http://example.com/hexo`, the configuration would be:
 >
-```yml
+```yaml
 url: http://example.com
 root: /hexo
 ```
 > For a site accessible using `http://example.com/`, the configuration would be:
 >
-```yml
+```yaml
 url: http://example.com
 root: /
 ```
