@@ -5,67 +5,82 @@ permalink: en/start
 id: 1
 lang: en
 ---
-In Hexo, there are usually two configuration files, one is the site root directory `_config.yml`; the other is the theme directory` _config.yml`. For convenience of description, in the following description, the former is referred to as a **site config**, which is called a **theme config**.
+
+In Hexo, there are usually two configuration files, both called `_config.yml`. The first one is in the site root directory; the other is in the theme directory. For convenience of description, in the following description, the former is referred to as the **site config** and the latter as the **theme config**.
 
 ## Installing "Material"
 
-Hexo installation of the theme is very simple, just put the theme file in the site directory `themes` directory, and then modify the configuration file can be.
-Specific to the Material, there are `Github` and `NPM` two ways.
+Installation of an Hexo theme is quite simple. You simply need to put the theme directory inside the `themes` directory of your site and modify the theme config.
 
-### Github
-> You can choose to clone or download a [stable release](https://github.com/viosey/hexo-theme-material/releases).
+There are three ways to install the Material theme: using `Github` or `NPM`.
 
-In order to facilitate the subsequent update, the proposed ** clone ** approach. The cloning command is as follows:
+### Direct download
+
+Download a [stable release](https://github.com/viosey/hexo-theme-material/releases) and extract the content inside the `themes/material` directory.
+
+### Github (recommended)
+
+Cloning the Github repository is more suitable to benefit from further updates. Go in the site root directory and use the following command:
 
 ```Shell
-$ cd your-hexo-site/themes
-$ git clone https://github.com/viosey/hexo-theme-material.git material
+git clone https://github.com/viosey/hexo-theme-material.git themes/material
 ```
 
 ### NPM
+
+Go in the site root directory and use the following commands:
 
 ```
 npm install hexo-material
+cp -R node_modules/hexo-material/ themes/material
 ```
 
-This will download the Material theme to the `` node_modules`` folder in the `hexo` directory.
-Locate the `hexo-material` folder, and copy the file to the `Material` theme folder under the `theme` directory.
+## Enable "Material"
 
+Once you have the `themes/material` folder, open the **site config**, find the `theme` field, and change its value to `material`.
 
-##Enable "Material"
+> The folder `themes/material` can be named differently if you wish. You simply have to adapt the `theme` field accordingly.
 
-When the clone is complete, change the theme folder name to `material`.
-Then open **site config**, find the `theme` field, and change its value to` material`.
-> Folder name can be freely modified, not the only, just `theme` field corresponding to it.
+Run `hexo s --debug` and go to [`http://localhost:4000`](http://localhost:4000) to make sure the site is running properly.
 
-Run `hexo s --debug` and go to` http://localhost: 4000` to make sure the site is running properly.
+## Update "Material"
 
+### Direct download
 
-##Update "Material"
+Save your `_config.yml` file somewhere. Then download a new [stable release](https://github.com/viosey/hexo-theme-material/releases) and extract the content inside the `themes/material` directory. Finally reconcile the new version of the `_config.yml` with the one you saved.
 
-### Github
+### Github (recommended)
 
-use
+Simply use:
+
 ```
+cd themes/material
+git stash
 git pull
+git stash pop
 ```
 
-You can pull the latest version.
+The previous commands will put aside your custom config, pull the update reapply your modifications. Fix conflicts if needed.
 
 ### NPM
 
-NPM updates are available in two ways:
+NPM updates can be done in two ways:
 
-#### npm-update
+#### NPM update
+
+Save your `_config.yml` file somewhere. Then use:
 
 ```
 npm update hexo-material
+rm -R themes/material
+cp -R node_modules/hexo-material/ themes/material
 ```
 
-Then copy the file to the `Material` theme folder.
+Finally reconcile the new version of the `_config.yml` with the one you saved.
 
 #### npm-check
-[Npm-check](https://www.npmjs.com/package/npm-check) is used to check npm dependency package for updates, errors, and non-use, we can also use npm-check package updates .
+
+[Npm-check](https://www.npmjs.com/package/npm-check) is used to check NPM dependency package for updates or errors.
 
 Install npm-check:
 
@@ -73,57 +88,66 @@ Install npm-check:
 npm install -g npm-check
 ```
 
-Check the status of the npm package:
+Save your `_config.yml` file somewhere. Then use:
 
 ```
 npm-check hexo-material
 ```
-Use the space bar to select the package to be processed, carriage return directly for processing.
 
+Use the space bar to select the package to update and press enter.
 
 ## Basic settings
 
 ### Language
 
 Edit the **site config** and set `language` to the language you want.
+
 Available languages ​​are:
 
-- English (en)
-- Simplified Chinese (en-US)
-- Traditional Chinese (zh-TW)
-- Spanish (es)
-- 日本語 (ja)
+- Deutsche: de
+- English: en
+- Español: es
+- Français: fr
+- Malay: ms
+- 日本語: ja
+- العَرَبِيَّة: ar
+- 简体中文: zh-CN
+- 繁體中文: zh-TW
 
 
-> For example: Select Traditional Chinese, the configuration is:
+> For example, to use Traditional Chinese, the configuration would be:
 >
 ```yml
-language: en-TW
+language: zh-TW
 ```
 
 ### URL
 
-Edit **site config**, `url` fill in the main domain name,` root` fill in the subdirectory / root domain name
+Edit the **site config**, put your main domain name as the `url` parameter and put the site root directory as the `root` parameter.
 
-> For example: The domain name of the site is `http: // example.com / hexo`:
+> For example, for a site accessible using `http://example.com/hexo`, the configuration would be:
 >
-```Yml
+```yml
 url: http://example.com
 root: /hexo
 ```
-
-If your site is not running in a subdirectory, `root` is filled in as` / `.
+> For a site accessible using `http://example.com/`, the configuration would be:
+>
+```yml
+url: http://example.com
+root: /
+```
 
 ### Author name
 
-Edit **site config**, set `author` to your nickname.
+Edit the **site config** and set the `author` parameter with whatever you want to be called.
 
+### Site description
 
-### Site Description Settings
-
-Edit the **site config** and set the 'description` field to your site description. The site description can be a signature you like :)
+Edit the **site config** and set the `description` parameter with the description of your site description. The site description can be a signature you like :)
 
 ### RSS
 
-Install the plugin: [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed), Configuration as shown in the plugin `README.md`.
-Then add the generated feed path in [url: rss](/en/intro/#url).
+To use an RSS system, install the following plugin: [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed).
+
+Follow instructions from the plugin `README.md`. Then add the generated feed path as the `rss url` parameter in the **theme config**. See [here](/en/intro/#url) for more informations.
