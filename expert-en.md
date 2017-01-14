@@ -34,7 +34,7 @@ See [highlightjs](https://highlightjs.org/static/demo/) for more information.
 You can find the available stylesheet names inside the `themes/material/source/css/highlight` folder.
 
 For example:
-```yml
+```yaml
 reading:
     code_highlight: solarized-dark
 ```
