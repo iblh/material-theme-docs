@@ -5,41 +5,35 @@ permalink: en/expert
 id: 4
 lang: en
 ---
+
 ## Add custom code
 
-If you want to add custom `font-face` or statistical code (such as `Google Analytics`) to your site.
+If you want to add custom code, like `font-face` or statistical code (such as `Google Analytics`) to your site, you need to create a folder named `_data` (no rename) in the `source` folder in your site directory.
 
-You need to create a folder named `_data` (no rename) in the` source` folder in the hexo directory.
-
-And then create a file called head.yml in the file.
-
-The single code format is:
+Then create a file called `head.yml` in the file:
 
 ```yaml
 Name:
      "Put your code here"
 ```
 
-The code will be displayed before `</head>`,
-`Name` will appear as a comment above the code.
+The code will be displayed before `</head>` tag. `Name` will appear as a comment above the code.
 
 ## Palette
 
-[Color palette](https://material.google.com/style/color.html#color-color-palette)
+See [color palette](https://material.google.com/style/color.html#color-color-palette).
 
 ## Material icons
 
-Custom the icons in Material Theme, such as `dropdown: icon`.
-
-[Material icons](https://material.io/icons/)
+The list of icon used to customized the dropdown or page buttons is available [here](https://material.io/icons/).
 
 ## Code highlight
 
-[Preview 77 kinds style](https://highlightjs.org/static/demo/)
+See [highlightjs](https://highlightjs.org/static/demo/) for more information.
 
-At `Theme folder -> source -> css -> highlight` directory has all of the stylesheet，fill in the corresponding name.
+You can find the available stylesheet names inside the `themes/material/source/css/highlight` folder.
 
-For example：
+For example:
 ```yml
 reading:
     code_highlight: solarized-dark

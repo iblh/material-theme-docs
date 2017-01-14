@@ -150,4 +150,4 @@ Edit the **site config** and set the `description` parameter with the descriptio
 
 To use an RSS system, install the following plugin: [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed).
 
-Follow instructions from the plugin `README.md`. Then add the generated feed path as the `rss url` parameter in the **theme config**. See [here](/en/intro/#url) for more informations.
+Follow instructions from the plugin `README.md`. Then add the generated feed path as the `rss url` parameter in the **theme config**. See [here](/en/intro/#url) for more information.
