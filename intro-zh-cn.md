@@ -176,18 +176,33 @@ dropdown:
 #### pages
 
 用于设置独立页面，默认为空。填写条目后独立页面入口将显示在：
-- `blog_info` `Page` 按钮的下拉菜单中。(Scheme Paradox)
-- 侧边栏 `独立页面` 菜单中。(Scheme Paradox)
+- `logo card` `Page` 按钮的下拉菜单中。(Scheme Paradox)
+- 侧边栏中。(Scheme Paradox)
 - 站点左侧。(Scheme Isolation)
+
+
+以
+```
+Name: 
+	link: "/link/"
+	icon: icon
+```
+作为一个单位。
+
+`Name` 是该独立页面的名称，请自行修改。
+`link` 的参数为相对路径，对应 hexo 目录下的 `source` 文件夹内的相应文件夹。
+`icon` 的参数为自定义的 Material 图标，可用图标可在 [Material icons](https://material.io/icons/) 查询。
 
 >参考配置样式
 ```yml
 pages:
-	友情链接: "/links/"
-	时间轴归档: "/timeline/"
+	友情链接:
+		link: "/links/"
+		icon: people
+	About: "/about/"
+		link: "/about/"
+		icon: person
 ```
-
-首个参数为入口名字；后一个参数为相对路径，对应 hexo 目录下的 `source` 文件夹内的相应文件夹。
 
 
 ### Integrated Services
