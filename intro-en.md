@@ -216,7 +216,7 @@ See [comment system](/en/services/#Comment-system) for more information.
 
 - `use`: `Duoshuo` or `disqus`
 - `shortname`: the shortname
-- `duoshuo_thread_key`: used to set the use of tread key (`path` or `id`)
+- `duoshuo_thread_key_type`: used to set the use of tread key (`path` or `id`)
 - `duoshuo_embed_js_url`: the JavaScript url
 
 #### search

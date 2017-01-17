@@ -15,12 +15,12 @@
 [Intro markdown](https://github.com/viosey/material-theme-docs/blob/master/intro-en.md)
 
 ## 开始创作 Compose
-[主题介绍 markdown](https://github.com/viosey/material-theme-docs/blob/master/compose-zh-cn.md)
+[开始创作 markdown](https://github.com/viosey/material-theme-docs/blob/master/compose-zh-cn.md)
 
-[Expert markdown](https://github.com/viosey/material-theme-docs/blob/master/compose-en.md)
+[Compose markdown](https://github.com/viosey/material-theme-docs/blob/master/compose-en.md)
 
 ## 进阶设定 Expert
-[Expert markdown](https://github.com/viosey/material-theme-docs/blob/master/expert-zh-cn.md)
+[进阶设定 markdown](https://github.com/viosey/material-theme-docs/blob/master/expert-zh-cn.md)
 
 [Expert markdown](https://github.com/viosey/material-theme-docs/blob/master/compose-en.md)
 

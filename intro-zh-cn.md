@@ -216,7 +216,7 @@ pages:
 目前可使用 `duoshuo` `disqus`。
 - use:
 - shortname:
-- duoshuo_thread_key: 用于设置多说 tread key 的使用，默认为 `path`，可设置为 `id`。
+- duoshuo_thread_key_type: 用于设置多说 tread key 的使用，默认为 `path`，可设置为 `id`。
 - duoshuo_embed_js_url: 多说 js。
 
 #### search
