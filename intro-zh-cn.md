@@ -1,6 +1,6 @@
 ---
 title: 主题介绍
-version:
+version: 1.2.6
 permalink: intro
 id: 2
 lang: zh-cn

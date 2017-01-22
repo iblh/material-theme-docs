@@ -1,6 +1,6 @@
 ---
 title: Compose
-version:
+version: 1.2.6
 permalink: en/compose
 id: 3
 lang: en

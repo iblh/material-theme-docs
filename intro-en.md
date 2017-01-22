@@ -1,6 +1,6 @@
 ---
 title: Intro
-version:
+version: 1.2.6
 permalink: en/intro
 id: 2
 lang: en

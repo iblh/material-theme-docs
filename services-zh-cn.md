@@ -1,6 +1,6 @@
 ---
 title: 集成服务
-version:
+version: 1.2.6
 permalink: services
 id: 5
 lang: zh-cn
