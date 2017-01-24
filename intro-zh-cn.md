@@ -29,6 +29,7 @@ scheme: Paradox
 #scheme: Isolation
 ```
 
+
 ## 主题配置文件介绍
 
 ### Site Information
@@ -183,7 +184,7 @@ dropdown:
 
 以
 ```
-Name: 
+Name:
 	link: "/link/"
 	icon: icon
 ```
@@ -245,3 +246,14 @@ pages:
 - all_site_uv: 默认为 false。
 - post_pv: 默认为 false。
 - busuanzi_pure_mini_js: 统计 js。
+
+
+## 主要协助开发者
+
+[Github - Contributors](https://github.com/viosey/hexo-theme-material/graphs/contributors)
+
+- [pidupuis](https://github.com/pidupuis)
+- [neoFelhz](https://github.com/neoFelhz)
+- [AkarinServer](https://github.com/AkarinServer)
+- [cubesky](https://github.com/cubesky)
+- [Halyul](https://github.com/Halyul)

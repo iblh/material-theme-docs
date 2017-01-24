@@ -247,3 +247,14 @@ See [Busuanzi](/en/services/#Busuanzi) for more information.
 - `all_site_uv`: (default: false)
 - `post_pv`: (default: false)
 - `busuanzi_pure_mini_js`: the JavaScript statistics
+
+
+## Main Contributors
+
+[Github - Contributors](https://github.com/viosey/hexo-theme-material/graphs/contributors)
+
+- [pidupuis](https://github.com/pidupuis)
+- [neoFelhz](https://github.com/neoFelhz)
+- [AkarinServer](https://github.com/AkarinServer)
+- [cubesky](https://github.com/cubesky)
+- [Halyul](https://github.com/Halyul)
