@@ -148,12 +148,6 @@ footer_image:
 
 >该字体设定较为规范，如无特殊要求 无需额外修改。
 
-#### qrcode
-
-用于在文章页中显示二维码，扫描二维码即可直接打开文章。  
-需要 hexo-helper-qrcode 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
-
-
 ### Menu
 
 #### sns
@@ -267,6 +261,15 @@ Used to customize the sidebar footer.
 
 - `divider`: 设置成 `true` 后会在侧边栏底部之前增加一条分割线。
 - `theme`: 设置成 `true` 后会在侧边栏底部增加一个指向 Material 主题的链接。
+
+#### qrcode
+
+用于在文章页中显示二维码，扫描二维码即可直接打开文章。  
+需要 hexo-helper-qrcode 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
+
+#### topPost（开发中）
+
+使用该插件可以将指定文章置顶。
 
 ### Integrated Services
 

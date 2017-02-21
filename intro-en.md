@@ -262,7 +262,7 @@ Need `hexo-helper-qrcode` to support this feature:
 npm install hexo-helper-qrcode --save
 ```
 
-#### topPost
+#### topPost (Being Development)
 
 Use this to pin post at the top of the list of posts.
 
@@ -274,7 +274,10 @@ Used to set up a comment system.
 
 See [comment system](/en/services/#Comment-system) for more information.
 
-- `use`: `Duoshuo` or `disqus`
+- `use`: `Duoshuo` `disqus` or `disqus_click`
+
+> When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
+
 - `shortname`: the shortname
 - `duoshuo_thread_key_type`: used to set the use of tread key (`path` or `id`)
 - `duoshuo_embed_js_url`: the JavaScript url
