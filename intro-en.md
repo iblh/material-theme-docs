@@ -147,6 +147,10 @@ The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino
 
 The font settings are more standardized, no special requirements without additional changes.
 
+#### card_elevation
+
+Used to set elevation of the card on the list of the posts.  
+
 ### Menu
 
 #### sns

@@ -148,6 +148,10 @@ footer_image:
 
 >该字体设定较为规范，如无特殊要求 无需额外修改。
 
+#### card_elevation
+
+用于设置文章列表的卡片阴影，如无特殊要求 无需额外修改。
+
 ### Menu
 
 #### sns
@@ -300,6 +304,12 @@ Used to customize the sidebar footer.
 - use
 - swiftype_key
 
+#### analytics
+
+用于设置访客分析服务，支持 `Google Analysis` 和 `百度站长工具` 
+
+- `baidu_id`: 百度 ID
+- `google_id`: Google Analysis 密钥
 
 #### leancloud
 
