@@ -84,6 +84,8 @@ slogan:
 - `button_color`: the color used for buttons
 - `android_chrome_color`: the color of the Chrome address bar
 - `buffer`: the top loading progress bar buffers
+- `nprogress_color`: the color of the top loading progress bar
+- `nprogress_buffer`: the top loading progress bar buffers
 
 #### js_effect
 
@@ -144,13 +146,6 @@ Used to set the site fonts.
 The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Microsoft Yahe, Arial`
 
 The font settings are more standardized, no special requirements without additional changes.
-
-#### pace
-
-Pace is an automatic page load progress bar. You can find demos on http://github.hubspot.com/pace/docs/welcome
-
-- `style`: available values are `barber-shop`, `big-counter`, `bounce`, `center-atom`, `center-circle`, `center-radar`, `center-simple`, `corner-indicator`, `fill-left`, `fill-left-nocolor`, `flat-top`, `loading-bar`, `macosx`. But you can instead set this value to `custom` and adding your own style in `source/css/pace/custom.css` file.
-- `color`: the hexadecimal color. This parameter is absolutely required!
 
 ### Menu
 
@@ -253,9 +248,6 @@ Used to customize the sidebar footer.
 
 - `divider`: set `true` to add a divider before the footer
 - `theme`: set `true` to display a link to the theme site
-- `support`: set `true` to display a link to ask for help and support
-- `feedback`: set `true` to display a link to send a feedback
-- `material`: set `true` to display a link to the Material Design Guideline
 
 #### card_elevation
 
@@ -270,7 +262,7 @@ Need `hexo-helper-qrcode` to support this feature:
 npm install hexo-helper-qrcode --save
 ```
 
-#### topPost
+#### topPost (Being Development)
 
 Use this to pin post at the top of the list of posts.
 
@@ -282,7 +274,10 @@ Used to set up a comment system.
 
 See [comment system](/en/services/#Comment-system) for more information.
 
-- `use`: `Duoshuo` or `disqus`
+- `use`: `Duoshuo` `disqus` or `disqus_click`
+
+> When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
+
 - `shortname`: the shortname
 - `duoshuo_thread_key_type`: used to set the use of tread key (`path` or `id`)
 - `duoshuo_embed_js_url`: the JavaScript url
