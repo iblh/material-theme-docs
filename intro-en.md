@@ -330,4 +330,3 @@ See [Busuanzi](/en/services/#Busuanzi) for more information.
 - [neoFelhz](https://github.com/neoFelhz)
 - [AkarinServer](https://github.com/AkarinServer)
 - [cubesky](https://github.com/cubesky)
-- [Halyul](https://github.com/Halyul)
