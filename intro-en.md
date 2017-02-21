@@ -326,7 +326,7 @@ See [Busuanzi](/en/services/#Busuanzi) for more information.
 
 [Github - Contributors](https://github.com/viosey/hexo-theme-material/graphs/contributors)
 
-- [pidupuis](https://github.com/pidupuis)
 - [neoFelhz](https://github.com/neoFelhz)
-- [AkarinServer](https://github.com/AkarinServer)
+- [pidupuis](https://github.com/pidupuis)
 - [cubesky](https://github.com/cubesky)
+- [AkarinServer](https://github.com/AkarinServer)
