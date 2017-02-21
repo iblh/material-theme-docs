@@ -1,6 +1,6 @@
 ---
 title: Services
-version: 1.2.6
+version: 1.3.0
 permalink: en/services
 id: 5
 lang: en

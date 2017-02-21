@@ -1,6 +1,6 @@
 ---
 title: Start
-version: 1.2.6
+version: 1.3.0
 permalink: en/start
 id: 1
 lang: en

@@ -1,6 +1,6 @@
 ---
 title: Expert
-version: 1.2.6
+version: 1.3.0
 permalink: en/expert
 id: 4
 lang: en
@@ -14,7 +14,7 @@ Then create a file called `head.yml` in the file:
 
 ```yaml
 Name:
-     "Put your code here"
+    "Put your code here"
 ```
 
 The code will be displayed before `</head>` tag. `Name` will appear as a comment above the code.
@@ -29,12 +29,4 @@ The list of icon used to customized the dropdown or page buttons is available [h
 
 ## Code highlight
 
-See [highlightjs](https://highlightjs.org/static/demo/) for more information.
-
-You can find the available stylesheet names inside the `themes/material/source/css/highlight` folder.
-
-For example:
-```yaml
-reading:
-    code_highlight: solarized-dark
-```
+From `Version 1.3.0`, you can use `hexo-prism-plugin` to highlight your codes, visit [Hexo-Prism-Plugin Github](https://github.com/ele828/hexo-prism-plugin) to learn more.

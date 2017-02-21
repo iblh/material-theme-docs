@@ -1,6 +1,6 @@
 ---
 title: Intro
-version: 1.2.6
+version: 1.3.0
 permalink: en/intro
 id: 2
 lang: en
@@ -188,9 +188,9 @@ Refer to the configuration style
 
 ```yaml
 dropdown:
-    Email Me:
-        link: "#"
-        icon: email
+    Email Me:
+    link: "#"
+    icon: email
 ```
 
 ##### homepage
@@ -225,11 +225,11 @@ Refer to the configuration style. Let the icon empty if you don't need one. Set 
 
 ```yaml
 pages:
-    About:
+    About:
         link: "#about"
         icon: person
         divider: false
-    timeline archive:
+    timeline archive:
         link: "/timeline/"
         icon:
         divider: false
@@ -265,6 +265,12 @@ npm install hexo-helper-qrcode --save
 #### topPost (Being Development)
 
 Use this to pin post at the top of the list of posts.
+If you want to use this WIP feature, please install `hexo-helper-post-top` :
+```bash
+npm install hexo-helper-post-top --save
+```
+And then change this method to `true`.
+Now you can use `front-matter` `top: true` to pin your posts what you want to.
 
 ### Integrated services
 
