@@ -1,6 +1,6 @@
 ---
 title: 主题介绍
-version: 1.2.6
+version: 1.3.0
 permalink: intro
 id: 2
 lang: zh-cn
@@ -270,6 +270,8 @@ Used to customize the sidebar footer.
 #### topPost（开发中）
 
 使用该插件可以将指定文章置顶。
+如果您需要这个功能，请使用 `npm install hexo-helper-post-top --save` 安装支持插件，然后将这个开关设置为 `true`。
+之后在您需要置顶文章的 `front-matter` 中，添加 `top: true` 即可置顶。
 
 ### Integrated Services
 

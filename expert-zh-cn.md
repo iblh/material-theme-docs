@@ -1,6 +1,6 @@
 ---
 title: 进阶设定
-version: 1.2.6
+version: 1.3.0
 permalink: expert
 id: 4
 lang: zh-cn
@@ -34,12 +34,4 @@ Name:
 
 ## 代码高亮样式
 
-[77 种样式预览](https://highlightjs.org/static/demo/)
-
-在 `主题文件夹 -> source -> css -> highlight` 目录可查看所有样式文件，填入对应文件名即可使用。
-
-例如：
-```yml
-reading:
-	code_highlight: solarized-dark
-```
+从 `1.3.0` 版本开始，您可以使用 `hexo-prism-plugin` 进行代码染色，具体文档请参阅[Hexo-Prism-Plugin 插件文档](https://github.com/ele828/hexo-prism-plugin)

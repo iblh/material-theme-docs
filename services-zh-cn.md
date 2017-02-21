@@ -1,6 +1,6 @@
 ---
 title: 集成服务
-version: 1.2.6
+version: 1.3.0
 permalink: services
 id: 5
 lang: zh-cn
@@ -26,7 +26,7 @@ id: id_number
 
 ### Disqus
 
-使用 [Disqus](https://disqus.com/)，仅需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `"disqus"`。
+使用 [Disqus](https://disqus.com/)，仅需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `"disqus"` 或者 `"disqus_click"`。
 
 然后在 `comment: shortname: ` 填入你的 Disqus shortname
 

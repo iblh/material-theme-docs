@@ -1,6 +1,6 @@
 ---
 title: 开始使用
-version: 1.2.6
+version: 1.3.0
 permalink: start
 id: 1
 lang: zh-cn

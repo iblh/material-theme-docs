@@ -1,6 +1,6 @@
 ---
 title: 开始创作
-version: 1.2.6
+version: 1.3.0
 permalink: compose
 id: 3
 lang: zh-cn
@@ -20,18 +20,21 @@ hexo new <title>
 [Front-matter - 官方介绍](https://hexo.io/zh-cn/docs/front-matter.html)
 
 | 参数          | 描述                | 默认值       |
-|:--           |:--                  |:--           |
-| `layout`     | 布局                | post         |
-| `title`      | 标题                | 文件名       |
-| `date`       | 建立日期            | 文件建立日期 |
-| `updated`    | 更新日期            | 文件更新日期 |
-| `tags`       | 标签（不适用于分页）|              |
-| `categories` | 分类（不适用于分页）|              |
-| `permalink`  | 覆盖文章网址        |              |
-| `thumbnail`  | 缩略图地址          |              |
-| `toc`        |  显示 TOC 按钮      | true        |
-| `comment`      | 显示评论      | true        |
-| `notag`      | 不生成标签按钮      | false        |
+|:--            |:--                  |:--           |
+| `layout`      | 布局                | post         |
+| `title`       | 标题                | 文件名       |
+| `date`        | 建立日期            | 文件建立日期 |
+| `updated`     | 更新日期            | 文件更新日期 |
+| `tags`        | 标签（不适用于分页）|              |
+| `categories`  | 分类（不适用于分页）|              |
+| `permalink`   | 覆盖文章网址        |              |
+| `thumbnail`   | 缩略图地址          |              |
+| `toc`         | 显示 TOC 按钮       | true         |
+| `comment`     | 显示评论            | true         |
+| `notag`       | 不生成标签按钮      | false        |
+| `top`         | 置顶                | false        |
+
+注1：置顶功能请参考 [topPost](/intro/#topPost)
 
 ### 缩略图功能
 
