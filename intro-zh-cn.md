@@ -218,19 +218,19 @@ dropdown:
 
 ##### archives
 
-Used to set the archives button.
+用来设置归档下拉菜单。
 
-- `use`: set `true` to display this button is the sidebar
-- `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
-- `divider`: set `true` to add a divider after the button
+- `use`: 设置成 `true` 时在侧边栏显示归档。
+- `icon`: 为归档添加一个 Material Icon，注释掉或为空则不显示 Icon
+- `divider`: 设置成 `true` 后会在归档按钮底部增加一条分割线。
 
 ##### categories
 
-Used to set the categories button.
+用来设置分类显示按钮。
 
-- `use`: set `true` to display this button is the sidebar
-- `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
-- `divider`: set `true` to add a divider after the button
+- `use`: 设为 `true` 在侧边栏显示分类按钮。
+- `icon`: 在分类按钮前显示一个 Material Icon，注释掉或为空则不显示 Icon
+- `divider`: 设置成 `true` 后会在归档按钮底部增加一条分割线。
 
 ##### pages
 
@@ -240,9 +240,7 @@ Used to set the categories button.
 - 站点左侧。(Scheme Isolation)
 
 
-Used to set up custom pages (empty by default). The pages will appear in the sidebar.
-
-Refer to the configuration style. Let the icon empty if you don't need one. Set `true` to divider if you want a divider after the page button.
+请按照如下样例添加个人独立页面。 `divider` 设置成 `true` 后会在该条目底部增加一条分割线。
 
 ```yaml
 pages:
@@ -260,18 +258,15 @@ pages:
 
 Used to display the number of articles.
 
-- `use`: set `true` to display this button is the sidebar
-- `divider`: set `true` to add a divider after the button
+- `use`: 设置成 `true` 时会在侧边栏显示文章总数。
+- `divider`: 设置成 `true` 后会在该条目底部增加一条分割线。
 
 ##### footer
 
 Used to customize the sidebar footer.
 
-- `divider`: set `true` to add a divider before the footer
-- `theme`: set `true` to display a link to the theme site
-- `support`: set `true` to display a link to ask for help and support
-- `feedback`: set `true` to display a link to send a feedback
-- `material`: set `true` to display a link to the Material Design Guideline
+- `divider`: 设置成 `true` 后会在侧边栏底部之前增加一条分割线。
+- `theme`: 设置成 `true` 后会在侧边栏底部增加一个指向 Material 主题的链接。
 
 ### Integrated Services
 
@@ -281,7 +276,10 @@ Used to customize the sidebar footer.
 
 具体设置参考 [评论系统](/services/#评论系统)
 
-目前可使用 `duoshuo` `disqus`。
+目前可使用 `duoshuo` `disqus` 和 `disqus_click`。
+
+> 使用 Disqus_Click 时，页面不会主动加载 Disqus 评论，直到按下按钮。这项设置有助于改善处在 `公开、平等、有序 的中国互联网环境` 下的浏览者体验。
+
 - use:
 - shortname:
 - duoshuo_thread_key_type: 用于设置多说 tread key 的使用，默认为 `path`，可设置为 `id`。
@@ -321,6 +319,6 @@ Used to customize the sidebar footer.
 
 - [pidupuis](https://github.com/pidupuis)
 - [neoFelhz](https://github.com/neoFelhz)
-- [AkarinServer](https://github.com/AkarinServer)
 - [cubesky](https://github.com/cubesky)
+- [AkarinServer](https://github.com/AkarinServer)
 - [Halyul](https://github.com/Halyul)
