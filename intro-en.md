@@ -305,6 +305,8 @@ Currently, you can use `google` `swiftype` `local`.
 
 #### analytics
 
+Material theme has a built in Baidu's and Google's website analytics service.You can easily set the ID to enable it.
+
 - `baidu_id`: the Baidu ID
 - `google_id`: the Google key
 
