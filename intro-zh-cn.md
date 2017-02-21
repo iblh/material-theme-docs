@@ -56,15 +56,25 @@ scheme: Paradox
 
 如果要使用其中一个主题，将前面的注释 `#` 去掉即可。
 
+比如，选择使用 Paradox Scheme，只需要这样配置：
+
+```yaml
+#scheme: Nexus
+scheme: Paradox
+#scheme: Isolation
+```
+
 #### uiux
 
 用于设置主题 UI 与 UX。
 - slogan: 显示在 `blog_info` 模块中的标语，现在可以设置多行标语：
 
 > 单行标语使用
+
 > ```yaml
   slogan: 标语
 ```
+
 > 多行标语使用
 > ```yaml
   slogan:
@@ -90,9 +100,8 @@ scheme: Paradox
 #### reading
 
 用于设置阅读体验。
-- markdown: Markdown 解析样式。目前有三种样式，分别是 `Material`, `Github`, `Plain`。
+
 - entry_excerpt: 首页文章输出摘要的字符长度。默认为80。
-- code_highlight: 文章内代码高亮的样式，具体设置详情：[代码高亮样式](/expert/#代码高亮样式)。
 
 #### thumbnail
 
@@ -118,8 +127,18 @@ scheme: Paradox
 - daily_pic: 显示于 `daily_pic` 模块中。
 - sidebar_header: 显示于 `sidebar` 顶部。
 - footerico: 设置 `footer` 中 SNS 图标的路径。
-- upyun_logo: 默认为注释状态。取消注释后显示于 `sidebar` 底部。用于又拍云联盟的使用。
 - random_thumbnail: 随机缩略图的路径。
+- footer_image: 你可以在侧边栏底部放置任何你想要的图片。
+
+比如，你可以这样配置 又拍云 Logo：
+
+```yaml
+footer_image:
+    upyun_logo:
+        link: "https://www.upyun.com/"
+        src: "/img/upyun_logo.png"
+```
+
 
 #### fonts
 
@@ -165,29 +184,15 @@ scheme: Paradox
 
 #### dropdown
 用于设置 Paradox 侧边栏用户下拉菜单，默认为空。
->参考配置样式
-
->```yaml
-dropdown:
-	Email Me:
-		link: "#"
-		icon: email
-```
-
-#### pages
-
-用于设置独立页面，默认为空。填写条目后独立页面入口将显示在：
-- `logo card` `Page` 按钮的下拉菜单中。(Scheme Paradox)
-- 侧边栏中。(Scheme Paradox)
-- 站点左侧。(Scheme Isolation)
-
 
 以
+
 ```
 Name:
 	link: "/link/"
 	icon: icon
 ```
+
 作为一个单位。
 
 `Name` 是该独立页面的名称，请自行修改。
@@ -195,16 +200,78 @@ Name:
 `icon` 的参数为自定义的 Material 图标，可用图标可在 [Material icons](https://material.io/icons/) 查询。
 
 >参考配置样式
-```yml
-pages:
-	友情链接:
-		link: "/links/"
-		icon: people
-	About: "/about/"
-		link: "/about/"
-		icon: person
+
+```yaml
+dropdown:
+    Email Me:
+        link: "#"
+        icon: email
 ```
 
+##### homepage
+
+设置 “主页” 按钮
+
+- `use`: 设置 `true` 时会在侧边栏显示 “主页” 按钮.
+- `icon`: 在 “主页” 前面显示一个 Material 图标。为空和被注释时则不显示.
+- `divider`: 设置成 `true` 
+
+##### archives
+
+Used to set the archives button.
+
+- `use`: set `true` to display this button is the sidebar
+- `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
+- `divider`: set `true` to add a divider after the button
+
+##### categories
+
+Used to set the categories button.
+
+- `use`: set `true` to display this button is the sidebar
+- `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
+- `divider`: set `true` to add a divider after the button
+
+##### pages
+
+用于设置独立页面，默认为空。填写条目后独立页面入口将显示在：
+- `logo card` `Page` 按钮的下拉菜单中。(Scheme Paradox)
+- 侧边栏中。(Scheme Paradox)
+- 站点左侧。(Scheme Isolation)
+
+
+Used to set up custom pages (empty by default). The pages will appear in the sidebar.
+
+Refer to the configuration style. Let the icon empty if you don't need one. Set `true` to divider if you want a divider after the page button.
+
+```yaml
+pages:
+    About:
+        link: "#about"
+        icon: person
+        divider: false
+    timeline archive:
+        link: "/timeline/"
+        icon:
+        divider: false
+```
+
+##### article_num
+
+Used to display the number of articles.
+
+- `use`: set `true` to display this button is the sidebar
+- `divider`: set `true` to add a divider after the button
+
+##### footer
+
+Used to customize the sidebar footer.
+
+- `divider`: set `true` to add a divider before the footer
+- `theme`: set `true` to display a link to the theme site
+- `support`: set `true` to display a link to ask for help and support
+- `feedback`: set `true` to display a link to send a feedback
+- `material`: set `true` to display a link to the Material Design Guideline
 
 ### Integrated Services
 

@@ -84,6 +84,8 @@ slogan:
 - `button_color`: the color used for buttons
 - `android_chrome_color`: the color of the Chrome address bar
 - `buffer`: the top loading progress bar buffers
+- `nprogress_color`: the color of the top loading progress bar
+- `nprogress_buffer`: the top loading progress bar buffers
 
 #### js_effect
 
@@ -144,13 +146,6 @@ Used to set the site fonts.
 The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Microsoft Yahe, Arial`
 
 The font settings are more standardized, no special requirements without additional changes.
-
-#### pace
-
-Pace is an automatic page load progress bar. You can find demos on http://github.hubspot.com/pace/docs/welcome
-
-- `style`: available values are `barber-shop`, `big-counter`, `bounce`, `center-atom`, `center-circle`, `center-radar`, `center-simple`, `corner-indicator`, `fill-left`, `fill-left-nocolor`, `flat-top`, `loading-bar`, `macosx`. But you can instead set this value to `custom` and adding your own style in `source/css/pace/custom.css` file.
-- `color`: the hexadecimal color. This parameter is absolutely required!
 
 ### Menu
 
@@ -253,9 +248,6 @@ Used to customize the sidebar footer.
 
 - `divider`: set `true` to add a divider before the footer
 - `theme`: set `true` to display a link to the theme site
-- `support`: set `true` to display a link to ask for help and support
-- `feedback`: set `true` to display a link to send a feedback
-- `material`: set `true` to display a link to the Material Design Guideline
 
 #### card_elevation
 
