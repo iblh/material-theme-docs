@@ -32,6 +32,14 @@ When a nonprofit project depends only on the support of interest, it is difficul
 **Bitcoin：**
 <img src="/images/donate/BTCQR.png" width="180px" height="180px">
 
+## Donors list
+
+Thanks for the following donors：
+- $ 20.00 SGD --- Sun Ximeng
+- ￥ 10.00 CNY --- unknown (from wechat）
+- ￥ 5.00 CNY --- cubesky
+- ￥ 5.00 CNY --- Before_summ
+
 ## What to consider before giving?
 
 The existence of this channel does not mean you have to donate. You can also continue to use without doing anything.

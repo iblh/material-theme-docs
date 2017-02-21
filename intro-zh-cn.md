@@ -332,8 +332,7 @@ Used to customize the sidebar footer.
 
 [Github - Contributors](https://github.com/viosey/hexo-theme-material/graphs/contributors)
 
-- [pidupuis](https://github.com/pidupuis)
 - [neoFelhz](https://github.com/neoFelhz)
+- [pidupuis](https://github.com/pidupuis)
 - [cubesky](https://github.com/cubesky)
 - [AkarinServer](https://github.com/AkarinServer)
-- [Halyul](https://github.com/Halyul)

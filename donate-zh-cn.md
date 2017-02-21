@@ -32,6 +32,14 @@ lang: zh-cn
 **比特币：**
 <img src="/images/donate/BTCQR.png" width="180px" height="180px">
 
+## 捐赠者名单
+
+十分感谢以下捐赠者给予的打赏：
+- $ 20.00 SGD --- Sun Ximeng
+- ￥ 10.00 CNY --- 佚名 (微信捐赠）
+- ￥ 5.00 CNY --- 神楽坂立音
+- ￥ 5.00 CNY --- Before_summ
+
 ## 捐赠前要考虑什么 ？
 
 这个渠道的存在并不意味着你必须捐赠。你也可以继续使用而不做任何事。
