@@ -49,9 +49,9 @@ Used to set jump links.
 
 If you want to use one of the themes, delete the '#' before the scheme name.
 
-> For example, to select the Paradox scheme, simply use:
+For example, to select the Paradox scheme, simply use:
 
-> ```yaml
+```yaml
 #scheme: Nexus
 scheme: Paradox
 #scheme: Isolation
@@ -63,17 +63,19 @@ Used to set the user interface and user experience.
 
 - `slogan`: the slogan displayed in the `blog_info` module, now we support multi line slogan (see below).
 
-> Single line slogan
-> ```yaml
+Single line slogan:
+
+```yaml
 slogan: Slogan
 ```
 
-> Multi line slogan
-> ```yaml
+Multi line slogan:
+
+```yaml
 slogan:
- - "First Line"
- - "Second Line"
- - "Third Line"
+    - "First Line"
+    - "Second Line"
+    - "Third Line"
 ```
 
 - `theme_color`: the main color
@@ -81,8 +83,7 @@ slogan:
 - `hyperlink_color`: the color used for hyperlinks
 - `button_color`: the color used for buttons
 - `android_chrome_color`: the color of the Chrome address bar
-- `nprogress_color`: the color of the top loading progress bar
-- `nprogress_buffer`: the top loading progress bar buffers
+- `buffer`: the top loading progress bar buffers
 
 #### js_effect
 
@@ -95,9 +96,7 @@ Used to control the JavaScript features.
 
 Used to set the reading experience.
 
-- `markdown`: the markdown parsing style (`Material`, `Github` or `Plain`)
 - `entry_excerpt`: the home page outputs the character length of the digest (default: 80)
-- `code_highlight`: the style of code blocks (see [code highlight](/enl/expert/#Code-highlight))
 
 #### thumbnail
 
@@ -111,7 +110,7 @@ Used to set up article thumbnail correlation.
 Used to set the site background.
 
 - `purecolor`: the background color
-- `bgimg`: the background image path (default: themes/material/source/img/bg.png`)
+- `bgimg`: the background image path (default: `themes/material/source/img/bg.png`)
 - `bing`: used to enable bing pictures
     - `parameter`:
         - `color=`: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow.
@@ -126,8 +125,17 @@ Used to set the site image.
 - `daily_pic`: the daily picture
 - `sidebar_header`: the header picture
 - `footerico`: the prefix of the SNS icons from the `themes/material/source/img/footer` folder
-- `upyun_logo`: the upyun logo to put at the bottom of the sidebar
 - `random_thumbnail`: the path of the random thumbnail
+- `footer_image`: you can put as any images as you want at the bottom of `sidebar`.
+
+For instance, you can display the `upyun` logo as following:
+
+```yaml
+footer_image:
+    upyun_logo:
+        link: "https://www.upyun.com/"
+        src: "/img/upyun_logo.png"
+```
 
 #### fonts
 
@@ -135,16 +143,14 @@ Used to set the site fonts.
 
 The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Microsoft Yahe, Arial`
 
-> The font settings are more standardized, no special requirements without additional changes.
+The font settings are more standardized, no special requirements without additional changes.
 
-#### qrcode
+#### pace
 
-Use this to show qrcode in your article.  
-Need `hexo-helper-qrcode` to support this feature:
+Pace is an automatic page load progress bar. You can find demos on http://github.hubspot.com/pace/docs/welcome
 
-```bash
-npm install hexo-helper-qrcode --save
-```
+- `style`: available values are `barber-shop`, `big-counter`, `bounce`, `center-atom`, `center-circle`, `center-radar`, `center-simple`, `corner-indicator`, `fill-left`, `fill-left-nocolor`, `flat-top`, `loading-bar`, `macosx`. But you can instead set this value to `custom` and adding your own style in `source/css/pace/custom.css` file.
+- `color`: the hexadecimal color. This parameter is absolutely required!
 
 ### Menu
 
@@ -177,34 +183,96 @@ Used to choose which items will be displayed in share menu.
 - `qq`
 - `telegram`
 
-#### dropdown
+#### sidebar
+
+##### dropdown
 
 Used to set the Paradox sidebar drop-down menu (empty by default).
 
-> Refer to the configuration style
+Refer to the configuration style
 
-> ```yaml
-> dropdown:
+```yaml
+dropdown:
     Email Me:
         link: "#"
         icon: email
 ```
 
-#### pages
+##### homepage
+
+Used to set the home page button.
+
+- `use`: set `true` to display this button is the sidebar
+- `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
+- `divider`: set `true` to add a divider after the button
+
+##### archives
+
+Used to set the archives button.
+
+- `use`: set `true` to display this button is the sidebar
+- `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
+- `divider`: set `true` to add a divider after the button
+
+##### categories
+
+Used to set the categories button.
+
+- `use`: set `true` to display this button is the sidebar
+- `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
+- `divider`: set `true` to add a divider after the button
+
+##### pages
 
 Used to set up custom pages (empty by default). The pages will appear in the sidebar.
 
-> Refer to the configuration style. Let the icon empty if you don't need one.
->
-> ```yaml
+Refer to the configuration style. Let the icon empty if you don't need one. Set `true` to divider if you want a divider after the page button.
+
+```yaml
 pages:
     About:
         link: "#about"
         icon: person
+        divider: false
     timeline archive:
         link: "/timeline/"
         icon:
+        divider: false
 ```
+
+##### article_num
+
+Used to display the number of articles.
+
+- `use`: set `true` to display this button is the sidebar
+- `divider`: set `true` to add a divider after the button
+
+##### footer
+
+Used to customize the sidebar footer.
+
+- `divider`: set `true` to add a divider before the footer
+- `theme`: set `true` to display a link to the theme site
+- `support`: set `true` to display a link to ask for help and support
+- `feedback`: set `true` to display a link to send a feedback
+- `material`: set `true` to display a link to the Material Design Guideline
+
+#### card_elevation
+
+Use this to customize the shadow level of the parts of your page.
+
+#### qrcode
+
+Use this to show qrcode in your article.  
+Need `hexo-helper-qrcode` to support this feature:
+
+```bash
+npm install hexo-helper-qrcode --save
+```
+
+#### topPost
+
+Use this to pin post at the top of the list of posts.
 
 ### Integrated services
 
@@ -229,6 +297,11 @@ Currently, you can use `google` `swiftype` `local`.
 
 - `use`
 - `swiftype_key`
+
+#### analytics
+
+- `baidu_id`: the Baidu ID
+- `google_id`: the Google key
 
 #### leancloud
 
