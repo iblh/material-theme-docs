@@ -1,6 +1,6 @@
 ---
 title: Intro
-version: 1.2.6
+version: 1.3.0
 permalink: en/intro
 id: 2
 lang: en
@@ -84,6 +84,8 @@ slogan:
 - `button_color`: the color used for buttons
 - `android_chrome_color`: the color of the Chrome address bar
 - `buffer`: the top loading progress bar buffers
+- `nprogress_color`: the color of the top loading progress bar
+- `nprogress_buffer`: the top loading progress bar buffers
 
 #### js_effect
 
@@ -145,12 +147,9 @@ The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino
 
 The font settings are more standardized, no special requirements without additional changes.
 
-#### pace
+#### card_elevation
 
-Pace is an automatic page load progress bar. You can find demos on http://github.hubspot.com/pace/docs/welcome
-
-- `style`: available values are `barber-shop`, `big-counter`, `bounce`, `center-atom`, `center-circle`, `center-radar`, `center-simple`, `corner-indicator`, `fill-left`, `fill-left-nocolor`, `flat-top`, `loading-bar`, `macosx`. But you can instead set this value to `custom` and adding your own style in `source/css/pace/custom.css` file.
-- `color`: the hexadecimal color. This parameter is absolutely required!
+Used to set elevation of the card on the list of the posts.  
 
 ### Menu
 
@@ -193,9 +192,9 @@ Refer to the configuration style
 
 ```yaml
 dropdown:
-    Email Me:
-        link: "#"
-        icon: email
+    Email Me:
+    link: "#"
+    icon: email
 ```
 
 ##### homepage
@@ -230,11 +229,11 @@ Refer to the configuration style. Let the icon empty if you don't need one. Set 
 
 ```yaml
 pages:
-    About:
+    About:
         link: "#about"
         icon: person
         divider: false
-    timeline archive:
+    timeline archive:
         link: "/timeline/"
         icon:
         divider: false
@@ -253,9 +252,6 @@ Used to customize the sidebar footer.
 
 - `divider`: set `true` to add a divider before the footer
 - `theme`: set `true` to display a link to the theme site
-- `support`: set `true` to display a link to ask for help and support
-- `feedback`: set `true` to display a link to send a feedback
-- `material`: set `true` to display a link to the Material Design Guideline
 
 #### card_elevation
 
@@ -270,9 +266,15 @@ Need `hexo-helper-qrcode` to support this feature:
 npm install hexo-helper-qrcode --save
 ```
 
-#### topPost
+#### topPost (Being Development)
 
 Use this to pin post at the top of the list of posts.
+If you want to use this WIP feature, please install `hexo-helper-post-top` :
+```bash
+npm install hexo-helper-post-top --save
+```
+And then change this method to `true`.
+Now you can use `front-matter` `top: true` to pin your posts what you want to.
 
 ### Integrated services
 
@@ -282,7 +284,10 @@ Used to set up a comment system.
 
 See [comment system](/en/services/#Comment-system) for more information.
 
-- `use`: `Duoshuo` or `disqus`
+- `use`: `Duoshuo` `disqus` or `disqus_click`
+
+> When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
+
 - `shortname`: the shortname
 - `duoshuo_thread_key_type`: used to set the use of tread key (`path` or `id`)
 - `duoshuo_embed_js_url`: the JavaScript url
@@ -299,6 +304,8 @@ Currently, you can use `google` `swiftype` `local`.
 - `swiftype_key`
 
 #### analytics
+
+Material theme has a built in Baidu's and Google's website analytics service.You can easily set the ID to enable it.
 
 - `baidu_id`: the Baidu ID
 - `google_id`: the Google key

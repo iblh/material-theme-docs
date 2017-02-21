@@ -1,6 +1,6 @@
 ---
 title: Compose
-version: 1.2.6
+version: 1.3.0
 permalink: en/compose
 id: 3
 lang: en
@@ -22,19 +22,22 @@ Create a file with the extension `.md` inside the `source/_posts` folder.
 
 See [front-matter](https://hexo.io/en/docs/front-matter.html) for more information.
 
-| Setting    | Description                              | Default           |
-| ---------- | ---------------------------------------- | ----------------- |
-| layout     | Layout                                   |                   |
-| title      | Title                                    |                   |
-| date       | Published date                           | File created date |
-| update     | Updated date                             | File updated date |
-| comments   | Enables comment feature for the post     | true              |
-| tags       | Tags (Not available for pages)           |                   |
-| categories | Categories (Not available for pages)     |                   |
+| Setting    | Description                                | Default           |
+| ---------- | ------------------------------------------ | ----------------- |
+| layout     | Layout                                     |                   |
+| title      | Title                                      |                   |
+| date       | Published date                             | File created date |
+| update     | Updated date                               | File updated date |
+| comments   | Enables comment feature for the post       | true              |
+| tags       | Tags (Not available for pages)             |                   |
+| categories | Categories (Not available for pages)       |                   |
 | permalink  | Override the default permalink of the post |                   |
-| toc        | Display TOC button		                 | true   		     |
-| comment    | Display comment	                         | true             |
-| notag      | Do not generate Tags menu                | false             |
+| toc        | Display TOC button		                  | true   		      |
+| comment    | Display comment	                          | true              |
+| notag      | Do not generate Tags menu                  | false             |
+| top        | Pin post on the top of the list            | false             |
+
+P.S. To use `Pin on top` feature please visit [topPost](/intro/#topPost)
 
 ### Thumbnail function
 

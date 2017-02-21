@@ -1,6 +1,6 @@
 ---
 title: 主题介绍
-version: 1.2.6
+version: 1.3.0
 permalink: intro
 id: 2
 lang: zh-cn
@@ -56,15 +56,25 @@ scheme: Paradox
 
 如果要使用其中一个主题，将前面的注释 `#` 去掉即可。
 
+比如，选择使用 Paradox Scheme，只需要这样配置：
+
+```yaml
+#scheme: Nexus
+scheme: Paradox
+#scheme: Isolation
+```
+
 #### uiux
 
 用于设置主题 UI 与 UX。
 - slogan: 显示在 `blog_info` 模块中的标语，现在可以设置多行标语：
 
 > 单行标语使用
+
 > ```yaml
   slogan: 标语
 ```
+
 > 多行标语使用
 > ```yaml
   slogan:
@@ -90,9 +100,8 @@ scheme: Paradox
 #### reading
 
 用于设置阅读体验。
-- markdown: Markdown 解析样式。目前有三种样式，分别是 `Material`, `Github`, `Plain`。
+
 - entry_excerpt: 首页文章输出摘要的字符长度。默认为80。
-- code_highlight: 文章内代码高亮的样式，具体设置详情：[代码高亮样式](/expert/#代码高亮样式)。
 
 #### thumbnail
 
@@ -118,8 +127,18 @@ scheme: Paradox
 - daily_pic: 显示于 `daily_pic` 模块中。
 - sidebar_header: 显示于 `sidebar` 顶部。
 - footerico: 设置 `footer` 中 SNS 图标的路径。
-- upyun_logo: 默认为注释状态。取消注释后显示于 `sidebar` 底部。用于又拍云联盟的使用。
 - random_thumbnail: 随机缩略图的路径。
+- footer_image: 你可以在侧边栏底部放置任何你想要的图片。
+
+比如，你可以这样配置 又拍云 Logo：
+
+```yaml
+footer_image:
+    upyun_logo:
+        link: "https://www.upyun.com/"
+        src: "/img/upyun_logo.png"
+```
+
 
 #### fonts
 
@@ -129,11 +148,9 @@ scheme: Paradox
 
 >该字体设定较为规范，如无特殊要求 无需额外修改。
 
-#### qrcode
+#### card_elevation
 
-用于在文章页中显示二维码，扫描二维码即可直接打开文章。  
-需要 hexo-helper-qrcode 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
-
+用于设置文章列表的卡片阴影，如无特殊要求 无需额外修改。
 
 ### Menu
 
@@ -165,29 +182,15 @@ scheme: Paradox
 
 #### dropdown
 用于设置 Paradox 侧边栏用户下拉菜单，默认为空。
->参考配置样式
-
->```yaml
-dropdown:
-	Email Me:
-		link: "#"
-		icon: email
-```
-
-#### pages
-
-用于设置独立页面，默认为空。填写条目后独立页面入口将显示在：
-- `logo card` `Page` 按钮的下拉菜单中。(Scheme Paradox)
-- 侧边栏中。(Scheme Paradox)
-- 站点左侧。(Scheme Isolation)
-
 
 以
+
 ```
 Name:
 	link: "/link/"
 	icon: icon
 ```
+
 作为一个单位。
 
 `Name` 是该独立页面的名称，请自行修改。
@@ -195,16 +198,84 @@ Name:
 `icon` 的参数为自定义的 Material 图标，可用图标可在 [Material icons](https://material.io/icons/) 查询。
 
 >参考配置样式
-```yml
-pages:
-	友情链接:
-		link: "/links/"
-		icon: people
-	About: "/about/"
-		link: "/about/"
-		icon: person
+
+```yaml
+dropdown:
+    Email Me:
+        link: "#"
+        icon: email
 ```
 
+##### homepage
+
+设置 “主页” 按钮
+
+- `use`: 设置 `true` 时会在侧边栏显示 “主页” 按钮.
+- `icon`: 在 “主页” 前面显示一个 Material 图标。为空和被注释时则不显示.
+- `divider`: 设置成 `true` 
+
+##### archives
+
+用来设置归档下拉菜单。
+
+- `use`: 设置成 `true` 时在侧边栏显示归档。
+- `icon`: 为归档添加一个 Material Icon，注释掉或为空则不显示 Icon
+- `divider`: 设置成 `true` 后会在归档按钮底部增加一条分割线。
+
+##### categories
+
+用来设置分类显示按钮。
+
+- `use`: 设为 `true` 在侧边栏显示分类按钮。
+- `icon`: 在分类按钮前显示一个 Material Icon，注释掉或为空则不显示 Icon
+- `divider`: 设置成 `true` 后会在归档按钮底部增加一条分割线。
+
+##### pages
+
+用于设置独立页面，默认为空。填写条目后独立页面入口将显示在：
+- `logo card` `Page` 按钮的下拉菜单中。(Scheme Paradox)
+- 侧边栏中。(Scheme Paradox)
+- 站点左侧。(Scheme Isolation)
+
+
+请按照如下样例添加个人独立页面。 `divider` 设置成 `true` 后会在该条目底部增加一条分割线。
+
+```yaml
+pages:
+    About:
+        link: "#about"
+        icon: person
+        divider: false
+    timeline archive:
+        link: "/timeline/"
+        icon:
+        divider: false
+```
+
+##### article_num
+
+Used to display the number of articles.
+
+- `use`: 设置成 `true` 时会在侧边栏显示文章总数。
+- `divider`: 设置成 `true` 后会在该条目底部增加一条分割线。
+
+##### footer
+
+Used to customize the sidebar footer.
+
+- `divider`: 设置成 `true` 后会在侧边栏底部之前增加一条分割线。
+- `theme`: 设置成 `true` 后会在侧边栏底部增加一个指向 Material 主题的链接。
+
+#### qrcode
+
+用于在文章页中显示二维码，扫描二维码即可直接打开文章。  
+需要 hexo-helper-qrcode 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
+
+#### topPost（开发中）
+
+使用该插件可以将指定文章置顶。
+如果您需要这个功能，请使用 `npm install hexo-helper-post-top --save` 安装支持插件，然后将这个开关设置为 `true`。
+之后在您需要置顶文章的 `front-matter` 中，添加 `top: true` 即可置顶。
 
 ### Integrated Services
 
@@ -214,7 +285,10 @@ pages:
 
 具体设置参考 [评论系统](/services/#评论系统)
 
-目前可使用 `duoshuo` `disqus`。
+目前可使用 `duoshuo` `disqus` 和 `disqus_click`。
+
+> 使用 Disqus_Click 时，页面不会主动加载 Disqus 评论，直到按下按钮。这项设置有助于改善处在 `公开、平等、有序 的中国互联网环境` 下的浏览者体验。
+
 - use:
 - shortname:
 - duoshuo_thread_key_type: 用于设置多说 tread key 的使用，默认为 `path`，可设置为 `id`。
@@ -230,6 +304,12 @@ pages:
 - use
 - swiftype_key
 
+#### analytics
+
+用于设置访客分析服务，支持 `Google Analysis` 和 `百度站长工具` 
+
+- `baidu_id`: 百度 ID
+- `google_id`: Google Analysis 密钥
 
 #### leancloud
 
