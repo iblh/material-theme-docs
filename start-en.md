@@ -5,6 +5,7 @@ permalink: en/start
 id: 1
 lang: en
 ---
+**The `_config.yml` file does not exist in the theme, you need to manually copy the `_config.template.yml` file and rename it to `_config.yml`**
 
 In Hexo, there are usually two configuration files, both called `_config.yml`. The first one is in the site root directory; the other is in the theme directory. For convenience of description, in the following description, the former is referred to as the **site config** and the latter as the **theme config**.
 
@@ -41,7 +42,11 @@ Once you have the `themes/material` folder, open the **site config**, find the `
 
 > The folder `themes/material` can be named differently if you wish. You simply have to adapt the `theme` field accordingly.
 
+**The `_config.yml` file does not exist in the theme, you need to manually copy the `_config.template.yml` file and rename it to `_config.yml`**
+
 Run `hexo s --debug` and go to [`http://localhost:4000`](http://localhost:4000) to make sure the site is running properly.
+
+>In case of error: Make sure you have configured "Basic settings - Language"
 
 ## Update "Material"
 
@@ -104,15 +109,16 @@ Edit the **site config** and set `language` to the language you want.
 
 Available languages ​​are:
 
-- Deutsche: de
-- English: en
-- Español: es
-- Français: fr
-- Malay: ms
-- 日本語: ja
-- العَرَبِيَّة: ar
-- 简体中文: zh-CN
-- 繁體中文: zh-TW
+- العَرَبِيَّة (ar)
+- Deutsch (de)
+- English (en)
+- Español (es)
+- Français (fr)
+- 日本語 (ja)
+- Malay (ms)
+- Portuguese (Brazil) (pt-BR)
+- 简体中文 (zh-CN)
+- 繁體中文 (zh-TW)
 
 
 > For example, to use Traditional Chinese, the configuration would be:

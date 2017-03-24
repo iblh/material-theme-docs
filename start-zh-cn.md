@@ -5,6 +5,8 @@ permalink: start
 id: 1
 lang: zh-cn
 ---
+**主题内不存在 `_config.yml` 文件，需要手动复制 `_config.template.yml` 文件，然后重命名为 `_config.yml`**
+
 在 Hexo 中，通常有两份配置文件，一个是站点根目录下的 `_config.yml`；另外一个是主题目录下的 `_config.yml`。为了描述方便，在以下说明中，将前者称为 **站点配置文件**，后者称为 **主题配置文件**。
 
 ## 安装「Material」
@@ -38,7 +40,11 @@ npm install hexo-material
 然后打开 **站点配置文件**，找到 `theme` 字段，并将其值更改为 `material` 。
 >文件夹名称可自由修改，并不是唯一的，只需 `theme` 字段与之对应即可。
 
+**主题内不存在 `_config.yml` 文件，需要手动复制 `_config.template.yml` 文件，然后重命名为 `_config.yml`**
+
 运行 `hexo s --debug`，并访问 `http://localhost:4000`，确保站点正确运行。
+
+>如遇报错：请确保已配置「基本设定 - 语言」
 
 
 ## 更新「Material」
@@ -88,13 +94,14 @@ npm-check hexo-material
 编辑 **站点配置文件**，将 `language` 设置成你所需要的语言。
 可用的语言如下：
 
-- العَرَبِيَّة (ar) 
+- العَرَبِيَّة (ar)
+- Deutsch (de)
 - English (en)
 - Español (es)
 - Français (fr)
-- Deutsche (de)
 - 日本語 (ja)
 - Malay (ms)
+- Portuguese (Brazil) (pt-BR)
 - 简体中文 (zh-CN)
 - 繁體中文 (zh-TW)
 

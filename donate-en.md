@@ -35,8 +35,16 @@ When a nonprofit project depends only on the support of interest, it is difficul
 ## Donors list
 
 Thanks for the following donors：
+
 - $ 20.00 SGD --- Sun Ximeng
-- ￥ 10.00 CNY --- unknown (from wechat）
+- ￥ 25.00 CNY --- 一个老白（02.26）
+- ￥ 20.00 CNY --- unknown (02.18 - WeChat）
+- ￥ 20.00 CNY --- unknown (03.07 - WeChat）
+- ￥ 10.66 CNY --- L RoGER（03.20）
+- ￥ 10.24 CNY --- unknown (03.19 - WeChat）
+- ￥ 10.00 CNY --- unknown (01.31 - WeChat）
+- ￥ 10.00 CNY --- unknown (02.21 - WeChat）
+- ￥ 10.00 CNY --- unknown (02.25 - WeChat）
 - ￥ 5.00 CNY --- cubesky
 - ￥ 5.00 CNY --- Before_summ
 
