@@ -21,15 +21,12 @@ lang: zh-cn
 
 ## 捐赠的渠道？
 
-[PayPal](https://www.paypal.me/viosey)
-
-**支付宝：**
+- [PayPal](https://www.paypal.me/viosey)
+- **支付宝：**
 <img src="/images/donate/AliPayQR.png" width="180px" height="180px">
-
-**微信支付：**
+- **微信支付：**
 <img src="/images/donate/WeChanQR.png" width="180px" height="180px">
-
-**比特币：**
+- **比特币：**
 <img src="/images/donate/BTCQR.png" width="180px" height="180px">
 
 ## 捐赠者名单
@@ -37,17 +34,22 @@ lang: zh-cn
 十分感谢以下捐赠者给予的打赏：
 >微信打赏请留言备注昵称
 
-- $ 20.00 SGD --- Sun Ximeng
-- ￥ 25.00 CNY --- 一个老白（02 月 26 日）
-- ￥ 20.00 CNY --- 佚名 (02 月 18 日 - 微信）
-- ￥ 20.00 CNY --- 佚名 (03 月 07 日 - 微信）
-- ￥ 10.66 CNY --- L RoGER（03 月 20 日）
-- ￥ 10.24 CNY --- 佚名 (03 月 19 日 - 微信）
-- ￥ 10.00 CNY --- 佚名 (01 月 31 日 - 微信）
-- ￥ 10.00 CNY --- 佚名 (02 月 21 日 - 微信）
-- ￥ 10.00 CNY --- 佚名 (02 月 25 日 - 微信）
-- ￥ 5.00 CNY --- 神楽坂立音
-- ￥ 5.00 CNY --- Before_summ
+| 捐赠 | 昵称 | 日期 |
+| ---- | --- | ---- |
+| $ 20.00 SGD | Sun Ximeng |
+| ￥ 50.00 CNY | 林固 | 04.01 |
+| ￥ 25.00 CNY | 一个老白 | 02.26 |
+| ￥ 20.00 CNY | 佚名 | 02.18 |
+| ￥ 20.00 CNY | 佚名 | 03.07 |
+| ￥ 10.66 CNY | L RoGER | 03.20 |
+| ￥ 10.24 CNY | 佚名 | 03.19 |
+| ￥ 10.00 CNY | 佚名 | 01.31 |
+| ￥ 10.00 CNY | 佚名 | 02.21 |
+| ￥ 10.00 CNY | 佚名 | 02.25 |
+| ￥ 10.00 CNY | daoSs | 03.30 |
+| ￥ 10.00 CNY | TonnyL | 03.31 |
+| ￥ 5.00 CNY | 神楽坂立音 |
+| ￥ 5.00 CNY | Before_summ |
 
 ## 捐赠前要考虑什么 ？
 
