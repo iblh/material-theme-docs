@@ -2,7 +2,7 @@
 title: 捐赠
 version:
 permalink: donate
-id: 1
+id: 8
 lang: zh-cn
 ---
 ## 捐赠是什么？
