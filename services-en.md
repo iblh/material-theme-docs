@@ -123,7 +123,7 @@ Parameters are:
 - `post_pv`: the number of page views for each post
 - `busuanzi_pure_mini_js`:
 
-#### Pin on top (Being Development)
+### Pin on top (Being Development)
 
 If you want to use this WIP feature, please install `hexo-helper-post-top` :
 ```bash
