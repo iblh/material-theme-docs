@@ -103,3 +103,7 @@ search:
 - `post_pv` 统计每篇文章的页面浏览次数，在文章页的 `分享按钮` 菜单中可看到。
 
 - `busuanzi_pure_mini_js` 调用不蒜子统计 js 文件，可将改文件放到自己的 CDN 然后修改值。
+
+### 博文置顶（实验性）
+如果您需要这个功能，请使用 `npm install hexo-helper-post-top --save` 安装支持插件。
+之后在您需要置顶文章的 `front-matter` 中，添加 `top: true` 即可置顶。

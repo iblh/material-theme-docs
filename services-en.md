@@ -122,3 +122,11 @@ Parameters are:
 - `all_site_uv`: counts the number of unique visitors to the site
 - `post_pv`: the number of page views for each post
 - `busuanzi_pure_mini_js`:
+
+#### Pin on top (Being Development)
+
+If you want to use this WIP feature, please install `hexo-helper-post-top` :
+```bash
+npm install hexo-helper-post-top --save
+```
+Now you can use `front-matter` `top: true` to pin your posts what you want to.
