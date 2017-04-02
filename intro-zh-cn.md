@@ -1,6 +1,6 @@
 ---
 title: 主题介绍
-version: 1.3.0
+version: 1.3.2
 permalink: intro
 id: 2
 lang: zh-cn
@@ -279,13 +279,28 @@ Used to customize the sidebar footer.
 
 ### Integrated Services
 
+#### MaterialCDN
+
+为了加速您的博客，现在您可以使用 CDN 来加速 Material 主题引用的静态文件。
+只需要将 `use` 设置为 `true`，并在 `base` 中填入你的 CDN 的 URL 路径即可。
+
+> **注意！`base` 中填入的 URL 末尾不需要带 `/` ！**
+
+例如，您可以这么配置：
+
+```yaml
+materialcdn: 
+    use: true 
+    base: https://materialcdn.nfz.moe/hexo/1.3.2
+```
+
 #### comment
 
 用于于设置评论系统。
 
 具体设置参考 [评论系统](/services/#评论系统)
 
-目前可使用 `duoshuo` `disqus` 和 `disqus_click`。
+目前可使用 `duoshuo` `disqus` `disqus_click` 和 `changyan`。
 
 > 使用 Disqus_Click 时，页面不会主动加载 Disqus 评论，直到按下按钮。这项设置有助于改善处在 `公开、平等、有序 的中国互联网环境` 下的浏览者体验。
 
@@ -293,6 +308,9 @@ Used to customize the sidebar footer.
 - shortname:
 - duoshuo_thread_key_type: 用于设置多说 tread key 的使用，默认为 `path`，可设置为 `id`。
 - duoshuo_embed_js_url: 多说 js。
+- changyan_appid: 畅言的 APPID
+- changyan_conf: 畅言的 CONF
+- changyan_thread_key_type: path #用于设置畅言的 tread key，默认为 `path`。
 
 #### search
 

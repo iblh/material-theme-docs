@@ -1,6 +1,6 @@
 ---
 title: Expert
-version: 1.3.0
+version: 1.3.2
 permalink: en/expert
 id: 4
 lang: en

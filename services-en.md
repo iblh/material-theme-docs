@@ -1,6 +1,6 @@
 ---
 title: Services
-version: 1.3.0
+version: 1.3.2
 permalink: en/services
 id: 5
 lang: en
@@ -10,37 +10,11 @@ You can configure third-party services by navigating to `Integrated Services` in
 
 ## Comment system
 
-### Duoshuo
-
-Material theme has a built-in [Duoshuo](https://duoshuo.com/) system.
-
-> Material theme has two kind of `duoshuo_thread_key_type`: path or id
-> For example.duoshuo.com:
->
-```yaml
-comment:
-    use: duoshuo
-    shortname: example
-    duoshuo_thread_key_type: path
-    duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
-```
-> If it is migrated from other blog systems, the thread_Key has to keep the same.
-
-### Disqus
-
-To use [Disqus](https://disqus.com/):
-
-> For example.disqus.com:
->
-```yaml
-comment:
-    use: disqus
-    shortname: example
-```
+See [comment](/en/intro/#comment) for more information.
 
 ## Search system
 
-See [comment](/en/intro/#comment) for more information.
+See [comment](/en/intro/#search) for more information.
 
 ### Google
 

@@ -1,6 +1,6 @@
 ---
 title: Intro
-version: 1.3.0
+version: 1.3.2
 permalink: en/intro
 id: 2
 lang: en
@@ -278,6 +278,21 @@ Now you can use `front-matter` `top: true` to pin your posts what you want to.
 
 ### Integrated services
 
+#### MaterialCDN
+
+Now Material Theme can using private CDN to boost the load of static files.
+Set `use` as `true`，then fill in the `base` as your url.
+
+> **ATTENTION! the `url` in `base` should with protocol and without `/` !**
+
+Here is an example of configuration.
+
+```yaml
+materialcdn: 
+    use: true 
+    base: https://materialcdn.nfz.moe/hexo/1.3.2
+```
+
 #### comment
 
 Used to set up a comment system.
@@ -288,10 +303,12 @@ See [comment system](/en/services/#Comment-system) for more information.
 
 > When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
 
-- `shortname`: the shortname
+- `shortname`: the shortname of duoshuo and disqus
 - `duoshuo_thread_key_type`: used to set the use of tread key (`path` or `id`)
 - `duoshuo_embed_js_url`: the JavaScript url
-
+- changyan_appid: the APPID of changyan
+- changyan_conf: the CONF of changyan
+- changyan_thread_key_type: path #identifier of posts. `path` as default。
 #### search
 
 Used to set up the search system.

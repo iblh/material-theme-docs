@@ -1,6 +1,6 @@
 ---
 title: 集成服务
-version: 1.3.0
+version: 1.3.2
 permalink: services
 id: 5
 lang: zh-cn
@@ -9,39 +9,11 @@ lang: zh-cn
 
 ## 评论系统
 
-### 多说
-Material 内置了一套 多说 的 Material Design 样式。
-
-使用 [多说](https://duoshuo.com/)，仅需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `"duoshuo"`。
-
-然后在 `comment: shortname: ` 填入你的多说 shortname
-
->主题的多说评论使用两种 `tread key`，使用方式参考：[comment](https://material.vss.im/intro/#comment)。
-默认为文章的相对路径。
-另一种为 id，需要在 `front-matter` 中添加 
-```yml
-id: id_number
-```
-如果是从其他博客系统迁移过来，需要和多说后台的 Thread_Key 保持一致。
-
-### Disqus
-
-使用 [Disqus](https://disqus.com/)，仅需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `"disqus"` 或者 `"disqus_click"`。
-
-然后在 `comment: shortname: ` 填入你的 Disqus shortname
-
----
-需要注意的是此处的 `shortname` 不是你的登录的 id，是你的评论二级域名去掉 `.duoshuo.com` 或 `.disqus.com` 部分
-
->例如：多说域名 `example.duoshuo.com` / Disqus 域名 `example.disqus.com`
-
->```yml
-shortname: example
-```
+Material 主题内提供了 disqus、多说和畅言的评论服务。阅读 [Intro-comment](/intro/#comment) 搜索评论配置有关介绍。
 
 ## 搜索系统
 
-阅读 [Intro-comment](/intro/#comment) 搜索系统配置介绍。
+阅读 [Intro-comment](/intro/#search) 搜索系统配置介绍。
 
 ### Google
 
