@@ -1,5 +1,5 @@
 ---
-title: 主题介绍
+title: 配置介绍
 version: 1.3.3
 permalink: intro
 id: 2
@@ -10,7 +10,7 @@ lang: zh-cn
 
 ## Site Information
 
-#### head
+### head
 
 用于配置生成的 HTML 文件的头部信息。
 
@@ -19,7 +19,7 @@ lang: zh-cn
 - high_res_favicon: iOS 主屏按钮图标
 - keywords: 网站关键词
 
-#### url
+### url
 
 用于设置跳转链接。
 
@@ -31,7 +31,7 @@ lang: zh-cn
 
 ## Style Settings
 
-### 分支「Scheme」介绍
+### scheme
 
 Material 主题提供了多种分支主题外观，亦称「Scheme」。
 目前 Material 内置三种 Scheme：
@@ -265,13 +265,16 @@ divider: 设置成 true 后会在侧边栏底部之前增加一条分割线。
 theme: 设置成 true 后会在侧边栏底部增加一个指向 Material 主题的链接。
 ```
 
-## Qrcode
+### Qrcode
 
 用于在文章页中显示二维码，扫描二维码即可直接打开文章。
 需要 `hexo-helper-qrcode` 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
 
-## topPost（开发中）
+### topPost（开发中）
 
 使用该插件可以将指定文章置顶。
 如果您需要这个功能，请使用 `npm install hexo-helper-post-top --save` 安装支持插件，然后将这个开关设置为 `true`。
 之后在您需要置顶文章的 `front-matter` 中，添加 `top: true` 即可置顶。
+
+## Integrated Services
+请参考 [集成服务](/services/)
