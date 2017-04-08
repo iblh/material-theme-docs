@@ -74,3 +74,29 @@ npm-check hexo-material
 ### Github
 
 你可以在[版本发布页](https://github.com/viosey/hexo-theme-material/releases)下载最新的主题。
+
+
+## 基本设定
+
+### 语言
+
+编辑 **站点配置文件**，将 `language` 设置成你所需要的语言。
+可用的语言如下：
+
+- العَرَبِيَّة (ar)
+- Deutsch (de)
+- English (en)
+- Español (es)
+- Français (fr)
+- 日本語 (ja)
+- Malay (ms)
+- Portuguese (Brazil) (pt-BR)
+- 简体中文 (zh-CN)
+- 繁體中文 (zh-TW)
+
+
+>例如：选用繁體中文，则配置为：
+>
+```yml
+language: zh-TW
+```
