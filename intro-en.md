@@ -1,32 +1,16 @@
 ---
 title: Intro
-version: 1.3.2
+version: 1.3.3
 permalink: en/intro
 id: 2
 lang: en
 ---
 
-## Introduction to "Scheme"
+Now we will introduce you about how to configure the theme, include `Site Information` `Style Settings` `Menu Settings`.
 
-Material theme provides a variety of theme designs, also known as "Scheme". Material currently supports three schemes.
+## Site information
 
-### Nexus (under development)
-
-This is the most standard Material Design style.
-
-### Paradox (default)
-
-This is the original style of Material. The layout is centered and illustrated.
-
-### Isolation
-
-This is a variant of Paradox using Jane style. It is concise and clear.
-
-## Theme configuration
-
-### Site information
-
-#### head
+### head
 
 Used to configure the generated HTML file header information.
 
@@ -35,7 +19,7 @@ Used to configure the generated HTML file header information.
 - `apple_touch_icon`: the iOS Home button icon
 - `keywords`: the site keywords
 
-#### url
+### url
 
 Used to set jump links.
 
@@ -43,12 +27,29 @@ Used to set jump links.
 - `daily_pic`: the redirect url from click on the daily picture
 - `logo`: the redirect url from click on the logo
 
-### Style
+> You can read the [Service](/service/) about how to set up the RSS.
 
-#### Scheme
+## Style Settings
+
+### scheme
+
+Material theme provides a variety of theme designs, also known as "Scheme". Material currently supports three schemes.
+
+#### Nexus (under development)
+
+This is the most standard Material Design style.
+
+#### Paradox (default)
+
+This is the original style of Material. The layout is centered and illustrated.
+
+#### Isolation
+
+This is a variant of Paradox using Jane style. It is concise and clear.
+
+----
 
 If you want to use one of the themes, delete the '#' before the scheme name.
-
 For example, to select the Paradox scheme, simply use:
 
 ```yaml
@@ -57,7 +58,7 @@ scheme: Paradox
 #scheme: Isolation
 ```
 
-#### uiux
+### uiux
 
 Used to set the user interface and user experience.
 
@@ -87,27 +88,27 @@ slogan:
 - `nprogress_color`: the color of the top loading progress bar
 - `nprogress_buffer`: the top loading progress bar buffers
 
-#### js_effect
+### js_effect
 
 Used to control the JavaScript features.
 
 - `fade`: part of the module to load the page fade effect (default: true)
 - `smoothscroll`: page smooth scrolling effects (default: false)
 
-#### reading
+### reading
 
 Used to set the reading experience.
 
 - `entry_excerpt`: the home page outputs the character length of the digest (default: 80)
 
-#### thumbnail
+### thumbnail
 
 Used to set up article thumbnail correlation.
 
 - `purecolor`: the color to fill (solid thumbnail used if no one is set)
 - `random_amount`: the number of random pictures taken from the `themes/material/source/img/random` folder
 
-#### background
+### background
 
 Used to set the site background.
 
@@ -139,21 +140,26 @@ footer_image:
         src: "/img/upyun_logo.png"
 ```
 
-#### fonts
+### fonts
 
 Used to set the site fonts.
 
 The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Microsoft Yahe, Arial`
 
-The font settings are more standardized, no special requirements without additional changes.
+> The font settings are more standardized for Material Design, no special requirements without additional changes.
+> When update the fonts, you should add fonts embed in `head.yml`. You can read [expert](/en/expert/) about how to use `head.yml`
 
-#### card_elevation
+### card_elevation
 
 Used to set elevation of the card on the list of the posts.  
 
-### Menu
+```bash
+npm install hexo-helper-qrcode --save
+```
 
-#### sns
+## Menu Settings
+
+### sns
 
 Used to fill in your SNS information. Except for `email` (which is displayed in the sidebar), a specific icon will be put inside the footer for each url you put.
 
@@ -170,7 +176,7 @@ Used to fill in your SNS information. Except for `email` (which is displayed in 
 - `bilibili`
 - `telegram`
 
-#### sns_share
+### sns_share
 
 Used to choose which items will be displayed in share menu.
 
@@ -182,9 +188,9 @@ Used to choose which items will be displayed in share menu.
 - `qq`
 - `telegram`
 
-#### sidebar
+### sidebar
 
-##### dropdown
+#### dropdown
 
 Used to set the Paradox sidebar drop-down menu (empty by default).
 
@@ -197,7 +203,7 @@ dropdown:
     icon: email
 ```
 
-##### homepage
+#### homepage
 
 Used to set the home page button.
 
@@ -205,7 +211,7 @@ Used to set the home page button.
 - `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
 - `divider`: set `true` to add a divider after the button
 
-##### archives
+#### archives
 
 Used to set the archives button.
 
@@ -213,7 +219,7 @@ Used to set the archives button.
 - `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
 - `divider`: set `true` to add a divider after the button
 
-##### categories
+#### categories
 
 Used to set the categories button.
 
@@ -221,7 +227,7 @@ Used to set the categories button.
 - `icon`: add an Material Design icon before the name of the button. Let it empty for no icon.
 - `divider`: set `true` to add a divider after the button
 
-##### pages
+#### pages
 
 Used to set up custom pages (empty by default). The pages will appear in the sidebar.
 
@@ -239,34 +245,26 @@ pages:
         divider: false
 ```
 
-##### article_num
+#### article_num
 
 Used to display the number of articles.
 
 - `use`: set `true` to display this button is the sidebar
 - `divider`: set `true` to add a divider after the button
 
-##### footer
+#### footer
 
 Used to customize the sidebar footer.
 
 - `divider`: set `true` to add a divider before the footer
 - `theme`: set `true` to display a link to the theme site
-
-#### card_elevation
-
-Use this to customize the shadow level of the parts of your page.
-
-#### qrcode
+- 
+### qrcode
 
 Use this to show qrcode in your article.  
 Need `hexo-helper-qrcode` to support this feature:
 
-```bash
-npm install hexo-helper-qrcode --save
-```
-
-#### topPost (Being Development)
+### topPost (Being Development)
 
 Use this to pin post at the top of the list of posts.
 If you want to use this WIP feature, please install `hexo-helper-post-top` :
@@ -276,81 +274,5 @@ npm install hexo-helper-post-top --save
 And then change this method to `true`.
 Now you can use `front-matter` `top: true` to pin your posts what you want to.
 
-### Integrated services
-
-#### MaterialCDN
-
-Now Material Theme can using private CDN to boost the load of static files.
-Set `use` as `true`，then fill in the `base` as your url.
-
-> **ATTENTION! the `url` in `base` should with protocol and without `/` !**
-
-Here is an example of configuration.
-
-```yaml
-materialcdn: 
-    use: true 
-    base: https://materialcdn.nfz.moe/hexo/1.3.2
-```
-
-#### comment
-
-Used to set up a comment system.
-
-See [comment system](/en/services/#Comment-system) for more information.
-
-- `use`: `Duoshuo` `disqus` or `disqus_click`
-
-> When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
-
-- `shortname`: the shortname of duoshuo and disqus
-- `duoshuo_thread_key_type`: used to set the use of tread key (`path` or `id`)
-- `duoshuo_embed_js_url`: the JavaScript url
-- changyan_appid: the APPID of changyan
-- changyan_conf: the CONF of changyan
-- changyan_thread_key_type: path #identifier of posts. `path` as default。
-#### search
-
-Used to set up the search system.
-
-See [search system](/en/services/#Search-system) for more information.
-
-Currently, you can use `google` `swiftype` `local`.
-
-- `use`
-- `swiftype_key`
-
-#### analytics
-
-Material theme has a built in Baidu's and Google's website analytics service.You can easily set the ID to enable it.
-
-- `baidu_id`: the Baidu ID
-- `google_id`: the Google key
-
-#### leancloud
-
-See [Leancloud](/en/services/#Leancloud) for more information.
-
-- `enable`: (default: false)
-- `app_id`: the app ID
-- `app_key`: the app key
-- `av_core_mini`: the JavaScript statistics
-
-#### busuanzi
-
-See [Busuanzi](/en/services/#Busuanzi) for more information.
-
-- `enable`: (default: false)
-- `all_site_uv`: (default: false)
-- `post_pv`: (default: false)
-- `busuanzi_pure_mini_js`: the JavaScript statistics
-
-
-## Main Contributors
-
-[Github - Contributors](https://github.com/viosey/hexo-theme-material/graphs/contributors)
-
-- [neoFelhz](https://github.com/neoFelhz)
-- [pidupuis](https://github.com/pidupuis)
-- [cubesky](https://github.com/cubesky)
-- [AkarinServer](https://github.com/AkarinServer)
+## Integrated Services
+Read the [Service](/services/)

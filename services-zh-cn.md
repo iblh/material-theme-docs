@@ -46,9 +46,7 @@ Material 内置了一套 多说 的 Material Design 样式。
 
 然后在 `comment: shortname: ` 填入你的多说 shortname
 
-> 主题的多说评论使用两种 `tread key`，使用方式参考：[comment](/intro/#comment)。
-
-默认为文章的相对路径 path。另一种为 id，需要在文章中的 `front-matter` 中添加 
+> 主题的多说评论使用两种 `tread key`。默认为文章的相对路径 path。另一种为 id，需要在文章中的 `front-matter` 中添加 
 
 ```yml
 id: id_number
@@ -166,7 +164,7 @@ google_id: Google Analysis 密钥
 
 > 为了保证应用的统计计数功能仅应用于自己的博客系统，你可以在 `应用->设置->安全中心` 的Web安全域名中加入自己的博客域名，以保证数据的调用安全。
 
-### 不蒜子
+#### 不蒜子
 
 ```yaml
 - enable: 默认为 false。

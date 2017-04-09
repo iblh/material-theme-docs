@@ -146,11 +146,14 @@ footer_image:
 > 该字体设定为 Material Design 的规范，如无特殊要求 无需额外修改。
 > 当你修改字体时，请在 `head.yml` 内使用 `<link>` 标签引用你的字体源。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
 
+### card_elevation
+
+用来设置主题卡片阴影。
+
 ### qrcode
 
 用于在文章页中显示二维码，扫描二维码即可直接打开文章。  
 需要 `hexo-helper-qrcode` 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
-
 
 ## Menu Settings
 
