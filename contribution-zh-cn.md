@@ -10,6 +10,8 @@ lang: zh-cn
 
 在参与贡献之前，请阅读[项目贡献 Wiki](https://github.com/viosey/hexo-theme-material/wiki)，了解如何为 Material 主题贡献。
 
+[现在，Open a Pull Request！](https://github.com/viosey/hexo-theme-material/pulls)
+
 ## 主要协助开发者
 
 [Github - Contributors](https://github.com/viosey/hexo-theme-material/graphs/contributors)

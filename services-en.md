@@ -14,6 +14,17 @@ First, you should install the plugin [hexo-generator-feed](https://github.com/he
 
 Then configure `theme config`  [url: rss](/en/intro/#url) with the URI.
 
+## topPost
+
+Use this to pin post at the top of the list of posts.
+If you want to use this WIP feature, please install `hexo-helper-post-top` :
+
+```bash
+npm install hexo-helper-post-top --save
+```
+
+Now you can use `front-matter` `top: true` to pin your posts what you want to.
+
 ----
 
 You can configure third-party services by navigating to `Integrated Services` in the **theme config**.

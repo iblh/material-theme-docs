@@ -13,6 +13,13 @@ lang: zh-cn
 安装插件：[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)，配置方式如插件 `README.md` 所示。
 然后在 [url: rss](/intro/#url) 中添加生成的 feed 路径。
 
+
+## topPost
+
+使用该插件可以将指定文章置顶。
+如果您需要这个功能，请使用 `npm install hexo-helper-post-top --save` 安装支持插件。
+之后在您需要置顶文章的 `front-matter` 中，添加 `top: true` 即可置顶。
+
 ----
 
 在 **主题配置文件** 中定位到 `Integrated Services` 即可进行第三方服务的配置。

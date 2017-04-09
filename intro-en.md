@@ -264,15 +264,5 @@ Used to customize the sidebar footer.
 Use this to show qrcode in your article.  
 Need `hexo-helper-qrcode` to support this feature:
 
-### topPost (Being Development)
-
-Use this to pin post at the top of the list of posts.
-If you want to use this WIP feature, please install `hexo-helper-post-top` :
-```bash
-npm install hexo-helper-post-top --save
-```
-And then change this method to `true`.
-Now you can use `front-matter` `top: true` to pin your posts what you want to.
-
 ## Integrated Services
 Read the [Service](/services/)

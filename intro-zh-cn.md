@@ -273,11 +273,5 @@ theme: 设置成 true 后会在侧边栏底部增加一个指向 Material 主题
 用于在文章页中显示二维码，扫描二维码即可直接打开文章。
 需要 `hexo-helper-qrcode` 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
 
-### topPost（开发中）
-
-使用该插件可以将指定文章置顶。
-如果您需要这个功能，请使用 `npm install hexo-helper-post-top --save` 安装支持插件，然后将这个开关设置为 `true`。
-之后在您需要置顶文章的 `front-matter` 中，添加 `top: true` 即可置顶。
-
 ## Integrated Services
 请参考 [集成服务](/services/)
