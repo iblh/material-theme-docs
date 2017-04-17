@@ -16,7 +16,7 @@ lang: zh-cn
 
 - favicon: 网站的 favicon
 - high_res_favicon: 高清 favicon
-- high_res_favicon: iOS 主屏按钮图标
+- apple_touch_icon: iOS 主屏按钮图标
 - keywords: 网站关键词
 
 ### url
