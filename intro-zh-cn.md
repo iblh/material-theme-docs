@@ -86,6 +86,9 @@ scheme: Paradox
 - nprogress_color: 页面加载时顶部加载进度条的颜色。
 - nprogress_buffer: 页面加载时顶部加载进度条的缓冲时间。
 
+> [Color palette](https://material.google.com/style/color.html#color-color-palette)
+> 符合 Material Design 的规范颜色。
+
 ### js_effect
 
 用来控制 Material 主题中自带的多种 js 特性。
@@ -149,11 +152,6 @@ footer_image:
 ### card_elevation
 
 用来设置主题卡片阴影。
-
-### qrcode
-
-用于在文章页中显示二维码，扫描二维码即可直接打开文章。  
-需要 `hexo-helper-qrcode` 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
 
 ## Menu Settings
 

@@ -19,10 +19,6 @@ Name:
 
 The code will be displayed before `</head>` tag. `Name` will appear as a comment above the code.
 
-## Palette
-
-See [color palette](https://material.google.com/style/color.html#color-color-palette).
-
 ## Material icons
 
 The list of icon used to customized the dropdown or page buttons is available [here](https://material.io/icons/).
@@ -42,15 +38,11 @@ Material Theme using the third-party lib listed below, which can be loaded using
 
 ### Fontawesome 4.5.0
 
-`/source/css/style.min.css`
-
-> You should change the URI in `style.css`, then compress it to `style.min.css` 
+`/layout/_partial/config_css.ejs`
 
 ### Material Icons 3.0.1
 
-`/source/css/style.min.css`
-
-> You should change the URI in `style.css`, then compress it to `style.min.css` 
+`/layout/_partial/config_css.ejs`
 
 ### nprogress 0.2.0
 

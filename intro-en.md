@@ -88,6 +88,8 @@ slogan:
 - `nprogress_color`: the color of the top loading progress bar
 - `nprogress_buffer`: the top loading progress bar buffers
 
+> [color palette](https://material.google.com/style/color.html#color-color-palette).
+
 ### js_effect
 
 Used to control the JavaScript features.
@@ -152,10 +154,6 @@ The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino
 ### card_elevation
 
 Used to set elevation of the card on the list of the posts.  
-
-```bash
-npm install hexo-helper-qrcode --save
-```
 
 ## Menu Settings
 
