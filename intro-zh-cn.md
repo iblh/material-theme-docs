@@ -118,6 +118,9 @@ scheme: Paradox
 - purecolor: 填入颜色代码。则站点使用纯色背景。
 - bgimg: 背景地址，默认调用 `主题文件夹 -> source -> img` 中的 `bg.png`。可更换此图片或者自己填入 url。
 - bing: 用于启用“必应美图”的图片作为背景。
+    - `parameter`:
+        - `color=`: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow.
+        - `type=`: A (动物), C (人文), N (自然), S (太空), T (旅行).
 
 ### img
 
