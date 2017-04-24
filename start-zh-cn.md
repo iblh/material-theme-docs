@@ -1,6 +1,6 @@
 ---
 title: 开始使用
-version: 1.3.3
+version: 1.3.4
 permalink: start
 id: 1
 lang: zh-cn
@@ -38,7 +38,8 @@ npm install hexo-material
 
 > 文件夹名称可自由修改，并不是唯一的，只需 `theme` 字段与之对应即可。
 
-**将 `material` 文件夹中的 `_config.template.yml` 重命名名为 `_config.yml`**。
+为防止造成冲突，主题以 `_config.template.yml` 文件取代 `_config.yml` 文件，用以参考配置。
+**需要手动将 `material` 文件夹中的 `_config.template.yml` 复制一份并重命名为 `_config.yml`**。
 
 现在，运行 `hexo s --debug` 并访问 `http://localhost:4000`，确保站点正确运行。
 

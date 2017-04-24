@@ -1,6 +1,6 @@
 ---
 title: 进阶设定
-version: 1.3.2
+version: 1.3.4
 permalink: expert
 id: 4
 lang: zh-cn

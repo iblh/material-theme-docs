@@ -1,6 +1,6 @@
 ---
 title: 开始创作
-version: 1.3.2
+version: 1.3.4
 permalink: compose
 id: 3
 lang: zh-cn

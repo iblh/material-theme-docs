@@ -1,6 +1,6 @@
 ---
 title: Start
-version: 1.3.3
+version: 1.3.4
 permalink: en/start
 id: 1
 lang: en
@@ -38,7 +38,7 @@ Once you have the `themes/material` folder, open the **site config**, find the `
 
 > The folder `themes/material` can be named differently if you wish. You simply have to adapt the `theme` field accordingly.
 
-**The `_config.yml` file does not exist in the theme, you need to manually copy the `_config.template.yml` file and rename it to `_config.yml`**
+**The `_config.yml` file does not exist in the theme, you need to manually duplicate the `_config.template.yml` file and rename it to `_config.yml`**
 
 Run `hexo s --debug` and go to [`http://localhost:4000`](http://localhost:4000) to make sure the site is running properly.
 

@@ -1,6 +1,6 @@
 ---
 title: 参与贡献
-version: 1.3.3
+version: 1.3.4
 permalink: contributions
 id: 6
 lang: zh-cn

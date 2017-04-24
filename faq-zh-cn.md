@@ -1,6 +1,6 @@
 ---
 title: 常见问题
-version: 1.3.2
+version: 1.3.4
 permalink: faq
 id: 2
 lang: zh-cn

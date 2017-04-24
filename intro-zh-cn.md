@@ -1,6 +1,6 @@
 ---
 title: 配置介绍
-version: 1.3.3
+version: 1.3.4
 permalink: intro
 id: 2
 lang: zh-cn
