@@ -157,17 +157,19 @@ footer_image:
 > The font settings are more standardized for Material Design, no special requirements without additional changes.
 > When update the fonts, you should add fonts embed in `head.yml`. You can read [expert](/en/expert/) about how to use `head.yml`
 
-- `host`: Used to set which fonts lib will be uesd in the theme.
+- `use`: Used to set which fonts lib will be uesd in the theme.
 
-> We have two available value of "host": `google` and `baomitu`.
+> We have built in three available value of "use": `google` `ustc` `baomitu`. 
+> Also, you can configured it as `custom` to use the proxy of google fonts service your like, in order to boost your site in China, where vistors can't load google font normally.
 > - `google`: use `fonts.googleapi.com` to load `Roboto` and `Material Icon`.
 > When using `Isolation UX`, the theme will load `Font-Awesome` locally.
-> - `baomitu` use `lib.baomitu.com`(a public cdn which maintained by Qihoo 360 75Team) to load `Roboto` and `Material Icon`
+> - `baomitu`: use `lib.baomitu.com`(a public cdn which maintained by Qihoo 360 75Team) to load `Roboto` and `Material Icon`
 > When using `Isolation UX`, the theme will load `Font-Awesome` from `lib.baomitu.com` as well.
-
-If you want to use one of the font host, just delete the '#' before the hostname your want, and add '#' to another.
-
-Both of the `fonts.googleapi.com` and `lib.baomitu.com` are HTTPS supported. Otherwise, `lib.baomitu.com` support HTTP/2 while `fonts.googleapi.com` support HTTP/2+QUIC/37.
+> - `ustc`: use `fonts.proxy.ustclug.org`(a proxy service of Google Font which maintained by University of Science and Technology of China and USTCLUG) to load `Roboto` and `Material Icon`
+> When using `Isolation UX`, the theme will load `Font-Awesome` locally.
+> - `custom`: use the font lib in whose URI your configured in `custom_font_host` to load `Roboto` and `Material Icon`.
+> When using `Isolation UX`, the theme will load `Font-Awesome` locally.
+> **Attention! The URI in `custom_font_host` should with proctol (such as https://) and without `/` at the end**
 
 ### card_elevation
 

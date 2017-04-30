@@ -159,18 +159,13 @@ footer_image:
 > 该字体设定为 Material Design 的规范，如无特殊要求 无需额外修改。
 > 当你修改字体时，请在 `head.yml` 内使用 `<link>` 标签引用你的字体源。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
 
-- `host`: 用于设置站点字体的引用位置。
+- `use`: 用于设置站点字体的引用方式。Material 主题内置了以下三种字体库支持。除此以外，你也可以手动设定在
+  - `google`: 使用 Google 字体库加载 `Roboto` 字体和 `Material Icon`。当使用了 `Isolation UX` 时，主题会从本地或 [MaterialCDN](/services/#MaterialCDN) 加载 `Font-Awesome`
+  - `ustc`: 使用中科大反代的 Google 字体库加载 `Roboto` 字体和 `Material Icon`。当使用了 `Isolation UX` 时，主题会从本地或 [MaterialCDN](/services/#MaterialCDN) 加载 `Font-Awesome`
+  - `baomitu`: 使用 360 前端团队 奇舞团 维护的字体库加载 `Roboto` 字体和 `Material Icon`。当使用了 `Isolation UX` 时，主题会从 奇舞团 维护的公共 CDN 库加载 `Font-Awesome`
+  - `custom`, 使用该选项需要在 `custom_font_host` 中填入字体库的 URL。当使用了 `Isolation UX` 时，主题会从本地或 [MaterialCDN](/services/#MaterialCDN) 加载 `Font-Awesome`
 
-> Material 主题提供了两个字体库的支持。
-
-> - `google`: 使用 Google 字体库加载 `Roboto` 字体和 `Material Icon`
-> 当使用了 `Isolation UX` 时，主题会从本地或 [MaterialCDN](/services/#MaterialCDN) 加载 `Font-Awesome`
-> - `baomitu`: 使用 360 前端团队 奇舞团 维护的字体库加载 `Roboto` 字体和 `Material Icon`
-> 当使用了 `Isolation UX` 时，主题会从 奇舞团 维护的公共 CDN 库加载 `Font-Awesome`
-
-在主题配置文件中有两行 `fonts: host` 的配置，去掉响应字体库选项前面注释 `#` 即可。
-
-两个字体库都提供了 HTTPS 支持；360 奇舞团公共库支持 HTTP/2，谷歌字体库支持 HTTP/2+QUIC/37。
+> **注意！`custom_font_host` 中设定的字体库的 URL 需要带 proctol（如 https://）且末尾不能带 `/` ！**
 
 ### card_elevation
 
