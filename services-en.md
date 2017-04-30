@@ -1,6 +1,6 @@
 ---
 title: Services
-version: 1.3.4
+version: 1.4.0
 permalink: en/services
 id: 5
 lang: en
@@ -50,16 +50,18 @@ Used to set up a comment system.
 
 See [comment system](/en/services/#Comment-system) for more information.
 
-- `use`: `Duoshuo` `disqus` `disqus_click` or `changyan`
+- `use`: `duoshuo` `disqus` `disqus_click` or `changyan`
 
 > When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
+> Attention! `disqus_proxy` is a special function that can load the Disqus comment list in China. And it is no need in your country.
 
 - `shortname`: the shortname of duoshuo and disqus
 - `duoshuo_thread_key_type`: used to set the use of tread key (`path` or `id`)
-- `duoshuo_embed_js_url`: the JavaScript url
+- `duoshuo_embed_js_url`: the JavaScript url for duoshuo.
 - changyan_appid: the APPID of changyan
 - changyan_conf: the CONF of changyan
 - changyan_thread_key_type: path #identifier of posts. `path` as default。
+- disqus_proxy_js_url: the JavaScript url for Disqus_Proxy mode. And as I said, it is no need in your country. Your country doesn't block the disqus, does it?
 
 ## Search system
 
@@ -93,16 +95,16 @@ search:
 
 ## Browse statistics
 
-### Baidu & Google Analytics
+### Site Analytics
 
-Material theme has a built in Baidu's and Google's website analytics service.You can easily set the ID to enable it.
+Material theme has a built in Baidu's, Google's website analytics and CNZZ's analytics service.You can easily set the ID to enable it.
 
-- `baidu_id`: the Baidu ID
-- `google_id`: the Google key
+- `use`: Set which analytics you want to use.  Available values are baidu | google | cnzz
+- `site_id`: the site_id that analytics service provide.
 
 ### Other Analytics
 
-You should set the `baidu_id` & `google_id` with nothing. Then you can add the analytics code in `head.yml`. You can read the [expert](/en/expert/) about how to use `head.yml`.
+You should set the `use` with nothing. Then you can add the analytics code in `head.yml`. You can read the [expert](/en/expert/) about how to use `head.yml`.
 
 ### Leancloud
 

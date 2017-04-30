@@ -1,6 +1,6 @@
 ---
 title: 参与贡献
-version: 1.3.4
+version: 1.4.0
 permalink: contributions
 id: 6
 lang: zh-cn
@@ -20,6 +20,7 @@ lang: zh-cn
 - [neoFelhz](https://github.com/neoFelhz)
 - [cubesky](https://github.com/cubesky)
 - [AkarinServer](https://github.com/AkarinServer)
+- [EYHN](https://github.com/EYHN)
 
 ## 功能贡献者
 
@@ -28,10 +29,6 @@ lang: zh-cn
 feat(analytics): add analytics id function [#147](https://github.com/viosey/hexo-theme-material/pull/147)
 feat(ui): custom elevation [#158](https://github.com/viosey/hexo-theme-material/pull/158)
 feat(sidebar_footer_image): add sidebar footer image config [#160](https://github.com/viosey/hexo-theme-material/pull/160)
-
-- [EYHN](https://github.com/EYHN)
-
-feat(layout): add the "lang" to `<html>` [#189](https://github.com/viosey/hexo-theme-material/pull/189)
 
 - [lslvxy](https://github.com/lslvxy)
 

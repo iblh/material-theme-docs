@@ -1,6 +1,6 @@
 ---
 title: Donate
-version:
+version: null
 permalink: en/donate
 id: 1
 lang: en

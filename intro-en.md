@@ -1,6 +1,6 @@
 ---
 title: Intro
-version: 1.3.4
+version: 1.4.0
 permalink: en/intro
 id: 2
 lang: en
@@ -18,6 +18,13 @@ Used to configure the generated HTML file header information.
 - `high_res_favicon`: the favicon using high quality format
 - `apple_touch_icon`: the iOS Home button icon
 - `keywords`: the site keywords
+- `google_site_verification`: Google Search Console Verification.
+
+> 1. After logged in [Google Search Console](https://www.google.com/webmasters/tools/), when to the `Site Verification`, and use `<meta>` tag to finish the verification. Then Google will give you something like:
+```html
+<meta name="google-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+```
+> 2. Simply set the `google_site_verification` with the things like `xxxxxxxxxxxxxxxxxxxxxxxxxxxx`.
 
 ### url
 
@@ -144,16 +151,40 @@ footer_image:
 
 ### fonts
 
-Used to set the site fonts.
+- `fonts`: Used to set the site fonts.
 
-The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Microsoft Yahe, Arial`
-
+> The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Microsoft Yahe, Arial`
 > The font settings are more standardized for Material Design, no special requirements without additional changes.
 > When update the fonts, you should add fonts embed in `head.yml`. You can read [expert](/en/expert/) about how to use `head.yml`
+
+- `host`: Used to set which fonts lib will be uesd in the theme.
+
+> We have two available value of "host": `google` and `baomitu`.
+> - `google`: use `fonts.googleapi.com` to load `Roboto` and `Material Icon`.
+> When using `Isolation UX`, the theme will load `Font-Awesome` locally.
+> - `baomitu` use `lib.baomitu.com`(a public cdn which maintained by Qihoo 360 75Team) to load `Roboto` and `Material Icon`
+> When using `Isolation UX`, the theme will load `Font-Awesome` from `lib.baomitu.com` as well.
+
+If you want to use one of the font host, just delete the '#' before the hostname your want, and add '#' to another.
+
+Both of the `fonts.googleapi.com` and `lib.baomitu.com` are HTTPS supported. Otherwise, `lib.baomitu.com` support HTTP/2 while `fonts.googleapi.com` support HTTP/2+QUIC/37.
 
 ### card_elevation
 
 Used to set elevation of the card on the list of the posts.  
+
+### copyright_since
+
+Specify the date when the site was setup.
+
+>  For example, if you set it as 2015, then footer will show '© 2015 - 2017'
+
+When it is empty, the footer will only show the current year.
+
+### qrcode
+
+Use this to show qrcode in your article.  
+Need `hexo-helper-qrcode` to support this feature:
 
 ## Menu Settings
 
@@ -257,10 +288,6 @@ Used to customize the sidebar footer.
 - `divider`: set `true` to add a divider before the footer
 - `theme`: set `true` to display a link to the theme site
 - 
-### qrcode
-
-Use this to show qrcode in your article.  
-Need `hexo-helper-qrcode` to support this feature:
 
 ## Integrated Services
 Read the [Service](/services/)

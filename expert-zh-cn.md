@@ -1,6 +1,6 @@
 ---
 title: 进阶设定
-version: 1.3.4
+version: 1.4.0
 permalink: expert
 id: 4
 lang: zh-cn
@@ -50,7 +50,7 @@ Material 主题使用的第三方库包括：
 
 ### FontAwesome 4.5.0
 
-引用于 `/layout/_partial/config_css.ejs`
+引用于 `layout/_partial/head.ejs`
 
 ### Material Icons 3.0.1
 
@@ -82,7 +82,7 @@ Disqus 由于一些原因，在 **`公开、平等、有序 的 网络审查 地
 
 ### 主题配置
 
-在 **主题配置文件** 的 `comment: disqus_proxy_js_url` 中填入你 `disqus-proxy` 目录的 URI。
+在 **主题配置文件** 的 `comment: shortname:` 中填入你的 shortname，在 `comment: disqus_proxy_js_url` 中填入你 `disqus-proxy` 目录的 URI。
 
 > **注意！`comment: disqus_proxy_js_url` 中填入的是 `disqus-proxy` 所在目录的 URI，且末尾不需要带 `/` ！**
 > 如果你没有修改 `disqus-proxy` 文件夹的文件名，那么你的 URI 应该以 `disqus-proxy` 结尾。

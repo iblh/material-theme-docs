@@ -1,6 +1,6 @@
 ---
 title: 配置介绍
-version: 1.3.4
+version: 1.4.0
 permalink: intro
 id: 2
 lang: zh-cn
@@ -14,10 +14,18 @@ lang: zh-cn
 
 用于配置生成的 HTML 文件的头部信息。
 
-- favicon: 网站的 favicon
-- high_res_favicon: 高清 favicon
-- apple_touch_icon: iOS 主屏按钮图标
-- keywords: 网站关键词
+- `favicon`: 网站的 favicon
+- `high_res_favicon`: 高清 favicon
+- `apple_touch_icon`: iOS 主屏按钮图标
+- `keywords`: 网站关键词
+- `google_site_verification`: 谷歌 Search Console 验证
+
+> 设置 [Google Search Console](https://www.google.com/webmasters/tools/)，用于向谷歌提交 sitemap 和管理站点被谷歌收录的情况
+> 1. 登录 Google Search Console，在 `设置菜单 - 验证详情` 处，选择 `HTML 标记`，Google 会给你一串类似于这样的东西：
+```html
+<meta name="google-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+```
+> 2. 将 `xxxxxxxxxxxxxxxxxxxxxxxxxxxx` 字符串复制出来，填入 `google_site_verification` 中，博客发布以后即可通过验证。
 
 ### url
 
@@ -145,16 +153,41 @@ footer_image:
 
 ### fonts
 
-用于设置站点的字体。
+- `family`: 用于设置站点的字体。
 
-默认值为 `Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif`
-
+> `fonts.family` 默认值为 `Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif`
 > 该字体设定为 Material Design 的规范，如无特殊要求 无需额外修改。
 > 当你修改字体时，请在 `head.yml` 内使用 `<link>` 标签引用你的字体源。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
+
+- `host`: 用于设置站点字体的引用位置。
+
+> Material 主题提供了两个字体库的支持。
+
+> - `google`: 使用 Google 字体库加载 `Roboto` 字体和 `Material Icon`
+> 当使用了 `Isolation UX` 时，主题会从本地或 [MaterialCDN](/services/#MaterialCDN) 加载 `Font-Awesome`
+> - `baomitu`: 使用 360 前端团队 奇舞团 维护的字体库加载 `Roboto` 字体和 `Material Icon`
+> 当使用了 `Isolation UX` 时，主题会从 奇舞团 维护的公共 CDN 库加载 `Font-Awesome`
+
+在主题配置文件中有两行 `fonts: host` 的配置，去掉响应字体库选项前面注释 `#` 即可。
+
+两个字体库都提供了 HTTPS 支持；360 奇舞团公共库支持 HTTP/2，谷歌字体库支持 HTTP/2+QUIC/37。
 
 ### card_elevation
 
 用来设置主题卡片阴影。
+
+### copyright_since
+
+用于设置站点成立的时间。
+
+> 例如，如果你设置了 2015，那么 footer 就会显示 `© 2015 - 2017`。
+
+如果这个值为空，那么 footer 只会显示现在的年份。
+
+### Qrcode
+
+用于在文章页中显示二维码，扫描二维码即可直接打开文章。
+需要 `hexo-helper-qrcode` 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
 
 ## Menu Settings
 
@@ -268,11 +301,6 @@ divider: 设置成 true 后会在该条目底部增加一条分割线。
 divider: 设置成 true 后会在侧边栏底部之前增加一条分割线。
 theme: 设置成 true 后会在侧边栏底部增加一个指向 Material 主题的链接。
 ```
-
-### Qrcode
-
-用于在文章页中显示二维码，扫描二维码即可直接打开文章。
-需要 `hexo-helper-qrcode` 支持，使用 `npm install hexo-helper-qrcode --save` 进行安装。
 
 ## Integrated Services
 请参考 [集成服务](/services/)

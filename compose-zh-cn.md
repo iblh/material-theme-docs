@@ -1,6 +1,6 @@
 ---
 title: 开始创作
-version: 1.3.4
+version: 1.4.0
 permalink: compose
 id: 3
 lang: zh-cn
@@ -161,10 +161,3 @@ layout: tags
 >`title` 可修改，`layout` 不可修改。
 
 如果想添加「标签云」页面的入口，请参考 [独立页面](/intro/#pages)。
-
-
-## 创建「私有」页面
-如果某篇文章不想显示在站点中，只需要在 `front-matter` 中加入
-```yml
-layout: private
-```

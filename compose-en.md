@@ -1,6 +1,6 @@
 ---
 title: Compose
-version: 1.3.4
+version: 1.4.0
 permalink: en/compose
 id: 3
 lang: en
@@ -144,12 +144,3 @@ layout: tags
 > `title` can be changed, `layout` can not be modified.
 
 If you'd like to add an entry to the Tag Cloud page, please refer to the [page settings](/en/intro/#pages).
-
-## Create a private page
-
-If an article does not want to appear in the site, just add it to the `front-matter`
-Create a folder named as you want to name your page within the `source` folder. Then create a file named `index.md` inside this folder:
-
-```yaml
-layout: private
-```

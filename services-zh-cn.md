@@ -1,6 +1,6 @@
 ---
 title: 集成服务
-version: 1.3.4
+version: 1.4.0
 permalink: services
 id: 5
 lang: zh-cn
@@ -71,6 +71,10 @@ Material 主题提供了两种使用 [Disqus](https://disqus.com/) 主题的方�
 
 在 `comment: shortname: ` 填入你的 Disqus shortname
 
+### Disqus 代理模式
+
+阅读[进阶设定](/expert/)，了解如何在 **`公开、平等、有序 的 网络审查 地区`** 下加载 Disqus。
+
 ----
 
 需要注意的是此处的 `shortname` 不是你的登录的 id，是你的评论二级域名去掉 `.duoshuo.com` 或 `.disqus.com` 部分
@@ -123,24 +127,30 @@ search:
 
 ## 数据统计与分析
 
-用于设置访客分析服务，支持 Google Analysis 和 百度站长工具。
+用于设置访客分析服务，支持 Google Analysis 、百度站长工具和 CNZZ。
 
-```yaml
-baidu_id: 百度 ID
-google_id: Google Analysis 密钥
-```
+- use: 你使用的站点统计服务，可填入 `cnzz` `baidu` `google`
+- site_id: 站点统计 ID
 
 ### 百度统计
 
-登录 [百度统计](http://tongji.baidu.com/)，在站点的代码获取页面复制 `hm.js?` 后面那串统计脚本 id，填入 `baidu_id`。
+登录 [百度统计](http://tongji.baidu.com/)，在站点的代码获取页面复制 `hm.js?` 后面那串统计脚本 id，填入 `site_id`。
 
 ### Google 分析
 
-在 `google_id` 字段填入你的 Google 跟踪 ID。跟踪 ID 通常是以 UA- 开头。
+在 `site_id` 字段填入你的 Google 跟踪 ID。跟踪 ID 通常是以 UA- 开头。
+
+### CNZZ
+
+在 `site_id `填入 CNZZ 提供的统计的站点ID。 这个 ID 可以在地址栏里，或者自动生成的脚本里面找到。
+
+> 在 CNZZ 提供的统计代码中，`z_stat.php?id=` 后和 `&web_id=` 各有一串字符，它们应该是相同的。将这串字符填入 `site_id`
+
+为避免影响美观，Material 主题使用 `display: none;`隐藏了“站长统计”几个字。
 
 ### 其它统计服务
 
-确保 `baidu_id` `google_id` 两个字段为空，然后在在 `head.yml` 中填入你的统计服务代码。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
+确保 `use` 字段为空，然后在在 `head.yml` 中填入你的统计服务代码。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
 
 ### PV&UV 统计
 
