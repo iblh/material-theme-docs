@@ -50,18 +50,14 @@ Used to set up a comment system.
 
 See [comment system](/en/services/#Comment-system) for more information.
 
-- `use`: `duoshuo` `disqus` `disqus_click` or `changyan`
+- `use`: `disqus` `disqus_click` or `changyan`
 
 > When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
-> Attention! `disqus_proxy` is a special function that can load the Disqus comment list in China. And it is no need in your country.
 
 - `shortname`: the shortname of duoshuo and disqus
-- `duoshuo_thread_key_type`: used to set the use of tread key (`path` or `id`)
-- `duoshuo_embed_js_url`: the JavaScript url for duoshuo.
-- changyan_appid: the APPID of changyan
-- changyan_conf: the CONF of changyan
-- changyan_thread_key_type: path #identifier of posts. `path` as default。
-- disqus_proxy_js_url: the JavaScript url for Disqus_Proxy mode. And as I said, it is no need in your country. Your country doesn't block the disqus, does it?
+- `changyan_appid`: the APPID of changyan
+- `changyan_conf`: the CONF of changyan
+- `changyan_thread_key_type`: path #identifier of posts. `path` as default。
 
 ## Search system
 
