@@ -18,13 +18,17 @@ Used to configure the generated HTML file header information.
 - `high_res_favicon`: the favicon using high quality format
 - `apple_touch_icon`: the iOS Home button icon
 - `keywords`: the site keywords
-- `google_site_verification`: Google Search Console Verification.
+- `site_verification`: the verification of search engine console.
+  - `google`: Google Search Console
+  - `baidu`: Baidu Zhanzhang
 
-> 1. After logged in [Google Search Console](https://www.google.com/webmasters/tools/), when to the `Site Verification`, and use `<meta>` tag to finish the verification. Then Google will give you something like:
+> 1. After logged in the console of search engine, choose to use `<meta>` tag to finish the verification. Then console will give you something like:
 ```html
-<meta name="google-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+<meta name="xxxx-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 ```
-> 2. Simply set the `google_site_verification` with the things like `xxxxxxxxxxxxxxxxxxxxxxxxxxxx`.
+> 2. Simply set `site_verification: xxxx:` with the things like `xxxxxxxxxxxxxxxxxxxxxxxxxxxx`.
+
+- `structured_data`: Default is true. When enable it, the theme will generate the structured-data for SEO. This feature request you configure the **`theme config`** and **`site config`** correctly.So if there are something wrong when `hexo g`, please check your config file or set this value as `false`, then try again.
 
 ### url
 
@@ -185,10 +189,19 @@ When it is empty, the footer will only show the current year.
 
 ### qrcode
 
-Use this to show qrcode in your article.  
-Need `hexo-helper-qrcode` to support this feature:
+Use this to show qrcode in your article.
+
+- enable: show qrcode button in post or not.
+- use: choose which method to generate the Qrcode. Available value of "use": plugin | online
+
+> When using `plugin`, you need to install `hexo-helper-qrcode` to support this feature. Using `npm install hexo-helper-qrcode --save` to install the plugin.
+> When using `online`, the Qrcode will generate by `pan.baidu.com`. We DO NOT recommend you to use it.
 
 ## Menu Settings
+
+### toc
+
+Choose whether the line_number of toc(Table of Content) will show or not. Available value of "linenumber": true | false
 
 ### sns
 

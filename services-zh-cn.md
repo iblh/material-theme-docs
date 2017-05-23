@@ -61,13 +61,18 @@ Material 主题提供了两种使用 [Disqus](https://disqus.com/) 主题的方�
 shortname: example
 ```
 
-### 畅言 
+### 畅言
 
 使用 [畅言](http://changyan.kuaizhan.com)，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `changyan`。
 
 - changyan_appid: 畅言的 APPID
 - changyan_conf: 畅言的 CONF
 - changyan_thread_key_type: path #用于设置畅言的 tread key，默认为 path。
+
+### 网易云跟帖
+
+使用 [网易云跟帖](https://gentie.163.com/)，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `163gentie`。
+打开网易云跟帖后台中找到 “获取代码”，在 WEB 代码中，找到 `gentie_productKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"` 部分，将 “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” 填入到 **主题配置文件** 中评论系统的配置的 `gentie_productKey: ` 部分
 
 ## 搜索系统
 
@@ -110,7 +115,7 @@ search:
 
 ### 百度统计
 
-登录 [百度统计](http://tongji.baidu.com/)，在站点的代码获取页面复制 `hm.js?` 后面那串统计脚本 id，填入 `site_id`。
+登录 [百度统计](http://tongji.baidu.com/)，在站点的代码获取页面复制 `` 后面那串统计脚本 id，填入 `site_id`。
 
 ### Google 分析
 
@@ -118,9 +123,9 @@ search:
 
 ### CNZZ
 
-在 `site_id `填入 CNZZ 提供的统计的站点ID。 这个 ID 可以在地址栏里，或者自动生成的脚本里面找到。
+在 `site_id `填入 CNZZ 提供的统计的站点 ID。 这个 ID 可以在地址栏里，或者自动生成的脚本里面找到。
 
-> 在 CNZZ 提供的统计代码中，`z_stat.php?id=` 后和 `&web_id=` 各有一串字符，它们应该是相同的。将这串字符填入 `site_id`
+> 在 CNZZ 提供的统计代码中，`z_stat.php?id=` 后和 `&web_id=` 各有一串字符，它们应该是相同的。将这串字符填入 `site_id`。
 
 为避免影响美观，Material 主题使用 `display: none;`隐藏了“站长统计”几个字。
 

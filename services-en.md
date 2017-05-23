@@ -50,14 +50,15 @@ Used to set up a comment system.
 
 See [comment system](/en/services/#Comment-system) for more information.
 
-- `use`: `disqus` `disqus_click` or `changyan`
+- `use`: `disqus` `disqus_click` `changyan` or `163gentie`
 
 > When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
 
 - `shortname`: the shortname of duoshuo and disqus
 - `changyan_appid`: the APPID of changyan
 - `changyan_conf`: the CONF of changyan
-- `changyan_thread_key_type`: path #identifier of posts. `path` as default。
+- `changyan_thread_key_type`: path #identifier of posts. `path` as default.
+- `gentie_productKey`: You can find the peoductkey in `install code` at 163gentie's console, something like `gentie_productKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"`
 
 ## Search system
 
@@ -97,6 +98,10 @@ Material theme has a built in Baidu's, Google's website analytics and CNZZ's ana
 
 - `use`: Set which analytics you want to use.  Available values are baidu | google | cnzz
 - `site_id`: the site_id that analytics service provide.
+
+> - Google will give the `site ID` with `UA-` begin; 
+> - Baidu will give your a JavaScript URI like `hm.js?xxxxxxxxx` and `xxxxxxxx` is the site_id that you need.
+> - in CNZZ's code, there will be `z_stat.php?id=xxxxxxxxxxxx` and `&web_id=xxxxxxxxx`. Both of these `xxxxxxxx` should be the same. And this `xxxxxxxxx` is the site_id.
 
 ### Other Analytics
 
