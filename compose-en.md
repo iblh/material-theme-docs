@@ -36,6 +36,7 @@ See [front-matter](https://hexo.io/en/docs/front-matter.html) for more informati
 | comment    | Display comment	                          | true              |
 | notag      | Do not generate Tags menu                  | false             |
 | top        | Pin post on the top of the list            | false             |
+| mathjax        | Enable the MathJax for this post     | false             |
 
 P.S. To use `Pin on top` feature please visit [topPost](/intro/#topPost)
 
@@ -50,14 +51,6 @@ This scheme uses the default random thumbnails if there is no custom thumbnail. 
 #### Isolation
 
 This Scheme will only show thumbnails that have been customized.
-
-## Create the "About" page
-
-Create a new `about` page:
-
-```shell
-hexo new page "About"
-```
 
 If you want to add a link to the "Link" page, please refer to the [page settings](/en/intro/#pages).
 
@@ -144,3 +137,21 @@ layout: tags
 > `title` can be changed, `layout` can not be modified.
 
 If you'd like to add an entry to the Tag Cloud page, please refer to the [page settings](/en/intro/#pages).
+
+## Create the "Timeline" page
+
+### Create the page
+
+Create a folder named `timeline` within the `source` folder. Then create a file named `index.md` inside this folder:
+
+```yaml
+---
+title: timeline
+date:
+layout: timeline
+---
+```
+
+> `title` can be changed, `layout` can not be modified.
+
+If you'd like to add an entry to the Timeline page, please refer to the [page settings](/en/intro/#pages).

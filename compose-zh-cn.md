@@ -33,6 +33,7 @@ hexo new <title>
 | `comment`     | 显示评论            | true         |
 | `notag`       | 不生成标签按钮      | false        |
 | `top`         | 置顶                | false        |
+| `mathJax`         | 启用 Mathjax       | false        |
 
 注1：置顶功能请参考 [topPost](/intro/#topPost)
 
@@ -49,15 +50,6 @@ hexo new <title>
 #### Isolation
 
 此 Scheme 只会显示已自定义缩略图。
-
-
-## 创建「关于我」页面
-
-新建一个 `about` 页面：
-
-```
-hexo new page "about"
-```
 
 如果想添加「关于我」页面的入口，请参考 [独立页面](/intro/#pages)。
 
@@ -156,6 +148,26 @@ Name:
 title: tags
 date:
 layout: tags
+---
+```
+>`title` 可修改，`layout` 不可修改。
+
+如果想添加「标签云」页面的入口，请参考 [独立页面](/intro/#pages)。
+
+## 创建「时间轴」页面
+
+### 创建页面
+
+在 hexo 目录下的 `source` 文件夹内创建一个名为 `timeline`（只是建议，可根据自己喜好修改）的文件夹。
+
+然后在文件内创建一个名为 `index.md` 的 Markdown 文件。
+
+在 `index.md` 文件内写入如下内容即可。
+```markdown
+---
+title: timeline
+date:
+layout: timeline
 ---
 ```
 >`title` 可修改，`layout` 不可修改。
