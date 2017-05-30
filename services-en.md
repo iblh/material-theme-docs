@@ -58,7 +58,7 @@ See [comment system](/en/services/#Comment-system) for more information.
 - `changyan_appid`: the APPID of changyan
 - `changyan_conf`: the CONF of changyan
 - `changyan_thread_key_type`: path #identifier of posts. `path` as default.
-- `gentie_productKey`: You can find the peoductkey in `install code` at 163gentie's console, something like `gentie_productKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"`
+- `gentie_productKey`: You can find the productkey in `install code` at 163gentie's console, something like `gentie_productKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"`
 
 ## Search system
 
