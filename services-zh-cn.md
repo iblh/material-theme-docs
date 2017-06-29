@@ -24,21 +24,6 @@ lang: zh-cn
 
 在 **主题配置文件** 中定位到 `Integrated Services` 即可进行第三方服务的配置。
 
-## MaterialCDN
-
-为了加速您的博客，现在您可以使用 CDN 来加速 Material 主题引用的静态文件。
-只需要将 `use` 设置为 `true`，并在 `base` 中填入你的 CDN 的 URL 路径即可。
-
-> **注意！`base` 中填入的 URL 末尾不需要带 `/` ！**
-
-例如，您可以这么配置：
-
-```yaml
-materialcdn: 
-    use: true # 默认为 false
-    base: https://materialcdn.nfz.moe/hexo/1.3.2
-```
-
 ## 评论系统
 
 定位到 **`主题配置文件`** 中 `Integrated Services` 的 `comment`，即可以设置评论。
@@ -72,7 +57,14 @@ shortname: example
 ### 网易云跟帖
 
 使用 [网易云跟帖](https://gentie.163.com/)，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `163gentie`。
-打开网易云跟帖后台中找到 “获取代码”，在 WEB 代码中，找到 `gentie_productKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"` 部分，将 “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” 填入到 **主题配置文件** 中评论系统的配置的 `gentie_productKey: ` 部分
+打开网易云跟帖后台中找到 “获取代码”，在 WEB 代码中，找到 `gentie_productKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"` 部分，将 “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” 填入到 **主题配置文件** 中评论系统的配置的 `gentie_productKey: `
+
+### 来必力
+
+> Material 主题内置的来必力是 `city_verision`
+
+使用 来必力，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `livere`。
+打开来必力后台中找到 “获取代码”，在 WEB 代码中，找到 `data-uid`，填入到 **主题配置文件** 中评论系统的配置的 `livere_data_uid: `
 
 ## 搜索系统
 

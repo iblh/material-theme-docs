@@ -164,10 +164,10 @@ footer_image:
 > 当你修改字体时，请在 `head.yml` 内使用 `<link>` 标签引用你的字体源。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
 
 - `use`: 用于设置站点字体的引用方式。Material 主题内置了以下三种字体库支持。除此以外，你也可以手动设定你喜欢的谷歌字体反代服务。
-  - `google`: 使用 Google 字体库加载 `Roboto` 字体和 `Material Icon`。当使用了 `Isolation UX` 时，主题会从本地或 [MaterialCDN](/services/#MaterialCDN) 加载 `Font-Awesome`
-  - `ustc`: 使用中科大反代的 Google 字体库加载 `Roboto` 字体和 `Material Icon`。当使用了 `Isolation UX` 时，主题会从本地或 [MaterialCDN](/services/#MaterialCDN) 加载 `Font-Awesome`
-  - `baomitu`: 使用 360 前端团队 奇舞团 维护的字体库加载 `Roboto` 字体和 `Material Icon`。当使用了 `Isolation UX` 时，主题会从 奇舞团 维护的公共 CDN 库加载 `Font-Awesome`
-  - `custom`, 使用你喜欢的谷歌字体反代服务加载 `Roboto` 字体和 `Material Icon`。使用该选项需要在 `custom_font_host` 中填入字体库的 URL。当使用了 `Isolation UX` 时，主题会从本地或 [MaterialCDN](/services/#MaterialCDN) 加载 `Font-Awesome`
+  - `google`: 使用 Google 字体库加载 `Roboto` 字体和 `Material Icon`
+  - `ustc`: 使用中科大反代的 Google 字体库加载 `Roboto` 字体和 `Material Icon`
+  - `baomitu`: 使用 360 前端团队 奇舞团 维护的字体库加载 `Roboto` 字体和 `Material Icon`
+  - `custom`, 使用你喜欢的谷歌字体镜像服务加载 `Roboto` 字体和 `Material Icon`。使用该选项需要在 `custom_font_host` 中填入字体库的 URL
 
 > **注意！`custom_font_host` 中设定的字体库的 URL 需要带 proctol（如 https://）且末尾不能带 `/` ！**
 
@@ -182,6 +182,36 @@ footer_image:
 > 例如，如果你设置了 2015，那么 footer 就会显示 `© 2015 - 2017`。
 
 如果这个值为空，那么 footer 只会显示现在的年份。
+
+### footer text
+
+你可以在页面的 Footer 指定你想显示的文字，支持 HTML 标签；默认为空。
+比如，备案号可以这样设定：
+
+```yml
+footer_text: '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
+```
+
+### Code
+
+使用 `Google Prettify` 实现代码高亮。
+启用之前你需要禁用 Hexo 自带的代码高亮。
+
+```yml
+prettify:
+    enable: false # Available value: true | false,
+    theme: "vibrant-ink" # default value: "vibrant-ink"   # theme-name without '.css'
+```
+
+### Post License
+
+你可以在每篇文章的结尾添加你的版权说明，支持 HTML 标签。License 以粗体显示，默认为空。
+比如，你可这样设定 CC License。
+
+```yml
+license: 'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
+```
+> 你也可以在页面的 Front-Matter 中为不同文章添加不同的 License。
 
 ### Qrcode
 

@@ -27,23 +27,43 @@ The list of icon used to customized the dropdown or page buttons is available [h
 
 From `Version 1.3.0`, you can use `hexo-prism-plugin` to highlight your codes, visit [Hexo-Prism-Plugin Github](https://github.com/ele828/hexo-prism-plugin) to learn more.
 
-## Using Public CDN
+From `Version 1.4.5`, Material built in the `Google Prettify` for code_highlight.
 
-From 1.3.2, we add support for using PrivateCDN to boost your blog.
-Material Theme using the third-party lib listed below, which can be loaded using PublicCDN. You can patch the theme layout by your own.
+## Files Vendors
+
+This is about how to use CDN to load files.
+
+### MaterialCDN
+
+Material Theme can using private CDN to load of static files.
+Default(empty) will load the files from the origin server.
+
+> **ATTENTION! the url you fill in should with protocol and without `/` !**
+
+Here is an example of configuration.
+
+```yaml
+vendors:
+    materialcdn:  https://materialcdn.nfz.moe/hexo/1.3.2
+```
+-----
+
+Material Theme has used third party library below. You can fill in the with the uri of the files, then you can use public cdn to load them.
 
 ### jQuery 2.2.0
-
-`/layout/_partial?head.ejs`
-
 ### Fontawesome 4.5.0
 
-`/layout/_partial/config_css.ejs`
+> you should filled in with a uri of css, such as: `https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css`
+
+### MathJax 2.7.0-2.7.1
+
+> you needn't add query configuration in your uri. We have already done it for you.
+
+### nprogress 0.2.0
+### Prettify r298
+
+> only for the `prettify.js`. theme css files will load from your origin server or MaterialCDN
 
 ### Material Icons 3.0.1
 
-`/layout/_partial/config_css.ejs`
-
-### nprogress 0.2.0
-
-`/layout/_widget/nprogress.ejs`
+> you should filled in with a uri of css, such as: `https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css`

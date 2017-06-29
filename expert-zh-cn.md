@@ -35,31 +35,46 @@ Name:
 ## 代码高亮样式
 
 从 `1.3.0` 版本开始，您可以使用 `hexo-prism-plugin` 进行代码染色，具体文档请参阅 [Hexo-Prism-Plugin 插件文档](https://github.com/ele828/hexo-prism-plugin)
+从 `1.4.5` 版本开始，您可以使用主题内置的 `Google Prettify` 进行代码染色
 
-## 使用公共 CDN 库
+## 使用 CDN
 
-Material 主题从 1.3.2 版本开始支持 [MaterialCDN](/services/#MaterialCDN) 功能，你可以使用自己申请的私有 CDN 加速你的博客。
+### MaterialCDN
+
+现在你可以使用 CDN 来加速 Material 主题引用的静态文件，只需要在 `materialcdn` 中填入你的 CDN 的 URL 路径即可。默认为空、从网站源站加载。
+
+> **注意！填入的 URL 末尾不需要带 `/` ！**
+
+例如，您可以这么配置：
+
+```yaml
+vendors:
+    materialcdn:  https://materialcdn.nfz.moe/hexo/1.3.2
+```
+
+------
+
 Material 主题引用了下述第三方库，你可以使用公共 CDN 库加载它们。
-使用公共 CDN 的用户需要手动修改主题内的引用 URL。
-
 Material 主题使用的第三方库包括：
 
 ###  jQuery 2.2.0
-
-引用于 `/layout/_partial/head.ejs`
-
 ### FontAwesome 4.5.0
 
 引用于 `layout/_partial/head.ejs`
 
 ### Material Icons 3.0.1
 
-引用于 `/layout/_partial/config_css.ejs`
+> 你需要填入 css 的 URI，如：`https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css`
+
+### MathJax 2.7.0-2.7.1
+
+>你不需要在 URI 中带上 MathJax 的设定。我们已经加好了。
 
 ### nprogress 0.2.0
+### Prettify r298
 
-引用于 `/layout/_widget/nprogress.ejs`
+> 只加载 `prettify.js`。代码高亮的主题将从本地或者 MaterialCDN 中加载。
 
-### Mathjax 2.7.0
+### Material Icons 3.0.1
 
-引用于 `/layout/_widget/mathjax.ejs`
+> 你需要填入 css 的 URI，如：`https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css`
