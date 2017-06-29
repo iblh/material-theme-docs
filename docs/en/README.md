@@ -5,6 +5,8 @@ Before using "Material", please read the [Hexo documentions](https://hexo.io/doc
 In Hexo, there are usually two configuration files, both called `_config.yml`. The first one is in the site root directory; the other is in the theme directory. 
 For convenience of description, in the following description, the former is referred to as the **site config** and the latter as the **theme config**.
 
+----
+
 The documention included:
 
 - Install

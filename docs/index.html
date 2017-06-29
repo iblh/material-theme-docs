@@ -8,26 +8,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="shortcut icon" href="//material.viosey.com/favicon.ico" type="image/x-icon">
   <link rel="icon" href="//material.viosey.com/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.1.14/themes/buble.css">
   <title>Material Theme</title>
   <meta property="og:url" content="https://material.viosey.com">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Material Theme">
   <meta property="og:description" content="Material theme, an elegant & Material Design theme.">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.1.14/themes/vue.css">
+  <style>
+    .markdown-section code {
+      color: #424242
+    }
+  </style>
 </head>
 <body>
+  <nav>
+    <a href="#/">简体中文</a>
+    <a href="#/en/">English</a>
+  </nav>
   <div id="app">Loading . . . . | 正在加载</div>
 </body>
 <script>
   window.$docsify = {
     name: 'Material',
 
+    //GitHub Icon
     repo: 'https://github.com/viosey/hexo-theme-material/',
 
     // Google Analytics
     //ga: 'UA-XXXXX-Y',
 
-    themeColor: '#3F51B5',
+    themeColor: '#757575',
     
     // Search Support
     search: {
@@ -40,14 +50,18 @@
       noData: {
         '/': '找不到结果',
         '/en/': 'No Results'
-      }
-    }
+      },
+    },
+
+      // load sidevar from _sidebar.md
+      loadSidebar: '_sidebar.md',
+      subMaxLevel: 3,
   }
 </script>
 <script src="https://cdn.bootcss.com/docsify/4.1.14/docsify.min.js"></script>
 <script src="https://cdn.bootcss.com/docsify/4.1.14/plugins/search.min.js"></script>
 <script src="https://cdn.bootcss.com/prism/1.6.0/components/prism-yaml.min.js"></script>
-<script src="https://cdn.bootcss.com/docsify/4.1.14/plugins/front-matter.min.js"></script>
+<script src="https://cdn.bootcss.com/prism/1.5.1/components/prism-bash.min.js"></script>
 <!--<script src="https://cdn.bootcss.com/docsify/4.1.14/plugins/ga.min.js"></script>-->
 
 </html>
