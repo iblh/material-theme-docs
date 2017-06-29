@@ -1,12 +1,6 @@
----
-title: Services
-version: 1.4.0
-permalink: en/services
-id: 5
-lang: en
----
+# Intergrated Service
 
-"Material" has built in lots of Integrated Services. You can easily set up it.
+"Material" has built in lots of Integrated Services. You can set up it easily.
 
 ## RSS
 

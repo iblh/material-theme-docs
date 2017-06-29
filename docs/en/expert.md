@@ -1,10 +1,4 @@
----
-title: Expert
-version: 1.4.0
-permalink: en/expert
-id: 4
-lang: en
----
+# Expert Settings
 
 ## Add custom code
 

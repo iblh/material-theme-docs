@@ -1,10 +1,11 @@
-- [Install](en/install)
+- [Start](en/start)
 - Configuration
-  - Basic
-  - Style
-  - Menu
-  - Service
-  - Expert
-- Pages
-- [Compose](en/install)
-- Donate
+  - [Basic](en/config/basic)
+  - [Style](en/config/style)
+  - [Customize](en/config/customize)
+  - [Menu](en/config/menu)
+  - [Service](en/config/services)
+- [Expert](en/expert)
+- [Pages](en/pages)
+- [Compose](en/compose)
+- [Donate](en/donate)

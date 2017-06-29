@@ -1,7 +1,5 @@
 # 基本设定
 
-这里，我们将介绍主题的基本配置教程，包括 `Site Information`、`Style Settings`、`Menu Settings` 三个部分。
-
 ## Language
 
 编辑 **站点配置文件**，将 `language` 设置成你所需要的语言。
