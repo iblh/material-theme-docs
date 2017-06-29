@@ -1,12 +1,6 @@
----
-title: 进阶设定
-version: 1.4.0
-permalink: expert
-id: 4
-lang: zh-cn
----
+# 进阶使用
 
-> 以下部分可能影响到「Material」的正常运作，请务必先了解这些设定背后的相关知识。
+> 以下部分可能影响到「Material」主题的正常运作，请务必先了解这些设定背后的相关知识。
 
 -----
 
@@ -35,9 +29,11 @@ Name:
 ## 代码高亮样式
 
 从 `1.3.0` 版本开始，您可以使用 `hexo-prism-plugin` 进行代码染色，具体文档请参阅 [Hexo-Prism-Plugin 插件文档](https://github.com/ele828/hexo-prism-plugin)
-从 `1.4.5` 版本开始，您可以使用主题内置的 `Google Prettify` 进行代码染色
+从 `1.4.5` 版本开始，您可以使用主题内置的 `Google Prettify` 进行代码染色。具体文档请参阅主题配置。
 
 ## 使用 CDN
+
+定位到 **主题配置文件** 进行配置。
 
 ### MaterialCDN
 

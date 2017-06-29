@@ -1,10 +1,11 @@
-- [安装](install)
-- 主题设置
-  - 基本设定
-  - 样式设定
-  - 菜单设定
-  - 第三方服务配置
-  - 进阶设定
-- 独立页面
+- [开始使用](start)
+- 主题配置
+  - [基本配置](config/basic)
+  - [样式设定](config/style)
+  - [自定义设定](config/customize)
+  - [菜单设定](config/menu)
+  - [第三方服务](config/services)
+- [进阶使用](expert)
+- [独立页面](pages)
 - [开始创作](compose)
-- 捐赠
+- [捐赠](donate)

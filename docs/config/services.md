@@ -1,18 +1,11 @@
----
-title: 集成服务
-version: 1.4.0
-permalink: services
-id: 5
-lang: zh-cn
----
+# 第三方服务
 
 「Material」主题内置了多种第三方服务，并且可以轻松的启用。
 
 ## RSS
 
 安装插件：[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)，配置方式如插件 `README.md` 所示。
-然后在 [url: rss](/intro/#url) 中添加生成的 feed 路径。
-
+然后在 [url: rss](config/basic?id=url) 中添加生成的 feed 路径。
 
 ## topPost
 
