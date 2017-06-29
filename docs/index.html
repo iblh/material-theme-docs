@@ -29,7 +29,11 @@
 </body>
 <script>
   window.$docsify = {
-    name: '<img src="https://material.viosey.com/images/logo-small.png" height="25px">',
+    name: '<img src="https://material.viosey.com/images/logo-black.png" height="25px">',
+    nameLink: {
+      '/en/': '/#/en/',
+      '/': '/'
+    },
 
     //GitHub Icon
     repo: 'https://github.com/viosey/hexo-theme-material/',
@@ -44,18 +48,19 @@
       maxAge: 86400000, // 过期时间，单位毫秒，默认一天
       paths: 'auto',
       placeholder: {
+        '/en/': 'Search',
         '/': '搜索',
-        '/en/': 'Search'
       },
       noData: {
+        '/en/': 'No Results',
         '/': '找不到结果',
-        '/en/': 'No Results'
       },
     },
 
       // load sidevar from _sidebar.md
       loadSidebar: '_sidebar.md',
       subMaxLevel: 2,
+      autoHeader: true,
   }
 </script>
 <script src="https://cdn.bootcss.com/docsify/4.1.14/docsify.min.js"></script>
