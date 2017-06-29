@@ -9,13 +9,14 @@ For convenience of description, in the following description, the former is refe
 
 The documention included:
 
-- Install
+- [Start](en/start)
 - Configuration
-  - Basic
-  - Style
-  - Menu
-  - Service
-  - Expert
-- Pages
-- Compose
-- Donate
+  - [Basic](en/config/basic)
+  - [Style](en/config/style)
+  - [Customize](en/config/customize)
+  - [Menu](en/config/menu)
+  - [Service](en/config/services)
+- [Expert](en/expert)
+- [Pages](en/pages)
+- [Compose](en/compose)
+- [Donate](en/donate)
