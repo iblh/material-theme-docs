@@ -28,6 +28,7 @@ lang: zh-cn
 <meta name="xxxx-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 ```
 > 2. 将 `xxxxxxxxxxxxxxxxxxxxxxxxxxxx` 字符串复制出来，填入对应搜索引擎的设置中，博客更新以后即可通过验证。
+> 注：如果你使用了[集成服务](https://material.viosey.com/services/#Google-分析)中的[Google分析](https://analytics.google.com/)服务，那么在配置[谷歌 Search Console](https://www.google.com/webmasters/tools/) 时，可以直接使用Google分析来进行验证，无需再次使用Html标记验证。
 
 - `structured_data`: 启用后会在页面的 head 中生成结构化数据，有助于改善 Google 等搜索引擎的 SEO。这项功能需要你完善地配置主题的 **`站点配置文件`** 和 **`主题配置文件`**，所以如果你在 `hexo g` 中出现问题，尝试禁用该选项。默认值为 true.
 
