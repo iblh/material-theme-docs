@@ -48,6 +48,8 @@ vendors:
     materialcdn:  https://materialcdn.nfz.moe/hexo/1.3.2
 ```
 
+> 您可以使用由 [jsDelivr](https://www.jsdelivr.com) 提供的公共 CDN 加速您的博客。
+
 ------
 
 Material 主题引用了下述第三方库，你可以使用公共 CDN 库加载它们。
@@ -56,20 +58,16 @@ Material 主题使用的第三方库包括：
 ###  jQuery 2.2.0
 ### FontAwesome 4.5.0
 
-引用于 `layout/_partial/head.ejs`
-
-### Material Icons 3.0.1
-
 > 你需要填入 css 的 URI，如：`https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css`
 
 ### MathJax 2.7.0-2.7.1
 
->你不需要在 URI 中带上 MathJax 的设定。我们已经加好了。
+> 你不需要在 URI 中带上 MathJax 的 query 配置。主题会自动在你填入的 URI 后面加上。
 
 ### nprogress 0.2.0
 ### Prettify r298
 
-> 只加载 `prettify.js`。代码高亮的主题将从本地或者 MaterialCDN 中加载。
+> 仅加载 `prettify.js`。代码高亮的主题将从本地或者 MaterialCDN 中加载。
 
 ### Material Icons 3.0.1
 

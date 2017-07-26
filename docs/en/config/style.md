@@ -124,9 +124,9 @@ footer_image:
 > We have built in three available value of "use": `google` `ustc` `baomitu`. 
 > Also, you can configured it as `custom` to use the proxy of google fonts service your like, in order to boost your site in China, where vistors can't load google font normally.
 > - `google`: use `fonts.googleapi.com` to load `Roboto` and `Material Icon`.
-> - `baomitu`: use `lib.baomitu.com`(a public cdn which maintained by Qihoo 75Team) to load `Roboto` and `Material Icon`
-> - `ustc`: use `fonts.proxy.ustclug.org`(a proxy service of Google Font which maintained by University of Science and Technology of China and USTCLUG) to load `Roboto` and `Material Icon`
-> - `custom`: use the font lib in whose URI your configured in `custom_font_host` to load `Roboto` and `Material Icon`. It should be a mirror of Google Font.
+> - `baomitu`: use `lib.baomitu.com`(a public cdn which maintained by Qihoo 75Team) to load `Roboto`
+> - `ustc`: use `fonts.proxy.ustclug.org`(a proxy service of Google Font which maintained by University of Science and Technology of China and USTCLUG) to load `Roboto`
+> - `custom`: use the font lib in whose URI your configured in `custom_font_host` to load `Roboto`. It should be a mirror of Google Font.
 > **Attention! The URI in `custom_font_host` should with proctol (such as https://) and without `/` at the end**
 
 ## card_elevation

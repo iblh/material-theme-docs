@@ -121,10 +121,10 @@ footer_image:
 > 当你修改字体时，请在 `head.yml` 内使用 `<link>` 标签引用你的字体源。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
 
 - `use`: 用于设置站点字体的引用方式。Material 主题内置了以下三种字体库支持。除此以外，你也可以手动设定你喜欢的谷歌字体反代服务。
-  - `google`: 使用 Google 字体库加载 `Roboto` 字体和 `Material Icon`
-  - `ustc`: 使用中科大反代的 Google 字体库加载 `Roboto` 字体和 `Material Icon`
-  - `baomitu`: 使用 360 前端团队 奇舞团 维护的字体库加载 `Roboto` 字体和 `Material Icon`
-  - `custom`, 使用你喜欢的谷歌字体镜像服务加载 `Roboto` 字体和 `Material Icon`。使用该选项需要在 `custom_font_host` 中填入字体库的 URL
+  - `google`: 使用 Google 字体库加载 `Roboto` 字体。
+  - `ustc`: 使用中科大反代的 Google 字体库加载 `Roboto` 字体。
+  - `baomitu`: 使用 360 前端团队 奇舞团 维护的字体库加载 `Roboto` 字体。
+  - `custom`, 使用你喜欢的谷歌字体镜像服务加载 `Roboto` 字体。使用该选项需要在 `custom_font_host` 中填入字体库的 URL
 
 > **注意！`custom_font_host` 中设定的字体库的 URL 需要带 proctol（如 https://）且末尾不能带 `/` ！**
 
