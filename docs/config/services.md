@@ -54,6 +54,18 @@ shortname: example
 使用 来必力，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `livere`。
 打开来必力后台中找到 “获取代码”，在 WEB 代码中，找到 `data-uid`，填入到 **主题配置文件** 中评论系统的配置的 `livere_data_uid: `
 
+### Gitment
+
+使用 Gitment，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `gitment`。
+根据 [gitment 的文档](https://github.com/imsun/gitment/blob/master/README.md) 完成 GitHub Oauth App 的申请并获取 key。
+然后在主题配置文件中填入 `gitment_repo`  `gitment_owner` `gitment_client_id` 完成配置即可。
+
+### Valine
+
+Valine 是一款基于 Leancloud 的 sdk 开发的评论系统。使用 Valine，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `valine`。
+根据 [Valine 的文档](https://github.com/xCss/Valine/blob/master/README.md) 完成 Leancloud 的配置。
+然后在主题配置文件中填入 `valine_leancloud_appId`  `valine_leancloud_appKey` 完成配置即可。
+
 ## 搜索系统
 
 Material 主题内置了 `google ` `swiftype` `local` 三种搜索系统。

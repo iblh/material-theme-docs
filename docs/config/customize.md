@@ -19,14 +19,38 @@ footer_text: '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxx
 
 ## Code
 
-使用 `Google Prettify` 实现代码高亮。
+使用 `Google Prettify` 或 `hanabi` 实现代码高亮。你只能启用他们中的一个。
 启用之前你需要禁用 Hexo 自带的代码高亮。
 
 ```yml
+# Available value for `prettify` or `hanabi`: true | false
+# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yml. Make sure that default hexo built in highlight plugin is disabled.
+#        highlight:
+#            enable: false
+#
+#     Prettify
+#         theme value:
+#         theme-name  # /vendors/prettify/themes/[theme-name].css
 prettify:
-    enable: false # Available value: true | false,
-    theme: "vibrant-ink" # default value: "vibrant-ink"   # theme-name without '.css'
+  enable: false
+  theme: "vibrant-ink" # default value: "vibrant-ink"   # theme-name without '.css'
+#     Hanabi
+#         hanabi © egoist, Released under the MIT License
+#         https://github.com/egoist/hanabi
+#     
+#     line_number: [true/false] # Show line number for code block
+#     includeDefaultColors: [true/false] # Use default hanabi colors
+#     customColors:     # This value accept a string or am array to setting for hanabi colors.
+#                       # If `includeDefaultColors` is true, this will append colors to the color pool
+#                       # If `includeDefaultColors` is false, this will instead default color pool
+hanabi:
+    enable: false
+    line_number: true
+    includeDefaultColors: true
+    customColors: 
 ```
+
+`hanabi.customColors` 中添加多种自定义颜色作为代码高亮主题时请遵循 Yaml 的规范填写配置。
 
 ## Post License
 

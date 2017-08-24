@@ -126,6 +126,7 @@ footer_image:
 > - `google`: use `fonts.googleapi.com` to load `Roboto` and `Material Icon`.
 > - `baomitu`: use `lib.baomitu.com`(a public cdn which maintained by Qihoo 75Team) to load `Roboto`
 > - `ustc`: use `fonts.proxy.ustclug.org`(a proxy service of Google Font which maintained by University of Science and Technology of China and USTCLUG) to load `Roboto`
+> - `catnet`: use `cdnjs.cat.net`(A super fast public cdn service maintained by Showfom) to load `Roboto` & `Material Icon`
 > - `custom`: use the font lib in whose URI your configured in `custom_font_host` to load `Roboto`. It should be a mirror of Google Font.
 > **Attention! The URI in `custom_font_host` should with proctol (such as https://) and without `/` at the end**
 

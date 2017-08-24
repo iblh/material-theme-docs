@@ -24,17 +24,39 @@ Use this to show qrcode in your article.
 - use: choose which method to generate the Qrcode. Available value of "use": plugin | online
 
 > When using `plugin`, you need to install `hexo-helper-qrcode` to support this feature. Using `npm install hexo-helper-qrcode --save` to install the plugin.
-> When using `online`, the Qrcode will generate by `pan.baidu.com`. We DO NOT recommend you to use it.
+> When using `online`, the Qrcode will generate by `chart.googleapis.com`.
 
 ## Code
 
-Use `Google Prettify` to highlight the code
+Use `Google Prettify` or `hanabi` to highlight the code
 if true, check highlight option in _config.yml. Make sure that default code highlight plugin is disabled.
 
 ```yml
+# Available value for `prettify` or `hanabi`: true | false
+# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yml. Make sure that default hexo built in highlight plugin is disabled.
+#        highlight:
+#            enable: false
+#
+#     Prettify
+#         theme value:
+#         theme-name  # /vendors/prettify/themes/[theme-name].css
 prettify:
-    enable: false # Available value: true | false,
-    theme: "vibrant-ink" # default value: "vibrant-ink"   # theme-name without '.css'
+  enable: false
+  theme: "vibrant-ink" # default value: "vibrant-ink"   # theme-name without '.css'
+#     Hanabi
+#         hanabi © egoist, Released under the MIT License
+#         https://github.com/egoist/hanabi
+#     
+#     line_number: [true/false] # Show line number for code block
+#     includeDefaultColors: [true/false] # Use default hanabi colors
+#     customColors:     # This value accept a string or am array to setting for hanabi colors.
+#                       # If `includeDefaultColors` is true, this will append colors to the color pool
+#                       # If `includeDefaultColors` is false, this will instead default color pool
+hanabi:
+    enable: false
+    line_number: true
+    includeDefaultColors: true
+    customColors: 
 ```
 
 ## Post License

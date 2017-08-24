@@ -35,11 +35,20 @@ See [comment system](/en/services/#Comment-system) for more information.
 
 > The livere built in the Material is `city_verison`.
 
+> [Document for Gitment Comment System](https://github.com/imsun/gitment/blob/master/README.md)
+> [Document for Valine Comment System](https://github.com/xCss/Valine/blob/master/README.md)
+
 - `shortname`: the shortname of duoshuo and disqus
 - `changyan_appid`: the APPID of changyan
 - `changyan_conf`: the CONF of changyan
 - `changyan_thread_key_type`: path #identifier of posts. `path` as default.
 - `livere_data_uid`: You can find the `datd_uid` from the provided code.
+- `gitment_repo`: git repo of the hexo
+- `gitment_owner`: git repo's owner
+- `gitment_client_id`: github app client id 
+- `gitment_client_secret` : github app client secret 
+- `valine_leancloud_appId`: leancloud application app id
+- `valine_leancloud_appKey`: leancloud application app key
 
 ## Search system
 

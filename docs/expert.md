@@ -6,7 +6,7 @@
 
 ## 添加自定义代码
 
-如果想要在站点添加自定义 `font-face` 或者统计代码（例如 `Google Analytics`）。
+如果想要在站点的 `<head>` 之前添加自定义 `font-face` 或者统计代码（例如 `Piwik Analytics`）。
 
 需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 head.yml 的文件。
 
@@ -17,8 +17,21 @@ Name:
 	"put your code here"
 ```
 
-代码将显示在 `</head>` 之前，
-`Name` 将作为注释显示在代码上方。
+代码将显示在 `</head>` 之前。
+
+---
+
+如果想要在站点的 `</html>` 之前添加自定义代码（例如 `Service Worker`）。
+
+需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 footer.yml 的文件。
+单个代码格式为：
+
+```yml
+Name:
+	"put your code here"
+```
+
+代码将显示在 `</html>` 之前。
 
 ## Material 图标
 
@@ -45,7 +58,7 @@ Name:
 
 ```yaml
 vendors:
-    materialcdn:  https://materialcdn.nfz.moe/hexo/1.3.2
+    materialcdn:  https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source
 ```
 
 > 您可以使用由 [jsDelivr](https://www.jsdelivr.com) 提供的公共 CDN 加速您的博客。
