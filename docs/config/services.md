@@ -1,18 +1,11 @@
----
-title: 集成服务
-version: 1.4.0
-permalink: services
-id: 5
-lang: zh-cn
----
+# 第三方服务
 
 「Material」主题内置了多种第三方服务，并且可以轻松的启用。
 
 ## RSS
 
 安装插件：[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)，配置方式如插件 `README.md` 所示。
-然后在 [url: rss](/intro/#url) 中添加生成的 feed 路径。
-
+然后在 [url: rss](config/basic?id=url) 中添加生成的 feed 路径。
 
 ## topPost
 
@@ -54,17 +47,24 @@ shortname: example
 - changyan_conf: 畅言的 CONF
 - changyan_thread_key_type: path #用于设置畅言的 tread key，默认为 path。
 
-### 网易云跟帖
-
-使用 [网易云跟帖](https://gentie.163.com/)，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `163gentie`。
-打开网易云跟帖后台中找到 “获取代码”，在 WEB 代码中，找到 `gentie_productKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"` 部分，将 “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” 填入到 **主题配置文件** 中评论系统的配置的 `gentie_productKey: `
-
 ### 来必力
 
 > Material 主题内置的来必力是 `city_verision`
 
 使用 来必力，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `livere`。
 打开来必力后台中找到 “获取代码”，在 WEB 代码中，找到 `data-uid`，填入到 **主题配置文件** 中评论系统的配置的 `livere_data_uid: `
+
+### Gitment
+
+使用 Gitment，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `gitment`。
+根据 [gitment 的文档](https://github.com/imsun/gitment/blob/master/README.md) 完成 GitHub Oauth App 的申请并获取 key。
+然后在主题配置文件中填入 `gitment_repo`  `gitment_owner` `gitment_client_id` 完成配置即可。
+
+### Valine
+
+Valine 是一款基于 Leancloud 的 sdk 开发的评论系统。使用 Valine，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `valine`。
+根据 [Valine 的文档](https://github.com/xCss/Valine/blob/master/README.md) 完成 Leancloud 的配置。
+然后在主题配置文件中填入 `valine_leancloud_appId`  `valine_leancloud_appKey` 完成配置即可。
 
 ## 搜索系统
 
@@ -102,20 +102,19 @@ search:
 
 用于设置访客分析服务，支持 Google Analysis 、百度站长工具和 CNZZ。
 
-- use: 你使用的站点统计服务，可填入 `cnzz` `baidu` `google`
-- site_id: 站点统计 ID
+- `xxxx_site_id`: 站点统计 ID
 
 ### 百度统计
 
-登录 [百度统计](http://tongji.baidu.com/)，在站点的代码获取页面复制 `` 后面那串统计脚本 id，填入 `site_id`。
+登录 [百度统计](http://tongji.baidu.com/)，在站点的代码获取页面复制 `` 后面那串统计脚本 id，填入 `baidu_site_id`。
 
 ### Google 分析
 
-在 `site_id` 字段填入你的 Google 跟踪 ID。跟踪 ID 通常是以 UA- 开头。
+在 `google_site_id` 字段填入你的 Google 跟踪 ID。跟踪 ID 通常是以 UA- 开头。
 
 ### CNZZ
 
-在 `site_id `填入 CNZZ 提供的统计的站点 ID。 这个 ID 可以在地址栏里，或者自动生成的脚本里面找到。
+在 `cnzz_site_id `填入 CNZZ 提供的统计的站点 ID。 这个 ID 可以在地址栏里，或者自动生成的脚本里面找到。
 
 > 在 CNZZ 提供的统计代码中，`z_stat.php?id=` 后和 `&web_id=` 各有一串字符，它们应该是相同的。将这串字符填入 `site_id`。
 
@@ -123,7 +122,7 @@ search:
 
 ### 其它统计服务
 
-确保 `use` 字段为空，然后在在 `head.yml` 中填入你的统计服务代码。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
+确保 上述配置的字段为空，然后在在 `head.yml` 中填入你的统计服务代码。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
 
 ### PV&UV 统计
 

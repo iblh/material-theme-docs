@@ -1,14 +1,8 @@
----
-title: Expert
-version: 1.4.0
-permalink: en/expert
-id: 4
-lang: en
----
+# Expert Settings
 
 ## Add custom code
 
-If you want to add custom code, like `font-face` or statistical code (such as `Google Analytics`) to your site, you need to create a folder named `_data` (no rename) in the `source` folder in your site directory.
+If you want to add custom code, like `font-face` or statistical code (such as `Piwik Analytics`) to your site, you need to create a folder named `_data` (no rename) in the `source` folder in your site directory.
 
 Then create a file called `head.yml` in the file:
 
@@ -18,6 +12,8 @@ Name:
 ```
 
 The code will be displayed before `</head>` tag. `Name` will appear as a comment above the code.
+
+Also, if you want to add custom code before `</html>` , simply create a file called `footer.yml` in `_data`. Same usage as `head.yml`
 
 ## Material icons
 

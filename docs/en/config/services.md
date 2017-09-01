@@ -1,12 +1,6 @@
----
-title: Services
-version: 1.4.0
-permalink: en/services
-id: 5
-lang: en
----
+# Intergrated Service
 
-"Material" has built in lots of Integrated Services. You can easily set up it.
+"Material" has built in lots of Integrated Services. You can set up it easily.
 
 ## RSS
 
@@ -35,19 +29,26 @@ Used to set up a comment system.
 
 See [comment system](/en/services/#Comment-system) for more information.
 
-- `use`: `disqus` `disqus_click` `changyan` `163gentie` or `livere`
+- `use`: `disqus` `disqus_click` `changyan` or `livere`
 
 > When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
 
 > The livere built in the Material is `city_verison`.
 
+> [Document for Gitment Comment System](https://github.com/imsun/gitment/blob/master/README.md)
+> [Document for Valine Comment System](https://github.com/xCss/Valine/blob/master/README.md)
+
 - `shortname`: the shortname of duoshuo and disqus
 - `changyan_appid`: the APPID of changyan
 - `changyan_conf`: the CONF of changyan
 - `changyan_thread_key_type`: path #identifier of posts. `path` as default.
-- `gentie_productKey`: You can find the productkey in `install code` at 163gentie's console, something like `gentie_productKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"`
-- `gentie_thread_key_type`: Default is path. If using ID, you should add `id` front-matter for every post. Then 163gentie will use it as identifier.
 - `livere_data_uid`: You can find the `datd_uid` from the provided code.
+- `gitment_repo`: git repo of the hexo
+- `gitment_owner`: git repo's owner
+- `gitment_client_id`: github app client id 
+- `gitment_client_secret` : github app client secret 
+- `valine_leancloud_appId`: leancloud application app id
+- `valine_leancloud_appKey`: leancloud application app key
 
 ## Search system
 
@@ -86,15 +87,15 @@ search:
 Material theme has a built in Baidu's, Google's website analytics and CNZZ's analytics service.You can easily set the ID to enable it.
 
 - `use`: Set which analytics you want to use.  Available values are baidu | google | cnzz
-- `site_id`: the site_id that analytics service provide.
+- `xxxx_site_id`: the site_id that analytics service provide.
 
 > - Google will give the `site ID` with `UA-` begin; 
 > - Baidu will give your a JavaScript URI like `hm.js?xxxxxxxxx` and `xxxxxxxx` is the site_id that you need.
-> - in CNZZ's code, there will be `z_stat.php?id=xxxxxxxxxxxx` and `&web_id=xxxxxxxxx`. Both of these `xxxxxxxx` should be the same. And this `xxxxxxxxx` is the site_id.
+> - in CNZZ's code, there will be `z_stat.php?id=xxxxxxxxxxxx` and `&web_id=xxxxxxxxxxx`. Both of these `xxxxxxxxxx` should be the same. And this `xxxxxxxxx` is the site_id of cnzz.
 
 ### Other Analytics
 
-You should set the `use` with nothing. Then you can add the analytics code in `head.yml`. You can read the [expert](/en/expert/) about how to use `head.yml`.
+You should left the all the site_id empty below. Then you can add the analytics code in `head.yml`. You can read the [expert](/en/expert/) about how to use `head.yml`.
 
 ### Leancloud
 

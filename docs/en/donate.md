@@ -1,10 +1,5 @@
----
-title: Donate
-version: null
-permalink: en/donate
-id: 1
-lang: en
----
+# Donate
+
 ## What is a donation?
 
 Donation is a common way to support developers and contributors. These developers do not add advertising or third-party promotion to obtain income, only through the use of the user's own initiative to express their gratitude to the developer.

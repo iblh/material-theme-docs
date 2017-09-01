@@ -1,30 +1,35 @@
-# Material Theme Docs
+# [Material Theme Docs](https://material.viosey.com)
 
-[Material Theme](https://material.viosey.com/)
+这是 [Material 主题](https://github.com/viosey/hexo-theme-material) 文档的源码仓库.
 
-[Material Theme - Github](https://github.com/viosey/hexo-theme-material)
+This is the repository for documentations of [Material Theme](https://github.com/viosey/hexo-theme-material).
 
-## 开始使用 Start
-[开始使用 markdown](https://github.com/viosey/material-theme-docs/blob/master/start-zh-cn.md)
+## Development
 
-[Start markdown](https://github.com/viosey/material-theme-docs/blob/master/start-en.md)
+Material 主题文档使用 markdown 编写，使用 [docsify](https://docsify.js.org/#/zh-cn/) 构建。
 
-## 主题介绍 Intro
-[主题介绍 markdown](https://github.com/viosey/material-theme-docs/blob/master/intro-zh-cn.md)
+Material Theme Documentions are proudly using markdown & [docsify](https://docsify.js.org/#/zh-cn/).
 
-[Intro markdown](https://github.com/viosey/material-theme-docs/blob/master/intro-en.md)
+### Requirement
 
-## 开始创作 Compose
-[开始创作 markdown](https://github.com/viosey/material-theme-docs/blob/master/compose-zh-cn.md)
+- Node.JS
+- Docsify.Cli
 
-[Compose markdown](https://github.com/viosey/material-theme-docs/blob/master/compose-en.md)
+```bash
+npm i docsify-cli -g
+```
 
-## 进阶设定 Expert
-[进阶设定 markdown](https://github.com/viosey/material-theme-docs/blob/master/expert-zh-cn.md)
+### Running
 
-[Expert markdown](https://github.com/viosey/material-theme-docs/blob/master/compose-en.md)
+```bash
+git clone https://github.com/viosey/material-theme-docs.git
+cd material-theme-docs
+```
 
-## 集成服务 Services
-[集成服务 markdown](https://github.com/viosey/material-theme-docs/blob/master/services-zh-cn.md)
+```bash
+docsify serve .
+```
 
-[Services markdown](https://github.com/viosey/material-theme-docs/blob/master/services-en.md)
+访问 `localhost:3000` 查看效果
+
+Visit `localhost:3000` to see the documentations
