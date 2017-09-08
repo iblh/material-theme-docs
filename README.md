@@ -25,7 +25,7 @@ npm i docsify-cli -g
 ## Usage
 
 ```bash
-git clone https://github.com/viosey/material-theme-docs.git
+git clone https://github.com/neko-dev/material-theme-docs.git
 
 cd material-theme-docs
 ```

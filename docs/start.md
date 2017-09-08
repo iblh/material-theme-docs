@@ -1,7 +1,17 @@
 ## 安装「Material」
 
 Hexo 安装主题的方式非常简单，只需要将主题文件放置于站点目录的 `themes` 目录下，然后修改下配置文件即可。
-「Material」主题可以在 [Github](https://github.com/viosey/hexo-theme-material/releases) 上下载。
+
+### Github
+
+你可以从 Github 上及时得获得 [稳定的发布版本](https://github.com/viosey/hexo-theme-material/releases)。
+
+### npm
+
+```
+npm install hexo-material
+```
+>该方式会把 Material 主题下载到 hexo 目录下的 `node_modules` 文件夹中。
 
 ## 启用「Material」
 

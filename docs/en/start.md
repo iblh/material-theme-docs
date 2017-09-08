@@ -1,7 +1,17 @@
 ## Installing "Material"
 
 Installation of an Hexo theme is quite simple. You simply need to put the theme directory inside the `themes` directory of your site and modify the theme config.
-You can download "Material" from [GitHub](https://github.com/viosey/hexo-theme-material/releases)
+
+### Github
+
+You can get a [stable release](https://github.com/viosey/hexo-theme-material/releases) from Github in a timely manner.
+
+### npm
+
+```
+npm install hexo-material
+```
+>This way the material theme will be downloaded to the `node_modules` folder under the hexo directory.
 
 ## Enable "Material"
 
