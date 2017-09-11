@@ -101,15 +101,15 @@ You should left the all the site_id empty below. Then you can add the analytics 
 
 Open the LeanCloud website and go to the [registration page](https://leancloud.cn/login.html#/signup) to register. After the mailbox is activated, click on the avatar to access the console page as following:
 
-![](https://qiniu.viosey.com/img/leancloud-config-1.png)
+![leancloud-config-1.png](https://cdn.jsdelivr.net/gh/neko-dev/material-theme-docs@latest/static/img/leancloud-config-1.png)
 
 Create a new application (the default type is JavaScript SDK), click Apply to enter;
 
 Create a Class named `Counter`
 Note: `ACL Permissions` must be `unrestricted`
 
-![](https://qiniu.viosey.com/img/leancloud-config-2.png)
-![](https://qiniu.viosey.com/img/leancloud-config-3.png)
+![leancloud-config-2.png](https://cdn.jsdelivr.net/gh/neko-dev/material-theme-docs@latest/static/img/leancloud-config-2.png)
+![leancloud-config-3.png](https://cdn.jsdelivr.net/gh/neko-dev/material-theme-docs@latest/static/img/leancloud-config-3.png)
 
 You can find `app_id` and `app_key` in `application -> Settings -> Application Key`.
 
