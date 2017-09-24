@@ -9,3 +9,7 @@
 - [独立页面](pages)
 - [开始创作](compose)
 - [捐赠](donate)
+- 开发指南
+ - [GUIDELINE](https://neko-dev.github.io/GUIDELINE/#/)
+ - [评论系统适配指南](dev_comment)
+ - [站点访问统计适配指南](dev_analytics)
