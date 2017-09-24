@@ -139,15 +139,15 @@ search:
 
 打开 LeanCloud 官网，进入[注册页面](https://leancloud.cn/login.html#/signup)注册。完成邮箱激活后，点击头像，进入控制台页面，如下：
 
-![leancloud-config-1.png](https://cdn.jsdelivr.net/gh/neko-dev/material-theme-docs@latest/static/img/leancloud-config-1.png)
+![leancloud-config-1.png](https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.2/static/img/leancloud-config-1.png)
 
 创建一个新应用 (默认类型为JavaScript SDK)，点击应用进入；
 
 创建名称为 `Counter` 的 Class
 注意：`ACL 权限` 必须为 `无限制` 
 
-![leancloud-config-2.png](https://cdn.jsdelivr.net/gh/neko-dev/material-theme-docs@latest/static/img/leancloud-config-2.png)
-![leancloud-config-3.png](https://cdn.jsdelivr.net/gh/neko-dev/material-theme-docs@latest/static/img/leancloud-config-3.png)
+![leancloud-config-2.png](https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.2/static/img/leancloud-config-2.png)
+![leancloud-config-3.png](https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.2/static/img/leancloud-config-3.png)
 
 编辑 `主题配置文件` ，修改 `leancloud` 条目，将 `enable` 改为 `true`，再填入 `app_id` 与 `app_key`。在 `应用->设置->应用 Key` 可看到 `APP ID` 与 `APP Key`
 

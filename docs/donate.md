@@ -15,15 +15,15 @@
 ## 捐赠的渠道？
 
 - **[PayPal](https://www.paypal.me/VioseyH/2.89):**
-><img src="/static/img/QRcode/PayPal.png" width="160px" height="160px">
+><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/PayPal.png" width="160px" height="160px">
 - **支付宝：**
-><img src="/static/img/QRcode/AliPay.png" width="160px" height="160px">
+><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/AliPay.png" width="160px" height="160px">
 - **微信支付：**
-><img src="/static/img/QRcode/WeChan.png" width="160px" height="160px">
+><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/WeChan.png" width="160px" height="160px">
 >
 >微信打赏请留言备注昵称
 - **比特币：**
-><img src="/static/img/QRcode/BTC.png" width="160px" height="160px">
+><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/BTC.png" width="160px" height="160px">
 
 ## 捐赠者名单
 
