@@ -118,7 +118,7 @@ footer_image:
 
 > `fonts.family` 默认值为 `Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif`
 > 该字体设定为 Material Design 的规范，如无特殊要求 无需额外修改。
-> 当你修改字体时，请在 `head.yml` 内使用 `<link>` 标签引用你的字体源。如何使用 `head.yml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
+> 当你修改字体时，请在 `head.yaml` 内使用 `<link>` 标签引用你的字体源。如何使用 `head.yaml`，请访问[进阶设定](/expert/)中关于 自定义代码 的部分。
 
 - `use`: 用于设置站点字体的引用方式。Material 主题内置了以下三种字体库支持。除此以外，你也可以手动设定你喜欢的谷歌字体反代服务。
   - `google`: 使用 Google 字体库加载 `Roboto` 字体。

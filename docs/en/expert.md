@@ -4,7 +4,7 @@
 
 If you want to add custom code, like `font-face` or statistical code (such as `Piwik Analytics`) to your site, you need to create a folder named `_data` (no rename) in the `source` folder in your site directory.
 
-Then create a file called `head.yml` in the file:
+Then create a file called `head.yaml` in the file:
 
 ```yaml
 Name:
@@ -13,7 +13,7 @@ Name:
 
 The code will be displayed before `</head>` tag. `Name` will appear as a comment above the code.
 
-Also, if you want to add custom code before `</html>` , simply create a file called `footer.yml` in `_data`. Same usage as `head.yml`
+Also, if you want to add custom code before `</html>` , simply create a file called `footer.yaml` in `_data`. Same usage as `head.yaml`
 
 ## Material icons
 
@@ -22,8 +22,8 @@ The list of icon used to customized the dropdown or page buttons is available [h
 ## Code highlight
 
 From `Version 1.3.0`, you can use `hexo-prism-plugin` to highlight your codes, visit [Hexo-Prism-Plugin Github](https://github.com/ele828/hexo-prism-plugin) to learn more.
-
 From `Version 1.4.5`, Material built in the `Google Prettify` for code_highlight.
+From `Version 1.5.0`, Material built in the `Hanibi` for code_highlight.
 
 ## Files Vendors
 
@@ -40,7 +40,7 @@ Here is an example of configuration.
 
 ```yaml
 vendors:
-    materialcdn:  https://materialcdn.nfz.moe/hexo/1.3.2
+    materialcdn: https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source
 ```
 -----
 

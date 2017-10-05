@@ -13,7 +13,7 @@
 你可以在页面的 Footer 指定你想显示的文字，支持 HTML 标签；默认为空。
 比如，备案号可以这样设定：
 
-```yml
+```yaml
 footer_text: '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
 ```
 
@@ -22,9 +22,9 @@ footer_text: '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxx
 使用 `Google Prettify` 或 `hanabi` 实现代码高亮。你只能启用他们中的一个。
 启用之前你需要禁用 Hexo 自带的代码高亮。
 
-```yml
+```yaml
 # Available value for `prettify` or `hanabi`: true | false
-# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yml. Make sure that default hexo built in highlight plugin is disabled.
+# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yaml. Make sure that default hexo built in highlight plugin is disabled.
 #        highlight:
 #            enable: false
 #
@@ -57,7 +57,7 @@ hanabi:
 你可以在每篇文章的结尾添加你的版权说明，支持 HTML 标签。License 以粗体显示，默认为空。
 比如，你可这样设定 CC License。
 
-```yml
+```yaml
 license: 'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 ```
 > 你也可以在页面的 Front-Matter 中为不同文章添加不同的 License。

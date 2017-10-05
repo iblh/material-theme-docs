@@ -95,7 +95,7 @@ Material theme has a built in Baidu's, Google's website analytics and CNZZ's ana
 
 ### Other Analytics
 
-You should left the all the site_id empty below. Then you can add the analytics code in `head.yml`. You can read the [expert](/en/expert/) about how to use `head.yml`.
+You should left the all the site_id empty below. Then you can add the analytics code in `head.yaml`. You can read the [expert](/en/expert/) about how to use `head.yaml`.
 
 ### Leancloud
 

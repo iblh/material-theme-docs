@@ -20,7 +20,7 @@ If you want to add a link to the "Link" page, please refer to the [page settings
 
 ### Add data
 
-Create a folder named `_data` (rename is forbidden) within the `source` folder. Then create a file named `links.yml` inside this folder.
+Create a folder named `_data` (rename is forbidden) within the `source` folder. Then create a file named `links.yaml` inside this folder.
 
 The format for a single link is:
 
@@ -53,7 +53,7 @@ If you'd like to add an entry to the "Gallery" page, please refer to the [page s
 
 ### Add data
 
-Create a folder named `_data` (rename is forbidden) within the `source` folder. Then create a file named `gallery.yml` inside this folder.
+Create a folder named `_data` (rename is forbidden) within the `source` folder. Then create a file named `gallery.yaml` inside this folder.
 
 The format for a single image is:
 

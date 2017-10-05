@@ -22,11 +22,11 @@ layout: links
 ### 添加数据
 同样在在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹。
 
-然后在文件内创建一个名为 `links.yml` 的文件。
+然后在文件内创建一个名为 `links.yaml` 的文件。
 
 单个友情链接的格式为：
 
-```yml
+```yaml
 Name:
     link: http://example.com
     avatar: http://example.com/avatar.png
@@ -63,11 +63,11 @@ layout: gallery
 ### 添加数据
 同样在在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹。
 
-然后在文件内创建一个名为 `gallery.yml` 的文件。
+然后在文件内创建一个名为 `gallery.yaml` 的文件。
 
 单个图片的格式为：
 
-```yml
+```yaml
 Name:
 	full_link: http://example.com/full-image.png
 	thumb_link: http://example.com/thumb-image.png

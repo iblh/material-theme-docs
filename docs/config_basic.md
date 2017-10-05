@@ -19,7 +19,7 @@
 
 >例如：选用繁體中文，则配置为：
 
-```yml
+```yaml
 language: zh-TW
 ```
 

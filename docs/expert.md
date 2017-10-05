@@ -8,11 +8,11 @@
 
 如果想要在站点的 `<head>` 之前添加自定义 `font-face` 或者统计代码（例如 `Piwik Analytics`）。
 
-需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 head.yml 的文件。
+需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 `head.yaml` 的文件。
 
 单个代码格式为：
 
-```yml
+```yaml
 Name:
 	"put your code here"
 ```
@@ -21,17 +21,17 @@ Name:
 
 ---
 
-如果想要在站点的 `</html>` 之前添加自定义代码（例如 `Service Worker`）。
+如果想要在站点的 `</body>` 之前添加自定义代码（例如 `Service Worker`）。
 
-需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 footer.yml 的文件。
+需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 `footer.yaml` 的文件。
 单个代码格式为：
 
-```yml
+```yaml
 Name:
 	"put your code here"
 ```
 
-代码将显示在 `</html>` 之前。
+代码将显示在 `</body>` 之前。
 
 ## Material 图标
 
@@ -43,6 +43,7 @@ Name:
 
 从 `1.3.0` 版本开始，您可以使用 `hexo-prism-plugin` 进行代码染色，具体文档请参阅 [Hexo-Prism-Plugin 插件文档](https://github.com/ele828/hexo-prism-plugin)
 从 `1.4.5` 版本开始，您可以使用主题内置的 `Google Prettify` 进行代码染色。具体文档请参阅主题配置。
+从 `1.5.0` 版本开始，您可以使用主题内置的 `Hanabi` 进行代码染色。具体文档请参阅主题配置。
 
 ## 使用 CDN
 

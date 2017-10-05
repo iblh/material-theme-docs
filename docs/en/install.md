@@ -30,7 +30,7 @@ Once you have the `themes/material` folder, open the **site config**, find the `
 
 > The folder `themes/material` can be named differently if you wish. You simply have to adapt the `theme` field accordingly.
 
-**The `_config.yml` file does not exist in the theme, you need to manually duplicate the `_config.template.yml` file and rename it to `_config.yml`**
+**The `_config.yaml` file does not exist in the theme, you need to manually duplicate the `_config.template.yaml` file and rename it to `_config.yaml`**
 
 Run `hexo s --debug` and go to [`http://localhost:4000`](http://localhost:4000) to make sure the site is running properly.
 
@@ -38,7 +38,7 @@ Run `hexo s --debug` and go to [`http://localhost:4000`](http://localhost:4000) 
 
 ### Direct download
 
-Save your `_config.yml` file somewhere. Then download a new [stable release](https://github.com/viosey/hexo-theme-material/releases) and extract the content inside the `themes/material` directory. Finally reconcile the new version of the `_config.yml` with the one you saved.
+Save your `_config.yaml` file somewhere. Then download a new [stable release](https://github.com/viosey/hexo-theme-material/releases) and extract the content inside the `themes/material` directory. Finally reconcile the new version of the `_config.yaml` with the one you saved.
 
 The previous commands will put aside your custom config, pull the update reapply your modifications. Fix conflicts if needed.
 
@@ -48,7 +48,7 @@ NPM updates can be done in two ways:
 
 #### NPM update
 
-Save your `_config.yml` file somewhere. Then use:
+Save your `_config.yaml` file somewhere. Then use:
 
 ```bash
 npm update hexo-material
@@ -56,7 +56,7 @@ rm -R themes/material
 cp -R node_modules/hexo-material/ themes/material
 ```
 
-Finally reconcile the new version of the `_config.yml` with the one you saved.
+Finally reconcile the new version of the `_config.yaml` with the one you saved.
 
 #### npm-check
 
@@ -68,7 +68,7 @@ Install npm-check:
 npm install -g npm-check
 ```
 
-Save your `_config.yml` file somewhere. Then use:
+Save your `_config.yaml` file somewhere. Then use:
 
 ```bash
 npm-check hexo-material

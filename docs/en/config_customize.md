@@ -12,7 +12,7 @@ When it is empty, the footer will only show the current year.
 You can specify the text you want to show in footer, HTML tag is supported.
 For example, you can setup ICP license number as:
 
-```yml
+```yaml
 footer_text: '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
 ```
 
@@ -29,11 +29,11 @@ Use this to show qrcode in your article.
 ## Code
 
 Use `Google Prettify` or `hanabi` to highlight the code
-if true, check highlight option in _config.yml. Make sure that default code highlight plugin is disabled.
+if true, check highlight option in _config.yaml. Make sure that default code highlight plugin is disabled.
 
-```yml
+```yaml
 # Available value for `prettify` or `hanabi`: true | false
-# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yml. Make sure that default hexo built in highlight plugin is disabled.
+# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yaml. Make sure that default hexo built in highlight plugin is disabled.
 #        highlight:
 #            enable: false
 #
@@ -63,7 +63,7 @@ hanabi:
 You can specify the text you want to show in the end of your posts and pages, HTML tag is supported.
 For example, you can setup a CC license as:
 
-```yml
+```yaml
 license: 'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 ```
 > You can also use Front-Matter `license` to override this setting.
