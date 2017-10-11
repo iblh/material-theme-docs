@@ -14,7 +14,7 @@
 
 ## 捐赠的渠道？
 
-- **[PayPal](https://www.paypal.me/VioseyH/2.89):**
+- **[PayPal](https://www.paypal.me/VioseyH/2.89)：**
 ><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/PayPal.png" width="160px" height="160px">
 - **支付宝：**
 ><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/AliPay.png" width="160px" height="160px">
