@@ -15,13 +15,13 @@ I only know that some things, rely on both sides to maintain.
 ## Donation ways?
 
 - **[PayPal](https://www.paypal.me/VioseyH/2.89): ** 
-><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/PayPal.png" width="160px" height="160px">
+><img src="https://alicdn.viosey.com/img/mt/qrcode/paypal.png" width="160px" height="160px">
 - **Alipay: **
-><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/AliPay.png" width="160px" height="160px">
+><img src="https://alicdn.viosey.com/img/mt/qrcode/alipay.png" width="160px" height="160px">
 - **Wechat Pay: **
-><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/WeChan.png" width="160px" height="160px">
+><img src="https://alicdn.viosey.com/img/mt/qrcode/wechat.png" width="160px" height="160px">
 - **Bitcoin: **
-><img src="https://github.elemecdn.com/neko-dev/material-theme-docs/1.5.3.3/static/img/QRcode/BTC.png" width="160px" height="160px">
+><img src="https://alicdn.viosey.com/img/mt/qrcode/btc.png" width="160px" height="160px">
 
 ## Donors list
 
