@@ -63,8 +63,16 @@ shortname: example
 ### Valine
 
 Valine 是一款基于 Leancloud 的 sdk 开发的评论系统。使用 Valine，需在 **主题配置文件** 中填写 `comment: use: ` 字段，值设置为 `valine`。
-根据 [Valine 的文档](https://github.com/xCss/Valine/blob/master/README.md) 完成 Leancloud 的配置。
-然后在主题配置文件中填入 `valine_leancloud_appId`  `valine_leancloud_appKey` 完成配置即可。
+根据 [Valine 的文档](https://github.com/xCss/Valine/blob/master/README.md) 完成 Leancloud 端的配置，然后填充下列参数。
+
+- `valine_leancloud_appId`：Leancloud 的 APPID
+- `valine_leancloud_appKey`：Leancloud 的 APPKey
+- `valine_notify`：true | false。Valine 的评论邮件提醒功能，请阅读 [Vailne Wiki 有关部分](https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE) 
+- `valine_placeholder`：没有评论时评论框显示的提示语
+
+### Gittalk
+
+[Gitalk](https://gitalk.github.io) 和 Gitment 一样都是一个基于 GitHub Issue 的评论系统。在完成 GitHub Oauth App 的申请并获取 key 后，在主题配置文件中填入 `gitalk_repo` `gitalk_owner` `gitalk_client_id` `gitalk_client_secret` 参数即可。
 
 ## 搜索系统
 

@@ -29,7 +29,7 @@ Used to set up a comment system.
 
 See [comment system](/en/services/#Comment-system) for more information.
 
-- `use`: `disqus` `disqus_click` `changyan` or `livere`
+- `use`: `disqus` `disqus_click` `changyan` `livere` `valine` or `gitalk`
 
 > When Using `disqus_click`, post won't load Disqus automatically. The pages will load Disqus when the vistors click the button. This feature will help to improve some people's browse exprience from where they can't load Disqus normally, such as China.
 
@@ -37,18 +37,25 @@ See [comment system](/en/services/#Comment-system) for more information.
 
 > [Document for Gitment Comment System](https://github.com/imsun/gitment/blob/master/README.md)
 > [Document for Valine Comment System](https://github.com/xCss/Valine/blob/master/README.md)
+> [Document for Gitalk Comment System](https://github.com/gitalk/gitalk/blob/master/readme.md)
 
 - `shortname`: the shortname of duoshuo and disqus
 - `changyan_appid`: the APPID of changyan
 - `changyan_conf`: the CONF of changyan
 - `changyan_thread_key_type`: path #identifier of posts. `path` as default.
 - `livere_data_uid`: You can find the `datd_uid` from the provided code.
-- `gitment_repo`: git repo of the hexo
-- `gitment_owner`: git repo's owner
-- `gitment_client_id`: github app client id 
+- `gitment_repo`: git repo of the gitment
+- `gitment_owner`: git repo's owner of the gitment
+- `gitment_client_id`: github app client id
 - `gitment_client_secret` : github app client secret 
 - `valine_leancloud_appId`: leancloud application app id
 - `valine_leancloud_appKey`: leancloud application app key
+- `valine_notify`：true | false Enable mail notify or not. Read the [wiki](https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE) for details.
+- `valine_placeholder`: What text to show when there are no comments.
+- `gitalk_repo` git repo of the gitalk
+- `gitalk_owner`: git repo's owner of the gitalk
+- `gitalk_client_id`: github app client id
+- `gitalk_client_secret` : github app client secret 
 
 ## Search system
 
