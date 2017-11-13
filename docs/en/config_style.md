@@ -117,7 +117,7 @@ footer_image:
 
 > The default values are `Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Microsoft Yahe, Arial`
 > The font settings are more standardized for Material Design, no special requirements without additional changes.
-> When update the fonts, you should add fonts embed in `head.yaml`. You can read [expert](/en/expert/) about how to use `head.yaml`
+> When update the fonts, you should add fonts embed in `head.yml`. You can read [expert](/en/expert/) about how to use `head.yml`
 
 - `use`: Used to set which fonts lib will be uesd in the theme.
 

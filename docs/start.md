@@ -10,8 +10,8 @@ Hexo 安装主题的方式非常简单，只需要将主题文件放置于站点
 
 > 文件夹名称可自由修改，并不是唯一的，只需 `theme` 字段与之对应即可。
 
-为防止造成冲突，主题以 `_config.template.yaml` 文件取代 `_config.yaml` 文件，用以参考配置。
-**需要手动将 `material` 文件夹中的 `_config.template.yaml` 复制一份并重命名为 `_config.yaml`**。
+为防止造成冲突，主题以 `_config.template.yml` 文件取代 `_config.yml` 文件，用以参考配置。
+**需要手动将 `material` 文件夹中的 `_config.template.yml` 复制一份并重命名为 `_config.yml`**。
 
 ## 更新「Material」
 

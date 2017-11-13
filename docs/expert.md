@@ -8,7 +8,7 @@
 
 如果想要在站点的 `<head>` 之前添加自定义 `font-face` 或者统计代码（例如 `Piwik Analytics`）。
 
-需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 `head.yaml` 的文件。
+需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 `head.yml` 的文件。
 
 单个代码格式为：
 
@@ -23,7 +23,7 @@ Name:
 
 如果想要在站点的 `</body>` 之前添加自定义代码（例如 `Service Worker`）。
 
-需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 `footer.yaml` 的文件。
+需要在 hexo 目录下的 `source` 文件夹内创建一个名为 `_data`（禁止改名）的文件夹，并在文件内创建一个名为 `footer.yml` 的文件。
 单个代码格式为：
 
 ```yaml

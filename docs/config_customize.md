@@ -24,7 +24,7 @@ footer_text: '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxx
 
 ```yaml
 # Available value for `prettify` or `hanabi`: true | false
-# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yaml. Make sure that default hexo built in highlight plugin is disabled.
+# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yml. Make sure that default hexo built in highlight plugin is disabled.
 #        highlight:
 #            enable: false
 #

@@ -29,11 +29,11 @@ Use this to show qrcode in your article.
 ## Code
 
 Use `Google Prettify` or `hanabi` to highlight the code
-if true, check highlight option in _config.yaml. Make sure that default code highlight plugin is disabled.
+if true, check highlight option in _config.yml. Make sure that default code highlight plugin is disabled.
 
 ```yaml
 # Available value for `prettify` or `hanabi`: true | false
-# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yaml. Make sure that default hexo built in highlight plugin is disabled.
+# You can only enable one of them to avoid issues. Also you need to check highlight option in _config.yml. Make sure that default hexo built in highlight plugin is disabled.
 #        highlight:
 #            enable: false
 #
