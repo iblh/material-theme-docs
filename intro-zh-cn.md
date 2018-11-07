@@ -64,9 +64,9 @@ Paradox 的至简样式，简洁明了。
 
 Scheme 的切换通过更改 **主题配置文件**，搜索 `scheme` 关键字。 你会看到有几行 scheme 的配置，将你需用启用的 scheme 去掉前面注释 `#` 即可。
 
-> 例如 - 选择 Paradox Scheme
+> 例如 - 选择 Paradox Scheme  
 
->```yaml
+```yaml
 #scheme: Nexus
 scheme: Paradox
 #scheme: Isolation
@@ -78,13 +78,15 @@ scheme: Paradox
 
 - slogan: 显示在 `blog_info` 模块中的标语，你可以设置单行标语或者多行标语：
 
-> 单行标语使用
-> ```yaml
+> 单行标语使用  
+
+```yaml
   slogan: 标语（支持 HTML 标签）
 ```
 
-> 多行标语使用
-> ```yaml
+> 多行标语使用  
+
+```yaml
   slogan:
    - "标语第一行"
    - "标语第二行"
